@@ -1,0 +1,3375 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Android/qcs605h/qcs605h:8.1.0/OPM1.171019.026/lnxbui03140519:userdebug/test-keys'
+Revision: '0'
+ABI: 'arm'
+pid: 587, tid: 1115, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+Cause: null pointer dereference
+    r0 e58df18c  r1 00000000  r2 00000bd8  r3 00000000
+    r4 00000002  r5 00000002  r6 e6d7e223  r7 e6de9aa0
+    r8 00002bc4  r9 e6d8204a  sl e6d5bfea  fp e6d82257
+    ip e88a65d0  sp e5518c34  lr e6b92d61  pc e882f1ce  cpsr 20000030
+    d0  000000003f800000  d1  000000003f800000
+    d2  000000003f7efeff  d3  000000003f800000
+    d4  43c0000000000000  d5  000000003f800000
+    d6  0000000000000000  d7  0000000000000000
+    d8  000000003f800000  d9  00000000447fc000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 000000f400030fd3  d17 0000000000000000
+    d18 000000003fc9652c  d19 0000000000000000
+    d20 be993dd93fd367a1  d21 bf181d7e3caa64c3
+    d22 0000000000000000  d23 0000000000000000
+    d24 0000000000000010  d25 0000000400000002
+    d26 0000000800000006  d27 0000000c0000000a
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 000000000000006b
+    scr 60000093
+
+backtrace:
+    #00 pc 000191ce  /system/lib/libc.so (__memcpy_base_aligned+61)
+    #01 pc 000d7d5d  /vendor/lib/hw/camera.qcom.so (CamX::IPEGamma15::UpdateIPEInternalData(CamX::ISPInputData const*) const+836)
+    #02 pc 000dac49  /vendor/lib/hw/camera.qcom.so (CamX::IPEGamma15::Execute(CamX::ISPInputData*)+164)
+    #03 pc 000ab959  /vendor/lib/hw/camera.qcom.so (CamX::IPENode::ProgramIQConfig(CamX::ISPInputData*)+400)
+    #04 pc 000a90d5  /vendor/lib/hw/camera.qcom.so (CamX::IPENode::ExecuteProcessRequest(CamX::ExecuteProcessRequestData*)+4148)
+    #05 pc 0021508f  /vendor/lib/hw/camera.qcom.so (CamX::Node::ProcessRequest(CamX::NodeProcessRequestData*, unsigned long long)+3534)
+    #06 pc 0023b0e9  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerCore(CamX::Dependency*)+296)
+    #07 pc 0023ae53  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerWrapper(void*)+26)
+    #08 pc 00199019  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::ProcessJobQueue()+164)
+    #09 pc 001987e5  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::DoWork()+156)
+    #10 pc 00198741  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::WorkerThreadBody(void*)+4)
+    #11 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #12 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e5518bf4  00000000
+         e5518bf8  e5d32000  [anon:libc_malloc]
+         e5518bfc  e5d32000  [anon:libc_malloc]
+         e5518c00  e6d5f4b6  /vendor/lib/hw/camera.qcom.so
+         e5518c04  e58dfde0  [anon:libc_malloc]
+         e5518c08  00000007
+         e5518c0c  00000000
+         e5518c10  00000001
+         e5518c14  00000004
+         e5518c18  00000000
+         e5518c1c  e80dbec0  [anon:libc_malloc]
+         e5518c20  00000007
+         e5518c24  e58dfde0  [anon:libc_malloc]
+         e5518c28  e6d5f4b6  /vendor/lib/hw/camera.qcom.so
+         e5518c2c  e5d32000  [anon:libc_malloc]
+         e5518c30  00000007
+    #00  e5518c34  00000002
+         e5518c38  00000002
+         e5518c3c  e6d7e223  /vendor/lib/hw/camera.qcom.so
+         e5518c40  e6de9aa0  /vendor/lib/hw/camera.qcom.so
+         e5518c44  00002bc4
+         e5518c48  e58df18c  [anon:libc_malloc]
+         e5518c4c  e6b92d61  /vendor/lib/hw/camera.qcom.so (CamX::IPEGamma15::UpdateIPEInternalData(CamX::ISPInputData const*) const+840)
+    #01  e5518c50  e2767b40  [anon:libc_malloc]
+         e5518c54  e5519a00
+         e5518c58  00000001
+         e5518c5c  e6b97c33  /vendor/lib/hw/camera.qcom.so (CamX::IPEICA10::SetTransformData(CamX::ISPInputData*)+218)
+         e5518c60  e5519a00
+         e5518c64  e2767b40  [anon:libc_malloc]
+         e5518c68  e5522c48
+         e5518c6c  e6b97ad7  /vendor/lib/hw/camera.qcom.so (CamX::IPEICA10::CheckDependenceChange(CamX::ISPInputData*)+878)
+         e5518c70  e58d4000  [anon:libc_malloc]
+         e5518c74  00000000
+         e5518c78  e13f9000  [anon:libc_malloc]
+         e5518c7c  e5519a00
+         e5518c80  00000000
+         e5518c84  00000000
+         e5518c88  00000000
+         e5518c8c  00000000
+         ........  ........
+    #02  e5518cb8  00000800
+         e5518cbc  00000400
+         e5518cc0  00000000
+         e5518cc4  e58dfe24  [anon:libc_malloc]
+         e5518cc8  e58d4000  [anon:libc_malloc]
+         e5518ccc  00000009
+         e5518cd0  e58d63a4  [anon:libc_malloc]
+         e5518cd4  e6b6695b  /vendor/lib/hw/camera.qcom.so (CamX::IPENode::ProgramIQConfig(CamX::ISPInputData*)+402)
+    #03  e5518cd8  00000000
+         e5518cdc  e58d9580  [anon:libc_malloc]
+         e5518ce0  e58d63dc  [anon:libc_malloc]
+         e5518ce4  e58d63e4  [anon:libc_malloc]
+         e5518ce8  e58d63e8  [anon:libc_malloc]
+         e5518cec  e58d63ec  [anon:libc_malloc]
+         e5518cf0  e58d63f0  [anon:libc_malloc]
+         e5518cf4  e58d63f4  [anon:libc_malloc]
+         e5518cf8  e58d642c  [anon:libc_malloc]
+         e5518cfc  e58d9590  [anon:libc_malloc]
+         e5518d00  e58d641c  [anon:libc_malloc]
+         e5518d04  e5518d0c
+         e5518d08  00000001
+         e5518d0c  00001590
+         e5518d10  00001710
+         e5518d14  00001890
+         ........  ........
+    #04  e5518d48  00000001
+         e5518d4c  00000002
+         e5518d50  00000000
+         e5518d54  00000000
+         e5518d58  00000000
+         e5518d5c  00000000
+         e5518d60  00000000
+         e5518d64  00000000
+         e5518d68  00000000
+         e5518d6c  00000000
+         e5518d70  00000001
+         e5518d74  e822a000  anon_inode:dmabuf
+         e5518d78  e551de58
+         e5518d7c  00000000
+         e5518d80  00000002
+         e5518d84  e8491000  anon_inode:dmabuf
+         ........  ........
+    #05  e5522d28  00000001
+         e5522d2c  00000000
+         e5522d30  00000000
+         e5522d34  e518fac0  [anon:libc_malloc]
+         e5522d38  e2094000  [anon:libc_malloc]
+         e5522d3c  e6dbf32f  /vendor/lib/hw/camera.qcom.so
+         e5522d40  e6dbe751  /vendor/lib/hw/camera.qcom.so
+         e5522d44  00000001
+         e5522d48  00000000
+         e5522d4c  e58d4028  [anon:libc_malloc]
+         e5522d50  00000000
+         e5522d54  00000000
+         e5522d58  e55231c0
+         e5522d5c  e58d41a8  [anon:libc_malloc]
+         e5522d60  e3fe42c8  [anon:libc_malloc]
+         e5522d64  80180000
+         ........  ........
+    #06  e5522f98  e4deb800  [anon:libc_malloc]
+         e5522f9c  e55271b8
+         e5522fa0  00000000
+         e5522fa4  00000000
+         e5522fa8  00000000
+         e5522fac  00000000
+         e5522fb0  00000000
+         e5522fb4  00000000
+         e5522fb8  00000000
+         e5522fbc  5ee6e410
+         e5522fc0  00000000
+         e5522fc4  00000000
+         e5522fc8  00000000
+         e5522fcc  00000000
+         e5522fd0  00000000
+         e5522fd4  00000000
+         ........  ........
+    #07  e5527ca0  e5abb000  [anon:libc_malloc]
+         e5527ca4  e6cc6229  /vendor/lib/hw/camera.qcom.so (CamX::MetadataPool::MetadataPoolThreadCb(void*)+24)
+         e5527ca8  00000000
+         e5527cac  00000000
+         e5527cb0  00000000
+         e5527cb4  00000000
+         e5527cb8  00000000
+         e5527cbc  00000000
+         e5527cc0  00000000
+         e5527cc4  00000000
+         e5527cc8  00000000
+         e5527ccc  00000000
+         e5527cd0  00000000
+         e5527cd4  00000000
+         e5527cd8  00000000
+         e5527cdc  00000000
+         ........  ........
+    #08  e5527ec0  e5b6e820  [anon:libc_malloc]
+         e5527ec4  00000000
+         e5527ec8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5527ecc  e5be1220  [anon:libc_malloc]
+         e5527ed0  e5be1220  [anon:libc_malloc]
+         e5527ed4  e58a8ce0  [anon:libc_malloc]
+         e5527ed8  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5527edc  e5ac7138  [anon:libc_malloc]
+         e5527ee0  e5ac312c  [anon:libc_malloc]
+         e5527ee4  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e5527ee8  00000000
+         e5527eec  00000000
+         e5527ef0  00000000
+         e5527ef4  00000000
+         e5527ef8  00000000
+         e5527efc  00000000
+         ........  ........
+    #09  e5528100  00000000
+         e5528104  e5abb114  [anon:libc_malloc]
+         e5528108  e5abf120  [anon:libc_malloc]
+         e552810c  e5ac312c  [anon:libc_malloc]
+         e5528110  e5ac7138  [anon:libc_malloc]
+         e5528114  00000000
+         e5528118  00000000
+         e552811c  00000000
+         e5528120  e5ac713c  [anon:libc_malloc]
+         e5528124  00000000
+         e5528128  e5aac7c0  [anon:libc_malloc]
+         e552812c  00000000
+         e5528130  00000000
+         e5528134  00000000
+         e5528138  00000000
+         e552813c  00000000
+         ........  ........
+    #10  e5528950  00000078
+         e5528954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #11  e5528958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e552895c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #12  e5528960  e5528978
+         e5528964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e5528968  e5528970
+         e552896c  00000000
+         e5528970  e5625970
+         e5528974  e542b970
+         e5528978  0000045b
+         e552897c  0000024b
+         e5528980  00000000
+         e5528984  e542c000  [anon:thread stack guard page]
+         e5528988  000fc970
+         e552898c  00001000
+         e5528990  00000000
+         e5528994  00000000
+         e5528998  00000000
+         e552899c  00000000
+
+memory near r0:
+    e58df16c 00000000 00000000 00000000 00000000  ................
+    e58df17c 00000000 00000000 00000000 00000000  ................
+    e58df18c 00000000 00000000 00000000 00000000  ................
+    e58df19c 00000000 00000000 00000000 00000000  ................
+    e58df1ac 00000000 00000000 00000000 00000000  ................
+    e58df1bc 00000000 00000000 00000000 00000000  ................
+    e58df1cc 00000000 00000000 00000000 00000000  ................
+    e58df1dc 00000000 00000000 00000000 00000000  ................
+    e58df1ec 00000000 00000000 00000000 00000000  ................
+    e58df1fc 00000000 00000000 00000000 00000000  ................
+    e58df20c 00000000 00000000 00000000 00000000  ................
+    e58df21c 00000000 00000000 00000000 00000000  ................
+    e58df22c 00000000 00000000 00000000 00000000  ................
+    e58df23c 00000000 00000000 00000000 00000000  ................
+    e58df24c 00000000 00000000 00000000 00000000  ................
+    e58df25c 00000000 00000000 00000000 00000000  ................
+
+memory near r6:
+    e6d7e200 70206e6f 20737361 6c6c7566 36202d20  on pass full - 6
+    e6d7e210 203a2034 202c6425 202c6425 202c6425  4 : %d, %d, %d, 
+    e6d7e220 55006425 74616470 45504965 65746e49  %d.UpdateIPEInte
+    e6d7e230 6c616e72 61746144 56205b00 5d425245  rnalData.[ VERB]
+    e6d7e240 25207325 32323a73 73252039 49202928  %s %s:229 %s() I
+    e6d7e250 74655351 676e6974 72745073 78305b20  QSettingsPtr [0x
+    e6d7e260 205d7025 56205b00 5d425245 25207325  %p] .[ VERB]%s %
+    e6d7e270 33323a73 73252039 44202928 52706d75  s:239 %s() DumpR
+    e6d7e280 6f436765 6769666e 205b0020 42524556  egConfig .[ VERB
+    e6d7e290 2073255d 323a7325 25203339 20292873  ]%s %s:293 %s() 
+    e6d7e2a0 61647075 676e6974 72686320 74616d6f  updating chromat
+    e6d7e2b0 70207869 746e696f 5b007265 4f525245  ix pointer.[ERRO
+    e6d7e2c0 73255d52 3a732520 20333033 29287325  R]%s %s:303 %s()
+    e6d7e2d0 69614620 2064656c 67206f74 43207465   Failed to get C
+    e6d7e2e0 6d6f7268 78697461 52455b00 5d524f52  hromatix.[ERROR]
+    e6d7e2f0 25207325 30333a73 73252038 4e202928  %s %s:308 %s() N
+
+memory near r7:
+    e6de9a80 00000000 00000000 00000000 00000000  ................
+    e6de9a90 e88ad1b8 e6df5928 e8295098 e8295050  ....(Y...P).PP).
+    e6de9aa0 e6ded2d4 e6dea130 e6dea000 e6ded314  ....0...........
+    e6de9ab0 e6ded9e8 e6ded998 e6ded954 e6ded7f0  ........T.......
+    e6de9ac0 e7bd2e24 e6dea918 e6ac8fa1 e6ac9119  $...............
+    e6de9ad0 e6deac20 e848b9cc e6de8820 e8445891   .....H. ....XD.
+    e6de9ae0 e6f4eb20 e6ded304 e6be2985 e6be2939   ........)..9)..
+    e6de9af0 e6be2ab1 e6be3769 e6be2a85 e6be34ed  .*..i7...*...4..
+    e6de9b00 e6be2a99 e6ded718 e6c370cd e6c357c1  .*.......p...W..
+    e6de9b10 e6c358bd e6c36421 e6c36ded e6de8e68  .X..!d...m..h...
+    e6de9b20 e6de8e3c e6de8e94 e6c41b91 e6df25ac  <............%..
+    e6de9b30 e6df160c e6d03e81 e6f4eb2c e6d1d195  .....>..,.......
+    e6de9b40 e6d1d19d e6f4eb30 e6dedea8 e6dedc98  ....0...........
+    e6de9b50 e6dedd48 e6dedcf0 e6dedc6c e6dede7c  H.......l...|...
+    e6de9b60 e6dedd74 e6dedcc4 e6dede24 e6deddf8  t.......$.......
+    e6de9b70 e6deddcc e6dedda0 e6dede50 e6dedd1c  ........P.......
+
+memory near r8:
+    00002ba4 -------- -------- -------- --------  ................
+    00002bb4 -------- -------- -------- --------  ................
+    00002bc4 -------- -------- -------- --------  ................
+    00002bd4 -------- -------- -------- --------  ................
+    00002be4 -------- -------- -------- --------  ................
+    00002bf4 -------- -------- -------- --------  ................
+    00002c04 -------- -------- -------- --------  ................
+    00002c14 -------- -------- -------- --------  ................
+    00002c24 -------- -------- -------- --------  ................
+    00002c34 -------- -------- -------- --------  ................
+    00002c44 -------- -------- -------- --------  ................
+    00002c54 -------- -------- -------- --------  ................
+    00002c64 -------- -------- -------- --------  ................
+    00002c74 -------- -------- -------- --------  ................
+    00002c84 -------- -------- -------- --------  ................
+    00002c94 -------- -------- -------- --------  ................
+
+memory near r9:
+    e6d82028 6f4d2029 656c7564 696e6920 6c616974  ) Module initial
+    e6d82038 74617a69 206e6f69 6c696166 21206465  ization failed !
+    e6d82048 65760021 726f646e 6f63712f 72702f6d  !.vendor/qcom/pr
+    e6d82058 6972706f 72617465 61632f79 6c2d786d  oprietary/camx-l
+    e6d82068 732f6269 65747379 2e2e2f6d 2f2e2e2f  ib/system/../../
+    e6d82078 786d6163 6372732f 6c77682f 7073692f  camx/src/hwl/isp
+    e6d82088 6f6d7169 656c7564 6d61632f 65706978  iqmodule/camxipe
+    e6d82098 6d6d6167 2e353161 00707063 5252455b  gamma15.cpp.[ERR
+    e6d820a8 255d524f 73252073 2038363a 29287325  OR]%s %s:68 %s()
+    e6d820b8 6c754e20 6e69206c 20747570 6e696f70   Null input poin
+    e6d820c8 00726574 5252455b 255d524f 73252073  ter.[ERROR]%s %s
+    e6d820d8 3931313a 28732520 6e552029 656c6261  :119 %s() Unable
+    e6d820e8 206f7420 74696e69 7a696c69 6f632065   to initilize co
+    e6d820f8 6e6f6d6d 62696c20 79726172 74616420  mmon library dat
+    e6d82108 6e202c61 656d206f 79726f6d 56205b00  a, no memory.[ V
+    e6d82118 5d425245 25207325 31333a73 73252032  ERB]%s %s:312 %s
+
+memory near sl:
+    e6d5bfc8 20732520 6f727265 736d5f72 6e654c67   %s error_msgLen
+    e6d5bfd8 20642520 6d617266 64695f65 20642520   %d frame_id %d 
+    e6d5bfe8 495b000a 20205053 005d2020 00535042  ..[ISP    ].BPS.
+    e6d5bff8 4556205b 255d4252 73252073 3239323a  [ VERB]%s %s:292
+    e6d5c008 28732520 6f6e2029 72506564 7265706f   %s() nodeProper
+    e6d5c018 6f437974 20746e75 76006425 6f646e65  tyCount %d.vendo
+    e6d5c028 63712f72 702f6d6f 72706f72 61746569  r/qcom/proprieta
+    e6d5c038 632f7972 2d786d61 2f62696c 74737973  ry/camx-lib/syst
+    e6d5c048 2e2f6d65 2e2e2f2e 6d61632f 72732f78  em/../../camx/sr
+    e6d5c058 77682f63 70622f6c 61632f73 7062786d  c/hwl/bps/camxbp
+    e6d5c068 646f6e73 70632e65 72430070 65746165  snode.cpp.Create
+    e6d5c078 49205b00 5d4f464e 25207325 31333a73  .[ INFO]%s %s:31
+    e6d5c088 73252032 42202928 49205350 6174736e  2 %s() BPS Insta
+    e6d5c098 2065636e 666f7270 49656c69 64252064  nce profileId %d
+    e6d5c0a8 6f727020 73736563 3a676e69 00642520   processing: %d.
+    e6d5c0b8 5252455b 255d524f 73252073 3731333a  [ERROR]%s %s:317
+
+memory near fp:
+    e6d82234 726f7065 676e6974 72754320 5b206576  eporting Curve [
+    e6d82244 20786469 6425203d 255b205d 25202c66  idx = %d] [%f, %
+    e6d82254 5b005d66 52455620 73255d42 3a732520  f].[ VERB]%s %s:
+    e6d82264 20313433 29287325 6e6f7420 70614d65  341 %s() toneMap
+    e6d82274 76727543 696f5065 2073746e 202c6425  CurvePoints %d, 
+    e6d82284 65756c42 70655220 6974726f 4320676e  Blue Reporting C
+    e6d82294 65767275 64695b20 203d2078 205d6425  urve [idx = %d] 
+    e6d822a4 2c66255b 5d662520 52455b00 5d524f52  [%f, %f].[ERROR]
+    e6d822b4 25207325 38333a73 73252035 49202928  %s %s:385 %s() I
+    e6d822c4 6c61766e 49206469 7475706e 4970203a  nvalid Input: pI
+    e6d822d4 7475706e 61746144 00702520 4556205b  nputData %p.[ VE
+    e6d822e4 255d4252 73252073 3939333a 28732520  RB]%s %s:399 %s(
+    e6d822f4 73252029 56205b00 5d425245 25207325  ) %s.[ VERB]%s %
+    e6d82304 32343a73 73252037 4c202928 49207875  s:427 %s() Lux I
+    e6d82314 7865646e 78305b20 205d6625 52455b00  ndex [0x%f] .[ER
+    e6d82324 5d524f52 25207325 39343a73 73252037  ROR]%s %s:497 %s
+
+memory near ip:
+    e88a65b0 e8858739 e885d2a9 e886a84d e830b0db  9.......M.....0.
+    e88a65c0 e8868449 e885ede3 e830b0e3 e885ae45  I.........0.E...
+    e88a65d0 e882f09f e8830610 e882f244 e8831585  ........D.......
+    e88a65e0 e88334c9 e8830999 e882f030 e8835999  .4......0....Y..
+    e88a65f0 e8860164 e88343e5 e88608cc e8831671  d....C......q...
+    e88a6600 e8860324 e882e23d e8837869 e88379e9  $...=...ix...y..
+    e88a6610 e8837a31 e8837901 e882fd0d e88309cd  1z...y..........
+    e88a6620 e885e931 e883a575 e882ffb9 e885ebd5  1...u...........
+    e88a6630 e8832b55 e885369d e8832db1 e8510c5c  U+...6...-..\.Q.
+    e88a6640 e83ea5fc e8891460 e8891460 e8891444  ..>.`...`...D...
+    e88a6650 e889156c e8891510 e8510c5c e8891474  l.......\.Q.t...
+    e88a6660 e88914b0 e88914c4 e889149c e8891488  ................
+    e88a6670 e88914d8 e83eb010 e83eada4 e8510c50  ......>...>.P.Q.
+    e88a6680 e8510c58 e8510f54 e8891b8c e8891be8  X.Q.T.Q.........
+    e88a6690 e83ea5fc e8891b54 e88919f4 e889185c  ..>.T.......\...
+    e88a66a0 e83ea5f0 e83ea5f8 e8510f2c e83ea794  ..>...>.,.Q...>.
+
+memory near sp:
+    e5518c14 00000004 00000000 e80dbec0 00000007  ................
+    e5518c24 e58dfde0 e6d5f4b6 e5d32000 00000007  ......... ......
+    e5518c34 00000002 00000002 e6d7e223 e6de9aa0  ........#.......
+    e5518c44 00002bc4 e58df18c e6b92d61 e2767b40  .+......a-..@{v.
+    e5518c54 e5519a00 00000001 e6b97c33 e5519a00  ..Q.....3|....Q.
+    e5518c64 e2767b40 e5522c48 e6b97ad7 e58d4000  @{v.H,R..z...@..
+    e5518c74 00000000 e13f9000 e5519a00 00000000  ......?...Q.....
+    e5518c84 00000000 00000000 00000000 5ee6e410  ...............^
+    e5518c94 e5519a00 e13f9000 e13d6060 00000400  ..Q...?.``=.....
+    e5518ca4 e5519a00 e58d62cc e5518d08 e58dfe28  ..Q..b....Q.(...
+    e5518cb4 e6b95c4d 00000800 00000400 00000000  M\..............
+    e5518cc4 e58dfe24 e58d4000 00000009 e58d63a4  $....@.......c..
+    e5518cd4 e6b6695b 00000000 e58d9580 e58d63dc  [i...........c..
+    e5518ce4 e58d63e4 e58d63e8 e58d63ec e58d63f0  .c...c...c...c..
+    e5518cf4 e58d63f4 e58d642c e58d9590 e58d641c  .c..,d.......d..
+    e5518d04 e5518d0c 00000001 00001590 00001710  ..Q.............
+
+code around pc:
+    e882f1ac 3b01f811 3b01f800 f811bf21 f8114b01  ...;...;!....K..
+    e882f1bc f8005b01 f8004b01 3a405b01 f891db0b  .[...K...[@:....
+    e882f1cc e8b1f100 e8a051f8 e8b151f8 e8a051f8  .....Q...Q...Q..
+    e882f1dc 3a4051f8 3240daf3 db043a20 51f8e8b1  .Q@:..@2 :.....Q
+    e882f1ec 51f8e8a0 32203a20 ea5fd01a bf247c02  ...Q : 2.._..|$.
+    e882f1fc c078c978 e8b1bf44 e8a00180 ea5f0180  x.x.D........._.
+    e882f20c bf247c82 3b04f851 3b04f840 f831bf44  .|$.Q..;@..;D.1.
+    e882f21c f8204b02 f0124b02 bf1c0f01 7003780b  .K ..K.......x.p
+    e882f22c 01f0e8bd 8001e8bd e1520003 9a000001  ..........R.....
+    e882f23c e52de004 fa000d06 e3520084 8a000015  ..-.......R.....
+    e882f24c e1a03000 eee01b10 e2522020 3a000003  .0......  R....:
+    e882f25c f2202150 e2522020 f403020d 2afffffc  P! .  R........*
+    e882f26c e2822020 e3120010 0a000000 f4030a0d    ..............
+    e882f27c e1b0ce82 3a000000 f403070d aa000000  .......:........
+    e882f28c f483080d e1b0cf82 44c31001 24c31001  ...........D...$
+    e882f29c 24c31001 e12fff1e e92d40f1 e2603000  ...$../..@-..0`.
+
+code around lr:
+    e6b92d40 f645680a 50c233b4 33b8f645 50c2684a  .hE..3.PE..3Jh.P
+    e6b92d50 32bcf645 44106889 4218f640 fb48f1bf  E..2.h.D@..B..H.
+    e6b92d60 b00c2000 8b04ecbd e8bdb001 bf008ff0  . ..............
+    e6b92d70 447fc000 00256fba 00256eb2 001ef450  ...D.o%..n%.P...
+    e6b92d80 001eb619 001ef574 001c93dc 001ef418  ....t...........
+    e6b92d90 001eb5ef 001ef576 001c93b2 001ef571  ....v.......q...
+    e6b92da0 001ef56f 001ef4c2 001eb66d 001ef551  o.......m...Q...
+    e6b92db0 001c944c f5adb570 4d327d04 2c00460c  L...p....}2M.F.,
+    e6b92dc0 6828447d 90836800 f8d4d008 69400964  }D(h.h......d.@i
+    e6b92dd0 f8d4b120 b1080960 e03c2000 4478482a   ...`.... <.*HxD
+    e6b92de0 fc2af0ba 48294603 4a2a4929 44789401  ..*..F)H)I*J..xD
+    e6b92df0 447a4479 20019000 fc20f0ba 44784826  yDzD... .. .&HxD
+    e6b92e00 68496801 d1252901 78006800 d52106c0  .hIh.)%..h.x..!.
+    e6b92e10 a8034a22 7100f44f 447a4623 fd58f735  "J..O..q#FzD5.X.
+    e6b92e20 447c4c1f e8d06820 f0100f8f d01a0f01  .L|D h..........
+    e6b92e30 447e4e1c 78406830 0f0cf010 6820d116  .N~D0h@x...... h
+
+memory map (653 entries):
+--->Fault address falls at 00000000 before any mapped regions
+    ace8d000-ace8ffff r-x         0      3000  /vendor/bin/hw/android.hardware.camera.provider@2.4-service (BuildId: c3b53a94efa19b195fb002dc93a604cc)
+    ace90000-ace90fff r--      2000      1000  /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+    ace91000-ace91fff rw-         0      1000
+    de2ae000-de3fffff rw-         0    152000  anon_inode:dmabuf
+    de400000-de87ffff rw-         0    480000  [anon:libc_malloc]
+    de899000-de993fff rw-         0     fb000  anon_inode:dmabuf
+    de994000-dea8efff rw-         0     fb000  anon_inode:dmabuf
+    dea8f000-deb89fff rw-         0     fb000  anon_inode:dmabuf
+    deb8a000-decdbfff rw-         0    152000  anon_inode:dmabuf
+    decdc000-dee2dfff rw-         0    152000  anon_inode:dmabuf
+    dee2e000-def7ffff rw-         0    152000  anon_inode:dmabuf
+    def80000-df0fffff rw-         0    180000  [anon:libc_malloc]
+    df14d000-df1c9fff rw-         0     7d000  anon_inode:dmabuf
+    df1ca000-df1dffff r-x         0     16000  /vendor/lib/libcamxtintlessalgo.so (BuildId: 35fb03894ad4dd7b27e95d73e99da5a3)
+    df1e0000-df1e0fff r--     15000      1000  /vendor/lib/libcamxtintlessalgo.so
+    df1e1000-df1e1fff rw-     16000      1000  /vendor/lib/libcamxtintlessalgo.so
+    df200000-df27ffff rw-         0     80000  [anon:libc_malloc]
+    df2aa000-df2f1fff rw-         0     48000  anon_inode:dmabuf
+    df2f2000-df443fff rw-         0    152000  anon_inode:dmabuf
+    df444000-df444fff ---         0      1000  [anon:thread stack guard page]
+    df445000-df540fff rw-         0     fc000
+    df541000-df546fff r-x         0      6000  /vendor/lib/libgrallocutils.so (BuildId: 2d2a86258c6761ddaf4b93d57ed1ab70)
+    df547000-df547fff r--      5000      1000  /vendor/lib/libgrallocutils.so
+    df548000-df548fff rw-      6000      1000  /vendor/lib/libgrallocutils.so
+    df58a000-df597fff r-x         0      e000  /vendor/lib/hw/gralloc.qcs605.so (BuildId: 98336028e06bedc7363a93f1a21136b1)
+    df598000-df598fff ---         0      1000
+    df599000-df599fff r--      e000      1000  /vendor/lib/hw/gralloc.qcs605.so
+    df59a000-df59afff rw-      f000      1000  /vendor/lib/hw/gralloc.qcs605.so
+    df59e000-df5e5fff rw-         0     48000  anon_inode:dmabuf
+    df5e6000-df5edfff r-x         0      8000  /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so (BuildId: 6c5c7bf727aedbac4325784def4abcd0)
+    df5ee000-df5eefff ---         0      1000
+    df5ef000-df5effff r--      8000      1000  /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
+    df5f0000-df5f0fff rw-      9000      1000  /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
+    df600000-dfa7ffff rw-         0    480000  [anon:libc_malloc]
+    dfa94000-dfbe5fff rw-         0    152000  anon_inode:dmabuf
+    dfbe6000-dfd37fff rw-         0    152000  anon_inode:dmabuf
+    dfd38000-dfd7ffff rw-         0     48000  anon_inode:dmabuf
+    dfd80000-dfdfffff rw-         0     80000  [anon:libc_malloc]
+    dfe38000-dfe7ffff rw-         0     48000  anon_inode:dmabuf
+    dfe80000-e03fffff rw-         0    580000  [anon:libc_malloc]
+    e0400000-e0afffff rw-         0    700000  [anon:libc_malloc]
+    e0b37000-e0b7efff rw-         0     48000  anon_inode:dmabuf
+    e0b7f000-e0c7ffff rw-         0    101000  /dev/ashmem/MessageQueue (deleted)
+    e0c80000-e2c7ffff rw-         0   2000000  [anon:libc_malloc]
+    e2c80000-e3e7ffff rw-         0   1200000  [anon:libc_malloc]
+    e3e80000-e4b7ffff rw-         0    d00000  [anon:libc_malloc]
+    e4baf000-e4bf6fff rw-         0     48000  anon_inode:dmabuf
+    e4bf7000-e4bfdfff r-x         0      7000  /vendor/lib/camera/components/libdefog.so (BuildId: eb3ca18d6609795c85ac7ad6083a18c1)
+    e4bfe000-e4bfefff r--      6000      1000  /vendor/lib/camera/components/libdefog.so
+    e4bff000-e4bfffff rw-      7000      1000  /vendor/lib/camera/components/libdefog.so
+    e4c00000-e4e7ffff rw-         0    280000  [anon:libc_malloc]
+    e4e85000-e4f85fff rw-         0    101000  /dev/ashmem/MessageQueue (deleted)
+    e4f86000-e4f86fff ---         0      1000  [anon:thread stack guard page]
+    e4f87000-e5082fff rw-         0     fc000
+    e5083000-e5083fff ---         0      1000  [anon:thread stack guard page]
+    e5084000-e517ffff rw-         0     fc000
+    e5180000-e51fffff rw-         0     80000  [anon:libc_malloc]
+    e5232000-e5232fff ---         0      1000  [anon:thread stack guard page]
+    e5233000-e532efff rw-         0     fc000
+    e532f000-e532ffff ---         0      1000  [anon:thread stack guard page]
+    e5330000-e542bfff rw-         0     fc000
+    e542c000-e542cfff ---         0      1000  [anon:thread stack guard page]
+    e542d000-e5528fff rw-         0     fc000
+    e5529000-e5529fff ---         0      1000  [anon:thread stack guard page]
+    e552a000-e5625fff rw-         0     fc000
+    e5626000-e5626fff ---         0      1000  [anon:thread stack guard page]
+    e5627000-e5722fff rw-         0     fc000
+    e5723000-e5723fff ---         0      1000  [anon:thread stack guard page]
+    e5724000-e581ffff rw-         0     fc000
+    e5820000-e5823fff r-x         0      4000  /vendor/lib/libqti-perfd-client.so (BuildId: 296cc33c863358091da202b59f31ceea)
+    e5824000-e5824fff r--      3000      1000  /vendor/lib/libqti-perfd-client.so
+    e5825000-e5825fff rw-      4000      1000  /vendor/lib/libqti-perfd-client.so
+    e5861000-e5875fff r-x         0     15000  /vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so (BuildId: e890f2ac64535543f50c0b22f1698122)
+    e5876000-e5876fff ---         0      1000
+    e5877000-e5877fff r--     15000      1000  /vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so
+    e5878000-e5878fff rw-     16000      1000  /vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so
+    e5880000-e59fffff rw-         0    180000  [anon:libc_malloc]
+    e5a00000-e5a47fff rw-         0     48000  anon_inode:dmabuf
+    e5a48000-e5a4afff r-x         0      3000  /vendor/lib/camera/com.qti.sensor.imx334.so (BuildId: 827bc204a844967ab47f36bd68299f94)
+    e5a4b000-e5a4bfff r--      2000      1000  /vendor/lib/camera/com.qti.sensor.imx334.so
+    e5a4c000-e5a4cfff rw-      3000      1000  /vendor/lib/camera/com.qti.sensor.imx334.so
+    e5a80000-e5dfffff rw-         0    380000  [anon:libc_malloc]
+    e5e42000-e5ea8fff r-x         0     67000  /vendor/lib/hw/com.qti.chi.override.so (BuildId: 3b996dfd088d95e15ff760711061be2e) (load bias 0x10000)
+    e5ea9000-e5ea9fff ---         0      1000
+    e5eaa000-e5eaafff r--     67000      1000  /vendor/lib/hw/com.qti.chi.override.so
+    e5eab000-e5efdfff rw-     68000     53000  /vendor/lib/hw/com.qti.chi.override.so
+    e5efe000-e5efffff rw-         0      2000  [anon:.bss]
+    e5f37000-e5f39fff r-x         0      3000  /vendor/lib/camera/components/com.qti.hvx.binning.so (BuildId: 6018f39b1b989074881f8e9627911806)
+    e5f3a000-e5f3afff r--      2000      1000  /vendor/lib/camera/components/com.qti.hvx.binning.so
+    e5f3b000-e5f3bfff rw-      3000      1000  /vendor/lib/camera/components/com.qti.hvx.binning.so
+    e5f65000-e5f67fff r-x         0      3000  /vendor/lib/camera/components/com.qti.hvx.addconstant.so (BuildId: ab8c7028a88746c92a3c71f249e0fba0)
+    e5f68000-e5f68fff r--      2000      1000  /vendor/lib/camera/components/com.qti.hvx.addconstant.so
+    e5f69000-e5f69fff rw-      3000      1000  /vendor/lib/camera/components/com.qti.hvx.addconstant.so
+    e5f82000-e5f87fff r-x         0      6000  /vendor/lib/camera/components/com.qtistatic.stats.pdlib.so (BuildId: 698e292d57d3a588145e95aeebe22989)
+    e5f88000-e5f88fff r--      5000      1000  /vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
+    e5f89000-e5f89fff rw-      6000      1000  /vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
+    e5f9d000-e5fe4fff rw-         0     48000  anon_inode:dmabuf
+    e5fe5000-e5febfff r-x         0      7000  /vendor/lib/camera/components/com.qtistatic.stats.awb.so (BuildId: 51c4dd68590fafcf3dcf3889450ae5a4)
+    e5fec000-e5fecfff r--      6000      1000  /vendor/lib/camera/components/com.qtistatic.stats.awb.so
+    e5fed000-e5fedfff rw-      7000      1000  /vendor/lib/camera/components/com.qtistatic.stats.awb.so
+    e6019000-e6020fff r-x         0      8000  /vendor/lib/camera/components/com.qtistatic.stats.af.so (BuildId: e9dee5385f7348a5eadd2d80b97cada3)
+    e6021000-e6021fff r--      7000      1000  /vendor/lib/camera/components/com.qtistatic.stats.af.so
+    e6022000-e6022fff rw-      8000      1000  /vendor/lib/camera/components/com.qtistatic.stats.af.so
+    e602b000-e6072fff rw-         0     48000  anon_inode:dmabuf
+    e6073000-e607afff r-x         0      8000  /vendor/lib/camera/components/com.qtistatic.stats.aec.so (BuildId: a7c03950137fe8fb8b4c531863c58069)
+    e607b000-e607bfff r--      7000      1000  /vendor/lib/camera/components/com.qtistatic.stats.aec.so
+    e607c000-e607cfff rw-      8000      1000  /vendor/lib/camera/components/com.qtistatic.stats.aec.so
+    e6090000-e6094fff r-x         0      5000  /vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so (BuildId: f63875ddea343e9fbeb29a7ee597ad1d)
+    e6095000-e6095fff r--      4000      1000  /vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
+    e6096000-e6096fff rw-      5000      1000  /vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
+    e609b000-e60e2fff rw-         0     48000  anon_inode:dmabuf
+    e60e3000-e60ebfff r-x         0      9000  /vendor/lib/camera/components/com.qti.stats.pdlibsony.so (BuildId: ee35721683e43972bf2c03350f219dba)
+    e60ec000-e60ecfff r--      8000      1000  /vendor/lib/camera/components/com.qti.stats.pdlibsony.so
+    e60ed000-e60edfff rw-      9000      1000  /vendor/lib/camera/components/com.qti.stats.pdlibsony.so
+    e6107000-e613afff r-x         0     34000  /vendor/lib/camera/components/com.qti.stats.pdlib.so (BuildId: c31e3cfc6ff624cf37616010a12a8f97)
+    e613b000-e613bfff r--     33000      1000  /vendor/lib/camera/components/com.qti.stats.pdlib.so
+    e613c000-e613cfff rw-     34000      1000  /vendor/lib/camera/components/com.qti.stats.pdlib.so
+    e6160000-e6166fff r-x         0      7000  /vendor/lib/camera/components/com.qti.stats.awbwrapper.so (BuildId: 47e6b5409b5625822f2d15cd6ffc67f5)
+    e6167000-e6167fff r--      6000      1000  /vendor/lib/camera/components/com.qti.stats.awbwrapper.so
+    e6168000-e6168fff rw-      7000      1000  /vendor/lib/camera/components/com.qti.stats.awbwrapper.so
+    e618a000-e61b3fff r-x         0     2a000  /vendor/lib/camera/components/com.qti.stats.awb.so (BuildId: 8b72da7d2066ee248e657d730dce3419)
+    e61b4000-e61b4fff ---         0      1000
+    e61b5000-e61b5fff r--     2a000      1000  /vendor/lib/camera/components/com.qti.stats.awb.so
+    e61b6000-e61b6fff rw-     2b000      1000  /vendor/lib/camera/components/com.qti.stats.awb.so
+    e61d2000-e61ddfff r-x         0      c000  /vendor/lib/camera/components/com.qti.stats.asd.so (BuildId: 098dcf045b9e93679579fa8db3679950)
+    e61de000-e61defff r--      b000      1000  /vendor/lib/camera/components/com.qti.stats.asd.so
+    e61df000-e61dffff rw-      c000      1000  /vendor/lib/camera/components/com.qti.stats.asd.so
+    e621f000-e622dfff r-x         0      f000  /vendor/lib/camera/components/com.qti.stats.afd.so (BuildId: 189ddc4ffdcc60314ed9f0cf74dd13d5)
+    e622e000-e622efff r--      e000      1000  /vendor/lib/camera/components/com.qti.stats.afd.so
+    e622f000-e622ffff rw-      f000      1000  /vendor/lib/camera/components/com.qti.stats.afd.so
+    e624d000-e62b0fff r-x         0     64000  /vendor/lib/camera/components/com.qti.stats.af.so (BuildId: 04f8b62266788610dc06a81e30ff0b42)
+    e62b1000-e62b1fff r--     63000      1000  /vendor/lib/camera/components/com.qti.stats.af.so
+    e62b2000-e62b2fff rw-     64000      1000  /vendor/lib/camera/components/com.qti.stats.af.so
+    e62c1000-e6309fff r-x         0     49000  /vendor/lib/camera/components/com.qti.stats.aec.so (BuildId: 2dd12cb761d58820f9ab684e7b988cb1) (load bias 0x1000)
+    e630a000-e630afff ---         0      1000
+    e630b000-e630bfff r--     49000      1000  /vendor/lib/camera/components/com.qti.stats.aec.so
+    e630c000-e630cfff rw-     4a000      1000  /vendor/lib/camera/components/com.qti.stats.aec.so
+    e630d000-e6354fff rw-         0     48000  anon_inode:dmabuf
+    e6355000-e6358fff r-x         0      4000  /vendor/lib/camera/components/com.qti.node.swregistration.so (BuildId: dfaed2f9e2f1ea9ae7c0e978d89d7de6)
+    e6359000-e6359fff r--      3000      1000  /vendor/lib/camera/components/com.qti.node.swregistration.so
+    e635a000-e635afff rw-      4000      1000  /vendor/lib/camera/components/com.qti.node.swregistration.so
+    e639f000-e63a2fff r-x         0      4000  /vendor/lib/camera/components/com.qti.node.stich.so (BuildId: 2499e2a6ee4790bd37dadf99558a95c1)
+    e63a3000-e63a3fff r--      3000      1000  /vendor/lib/camera/components/com.qti.node.stich.so
+    e63a4000-e63a4fff rw-      4000      1000  /vendor/lib/camera/components/com.qti.node.stich.so
+    e63c9000-e63d2fff r-x         0      a000  /vendor/lib/camera/components/com.qti.node.shdr.so (BuildId: 16ce7f7c8ab52a509c5a739c8a62d002)
+    e63d3000-e63d3fff r--      9000      1000  /vendor/lib/camera/components/com.qti.node.shdr.so
+    e63d4000-e63d4fff rw-      a000      1000  /vendor/lib/camera/components/com.qti.node.shdr.so
+    e63e4000-e642bfff rw-         0     48000  anon_inode:dmabuf
+    e642c000-e642ffff r-x         0      4000  /vendor/lib/camera/components/com.qti.node.remosaic.so (BuildId: 10937c60e5fad7f6b3cd6e9d89a1a1fa)
+    e6430000-e6430fff r--      3000      1000  /vendor/lib/camera/components/com.qti.node.remosaic.so
+    e6431000-e6431fff rw-      4000      1000  /vendor/lib/camera/components/com.qti.node.remosaic.so
+    e646f000-e6473fff r-x         0      5000  /vendor/lib/camera/components/com.qti.node.memcpy.so (BuildId: b1a4e25905d597bc544f716afa33814c)
+    e6474000-e6474fff r--      4000      1000  /vendor/lib/camera/components/com.qti.node.memcpy.so
+    e6475000-e6475fff rw-      5000      1000  /vendor/lib/camera/components/com.qti.node.memcpy.so
+    e64a1000-e64b1fff r-x         0     11000  /vendor/lib/camera/components/com.qti.node.ldcwarp.so (BuildId: 6df33a7e148970cef05c5621d34f56fb)
+    e64b2000-e64b2fff r--     10000      1000  /vendor/lib/camera/components/com.qti.node.ldcwarp.so
+    e64b3000-e64b3fff rw-     11000      1000  /vendor/lib/camera/components/com.qti.node.ldcwarp.so
+    e64c1000-e64d1fff r-x         0     11000  /vendor/lib/camera/components/com.qti.node.imagewarp.so (BuildId: bb5b787f622efa9c1121386ecf5dd02a)
+    e64d2000-e64d2fff r--     10000      1000  /vendor/lib/camera/components/com.qti.node.imagewarp.so
+    e64d3000-e64d3fff rw-     11000      1000  /vendor/lib/camera/components/com.qti.node.imagewarp.so
+    e64d6000-e651dfff rw-         0     48000  anon_inode:dmabuf
+    e651e000-e6529fff r-x         0      c000  /vendor/lib/camera/components/com.qti.node.gpu.so (BuildId: 6086b3b216c86b532c546258bf969eac)
+    e652a000-e652afff r--      b000      1000  /vendor/lib/camera/components/com.qti.node.gpu.so
+    e652b000-e652bfff rw-      c000      1000  /vendor/lib/camera/components/com.qti.node.gpu.so
+    e654b000-e6555fff r-x         0      b000  /vendor/lib/camera/components/com.qti.node.eisv3.so (BuildId: 5b1a512bd0a33d836b3ba2023feee347)
+    e6556000-e6556fff r--      a000      1000  /vendor/lib/camera/components/com.qti.node.eisv3.so
+    e6557000-e6557fff rw-      b000      1000  /vendor/lib/camera/components/com.qti.node.eisv3.so
+    e658c000-e6595fff r-x         0      a000  /vendor/lib/camera/components/com.qti.node.eisv2.so (BuildId: 50366b291d755e4129e610bb2829865c)
+    e6596000-e6596fff r--      9000      1000  /vendor/lib/camera/components/com.qti.node.eisv2.so
+    e6597000-e6597fff rw-      a000      1000  /vendor/lib/camera/components/com.qti.node.eisv2.so
+    e65dd000-e65ebfff r-x         0      f000  /vendor/lib/camera/components/com.qti.node.eisdg.so (BuildId: 4429ea269a9af5cfeac65f260eaadeed)
+    e65ec000-e65ecfff r--      e000      1000  /vendor/lib/camera/components/com.qti.node.eisdg.so
+    e65ed000-e65edfff rw-      f000      1000  /vendor/lib/camera/components/com.qti.node.eisdg.so
+    e662a000-e662dfff r-x         0      4000  /vendor/lib/camera/components/com.qti.node.dummysat.so (BuildId: 96cffaf11ee675579dd3fb95e2dbf902)
+    e662e000-e662efff r--      3000      1000  /vendor/lib/camera/components/com.qti.node.dummysat.so
+    e662f000-e662ffff rw-      4000      1000  /vendor/lib/camera/components/com.qti.node.dummysat.so
+    e664d000-e6650fff r-x         0      4000  /vendor/lib/camera/components/com.qti.node.dummyrtb.so (BuildId: caadbef96e11e084f9bb2350e5eea4bd)
+    e6651000-e6651fff r--      3000      1000  /vendor/lib/camera/components/com.qti.node.dummyrtb.so
+    e6652000-e6652fff rw-      4000      1000  /vendor/lib/camera/components/com.qti.node.dummyrtb.so
+    e6699000-e669dfff r-x         0      5000  /vendor/lib/camera/components/com.qti.node.depth.so (BuildId: 6004a2dd4ede92a1af90d9b1c87b8b70)
+    e669e000-e669efff r--      4000      1000  /vendor/lib/camera/components/com.qti.node.depth.so
+    e669f000-e669ffff rw-      5000      1000  /vendor/lib/camera/components/com.qti.node.depth.so
+    e66cd000-e66d3fff r-x         0      7000  /vendor/lib/camera/components/com.qti.node.defog.so (BuildId: 78f4bdb5ea80b0bb813c374fef1f4d3c)
+    e66d4000-e66d4fff r--      6000      1000  /vendor/lib/camera/components/com.qti.node.defog.so
+    e66d5000-e66d5fff rw-      7000      1000  /vendor/lib/camera/components/com.qti.node.defog.so
+    e6709000-e6709fff ---         0      1000  [anon:thread stack guard page]
+    e670a000-e6805fff rw-         0     fc000
+    e6806000-e6806fff ---         0      1000  [anon:thread stack guard page]
+    e6807000-e6902fff rw-         0     fc000
+    e6903000-e6903fff ---         0      1000  [anon:thread stack guard page]
+    e6904000-e69fffff rw-         0     fc000
+    e6a00000-e6a7ffff rw-         0     80000  [anon:libc_malloc]
+    e6a80000-e6abffff rw-         0     40000  anon_inode:dmabuf
+    e6ac0000-e6de5fff r-x         0    326000  /vendor/lib/hw/camera.qcom.so (BuildId: a5cc2330bbc4659418408f2592667871) (load bias 0x5000)
+    e6de6000-e6de9fff r--    325000      4000  /vendor/lib/hw/camera.qcom.so
+    e6dea000-e6deefff rw-    329000      5000  /vendor/lib/hw/camera.qcom.so
+    e6def000-e70fbfff rw-         0    30d000  [anon:.bss]
+    e7130000-e7133fff r-x         0      4000  /vendor/lib/libqmi_encdec.so (BuildId: 073f9bb8e04e1bb93026522bd1fe7d40)
+    e7134000-e7134fff r--      3000      1000  /vendor/lib/libqmi_encdec.so
+    e7135000-e7135fff rw-      4000      1000  /vendor/lib/libqmi_encdec.so
+    e716a000-e72acfff r-x         0    143000  /system/lib/libprotobuf-cpp-full.so (BuildId: c85374186a80cd3e64fb33c20ca38810) (load bias 0x3000)
+    e72ad000-e72b3fff r--    142000      7000  /system/lib/libprotobuf-cpp-full.so
+    e72b4000-e72b4fff rw-    149000      1000  /system/lib/libprotobuf-cpp-full.so
+    e72d5000-e72e8fff r-x         0     14000  /vendor/lib/libcamxfdengine.so (BuildId: c92d0e5608a53ef59265eca9e78cfdde)
+    e72e9000-e72e9fff r--     13000      1000  /vendor/lib/libcamxfdengine.so
+    e72ea000-e72eafff rw-     14000      1000  /vendor/lib/libcamxfdengine.so
+    e731b000-e732bfff r-x         0     11000  /vendor/lib/libdsutils.so (BuildId: b5f42124778e3c249e63950b75b5a8bb)
+    e732c000-e732cfff ---         0      1000
+    e732d000-e732dfff r--     11000      1000  /vendor/lib/libdsutils.so
+    e732e000-e732efff rw-     12000      1000  /vendor/lib/libdsutils.so
+    e7344000-e7414fff r-x         0     d1000  /vendor/lib/libssc.so (BuildId: a56a162a5cc75c3e9d139ff301a946f9) (load bias 0x3000)
+    e7415000-e741afff r--     d0000      6000  /vendor/lib/libssc.so
+    e741b000-e741bfff rw-     d6000      1000  /vendor/lib/libssc.so
+    e742c000-e7473fff rw-         0     48000  anon_inode:dmabuf
+    e7474000-e7476fff r-x         0      3000  /system/lib/libsync.so (BuildId: cd421e899f3960c7bf7b19786308fd92)
+    e7477000-e7477fff r--      2000      1000  /system/lib/libsync.so
+    e7478000-e7478fff rw-      3000      1000  /system/lib/libsync.so
+    e7498000-e749bfff r-x         0      4000  /vendor/lib/libqdMetaData.so (BuildId: 42e96bddd5d327d86342b6e257e56567)
+    e749c000-e749cfff r--      3000      1000  /vendor/lib/libqdMetaData.so
+    e749d000-e749dfff rw-      4000      1000  /vendor/lib/libqdMetaData.so
+    e74aa000-e74e9fff rw-         0     40000  anon_inode:dmabuf
+    e74ea000-e74eafff r-x         0      1000  /vendor/lib/libqmi_common_so.so (BuildId: 528d83a3657688271dd1460f7d5ed2dd)
+    e74eb000-e74ebfff r--         0      1000  /vendor/lib/libqmi_common_so.so (BuildId: 528d83a3657688271dd1460f7d5ed2dd)
+    e74ec000-e74ecfff rw-      1000      1000  /vendor/lib/libqmi_common_so.so
+    e751b000-e7538fff r-x         0     1e000  /vendor/lib/libdiag.so (BuildId: 8e9c0b7caab18fc9b541392a044d79fd)
+    e7539000-e7539fff r--     1d000      1000  /vendor/lib/libdiag.so
+    e753a000-e753cfff rw-     1e000      3000  /vendor/lib/libdiag.so
+    e753d000-e76f4fff rw-         0    1b8000  [anon:.bss]
+    e770e000-e7723fff r-x         0     16000  /system/lib/libz.so (BuildId: bd11324c3658e538ce6128c304c43ff3)
+    e7724000-e7724fff ---         0      1000
+    e7725000-e7725fff r--     16000      1000  /system/lib/libz.so
+    e7726000-e7726fff rw-     17000      1000  /system/lib/libz.so
+    e772c000-e776bfff rw-         0     40000  anon_inode:dmabuf
+    e776c000-e776ffff r-x         0      4000  /vendor/lib/libcamxstatscore.so (BuildId: ebace4f2ed71cc77d048fb853085766d)
+    e7770000-e7770fff r--      3000      1000  /vendor/lib/libcamxstatscore.so
+    e7771000-e7771fff rw-      4000      1000  /vendor/lib/libcamxstatscore.so
+    e77a5000-e77a8fff r-x         0      4000  /vendor/lib/libidl.so (BuildId: 1c63cb0e2267c75582728780c56f4050)
+    e77a9000-e77a9fff r--      3000      1000  /vendor/lib/libidl.so
+    e77aa000-e77aafff rw-      4000      1000  /vendor/lib/libidl.so
+    e77c4000-e77e0fff r-x         0     1d000  /vendor/lib/libcdsprpc.so (BuildId: 23abd87e5e2e6ce9ffb0dcaf5f1c2bfe)
+    e77e1000-e77e1fff r--     1c000      1000  /vendor/lib/libcdsprpc.so
+    e77e2000-e77e2fff rw-     1d000      1000  /vendor/lib/libcdsprpc.so
+    e77e3000-e77e3fff rw-         0      1000  [anon:.bss]
+    e7815000-e7818fff r-x         0      4000  /vendor/lib/libmdmdetect.so (BuildId: da9512b7a90024389198e72719abe064)
+    e7819000-e7819fff r--      3000      1000  /vendor/lib/libmdmdetect.so
+    e781a000-e781afff rw-      4000      1000  /vendor/lib/libmdmdetect.so
+    e7842000-e79b4fff r-x         0    173000  /vendor/lib/libcamxfdalgov7.so (BuildId: 6cbf18524ae7dc6cf801a769fda7feaf) (load bias 0x6000)
+    e79b5000-e79bbfff r--    172000      7000  /vendor/lib/libcamxfdalgov7.so
+    e79bc000-e79bcfff rw-    179000      1000  /vendor/lib/libcamxfdalgov7.so
+    e79c2000-e79cafff r-x         0      9000  /vendor/lib/libqmi_cci.so (BuildId: 850e64651bc19d6de267d84f7878d068)
+    e79cb000-e79cbfff ---         0      1000
+    e79cc000-e79ccfff r--      9000      1000  /vendor/lib/libqmi_cci.so
+    e79cd000-e79cdfff rw-      a000      1000  /vendor/lib/libqmi_cci.so
+    e79d8000-e7a17fff rw-         0     40000  anon_inode:dmabuf
+    e7a18000-e7a2bfff r-x         0     14000  /vendor/lib/libqmiservices.so (BuildId: fd00ccf581905571dbee2e51fbad9710) (load bias 0x5000)
+    e7a2c000-e7a32fff r--     13000      7000  /vendor/lib/libqmiservices.so
+    e7a33000-e7a33fff rw-     1a000      1000  /vendor/lib/libqmiservices.so
+    e7a6f000-e7a71fff r-x         0      3000  /vendor/lib/libsensorslog.so (BuildId: e56e352c1afe48bf7678e99505372ebf)
+    e7a72000-e7a72fff r--      2000      1000  /vendor/lib/libsensorslog.so
+    e7a73000-e7a73fff rw-      3000      1000  /vendor/lib/libsensorslog.so
+    e7a81000-e7a89fff r-x         0      9000  /vendor/lib/libqmi_client_qmux.so (BuildId: 9c70618d6a871ca15959dfd01fbebcc0)
+    e7a8a000-e7a8afff r--      8000      1000  /vendor/lib/libqmi_client_qmux.so
+    e7a8b000-e7a8bfff rw-      9000      1000  /vendor/lib/libqmi_client_qmux.so
+    e7a8c000-e7abffff rw-         0     34000  [anon:.bss]
+    e7ad6000-e7b15fff rw-         0     40000  anon_inode:dmabuf
+    e7b16000-e7b19fff r-x         0      4000  /vendor/lib/libcom.qti.chinodeutils.so (BuildId: 9518cfd44698055298acc3e97880d5ca)
+    e7b1a000-e7b1afff r--      3000      1000  /vendor/lib/libcom.qti.chinodeutils.so
+    e7b1b000-e7b1bfff rw-      4000      1000  /vendor/lib/libcom.qti.chinodeutils.so
+    e7b22000-e7b61fff rw-         0     40000  anon_inode:dmabuf
+    e7b62000-e7b65fff r-x         0      4000  /system/lib/libfmq.so (BuildId: 33840afb2fb9c6e1ecc0c0a47aeba8b1)
+    e7b66000-e7b66fff r--      3000      1000  /system/lib/libfmq.so
+    e7b67000-e7b67fff rw-      4000      1000  /system/lib/libfmq.so
+    e7b93000-e7ba6fff r-x         0     14000  /system/lib/vndk-sp/android.hardware.graphics.allocator@2.0.so (BuildId: 3d2f9a0393196a70d82a3150f0ef83e9)
+    e7ba7000-e7ba7fff ---         0      1000
+    e7ba8000-e7ba8fff r--     14000      1000  /system/lib/vndk-sp/android.hardware.graphics.allocator@2.0.so
+    e7ba9000-e7ba9fff rw-     15000      1000  /system/lib/vndk-sp/android.hardware.graphics.allocator@2.0.so
+    e7bcb000-e7bd2fff r-x         0      8000  /system/lib/libcamera_metadata.so (BuildId: 7bb559f4d19eff69742f4800ce09a924)
+    e7bd3000-e7bd3fff ---         0      1000
+    e7bd4000-e7bd4fff r--      8000      1000  /system/lib/libcamera_metadata.so
+    e7bd5000-e7bd5fff rw-      9000      1000  /system/lib/libcamera_metadata.so
+    e7c09000-e7c2afff r-x         0     22000  /vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so (BuildId: acf76307869ca9adc318a4a346d73d10)
+    e7c2b000-e7c2cfff r--     21000      2000  /vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+    e7c2d000-e7c2dfff rw-     23000      1000  /vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+    e7c50000-e7c52fff r-x         0      3000  /system/lib/vndk-sp/libhardware.so (BuildId: dc049b33da221960315e6b3ad5977922)
+    e7c53000-e7c53fff r--      2000      1000  /system/lib/vndk-sp/libhardware.so
+    e7c54000-e7c54fff rw-      3000      1000  /system/lib/vndk-sp/libhardware.so
+    e7c55000-e7c94fff rw-         0     40000  anon_inode:dmabuf
+    e7c95000-e7cadfff r-x         0     19000  /vendor/lib/camera.device@1.0-impl.so (BuildId: 6305b80f6bce3aa870fa1dc599febda0)
+    e7cae000-e7caefff ---         0      1000
+    e7caf000-e7caffff r--     19000      1000  /vendor/lib/camera.device@1.0-impl.so
+    e7cb0000-e7cb0fff rw-     1a000      1000  /vendor/lib/camera.device@1.0-impl.so
+    e7cef000-e7cf7fff r-x         0      9000  /vendor/lib/camera.device@3.3-impl.so (BuildId: d17eb3da7be6d5f0e8f4b3ab66eeb527)
+    e7cf8000-e7cf8fff ---         0      1000
+    e7cf9000-e7cf9fff r--      9000      1000  /vendor/lib/camera.device@3.3-impl.so
+    e7cfa000-e7cfafff rw-      a000      1000  /vendor/lib/camera.device@3.3-impl.so
+    e7d18000-e7d2bfff r-x         0     14000  /system/lib/android.hidl.allocator@1.0.so (BuildId: 3bea73a21487cf0cc32df0259e6a80e9)
+    e7d2c000-e7d2cfff ---         0      1000
+    e7d2d000-e7d2dfff r--     14000      1000  /system/lib/android.hidl.allocator@1.0.so
+    e7d2e000-e7d2efff rw-     15000      1000  /system/lib/android.hidl.allocator@1.0.so
+    e7d31000-e7d40fff rw-         0     10000  anon_inode:dmabuf
+    e7d41000-e7d5cfff r-x         0     1c000  /system/lib/vndk-sp/android.hidl.memory@1.0.so (BuildId: 6bd6735d641c98af81e80add0e83fcb9) (load bias 0x1000)
+    e7d5d000-e7d5dfff ---         0      1000
+    e7d5e000-e7d5ffff r--     1c000      2000  /system/lib/vndk-sp/android.hidl.memory@1.0.so
+    e7d60000-e7d60fff rw-     1e000      1000  /system/lib/vndk-sp/android.hidl.memory@1.0.so
+    e7d65000-e7d78fff rw-         0     14000  anon_inode:dmabuf
+    e7d79000-e7d93fff rw-         0     1b000  anon_inode:dmabuf
+    e7d94000-e7dacfff r-x         0     19000  /system/lib/vndk-sp/android.hardware.graphics.mapper@2.0.so (BuildId: 12912816eed6720e39ddaabd96331c36)
+    e7dad000-e7daefff r--     18000      2000  /system/lib/vndk-sp/android.hardware.graphics.mapper@2.0.so
+    e7daf000-e7daffff rw-     1a000      1000  /system/lib/vndk-sp/android.hardware.graphics.mapper@2.0.so
+    e7db8000-e7dc5fff rw-         0      e000  anon_inode:dmabuf
+    e7dc6000-e7de9fff r-x         0     24000  /vendor/lib/camera.device@3.2-impl.so (BuildId: a6be29f0b9b355249645340120e09546)
+    e7dea000-e7deafff ---         0      1000
+    e7deb000-e7debfff r--     24000      1000  /vendor/lib/camera.device@3.2-impl.so
+    e7dec000-e7decfff rw-     25000      1000  /vendor/lib/camera.device@3.2-impl.so
+    e7dee000-e7df5fff rw-         0      8000  anon_inode:dmabuf
+    e7df6000-e7e0ffff rw-         0     1a000  anon_inode:dmabuf
+    e7e10000-e7e2ffff r--         0     20000  /dev/__properties__/u:object_r:config_prop:s0
+    e7e30000-e7e34fff r-x         0      5000  /system/lib/vndk-sp/libhidlmemory.so (BuildId: 06165eb7347e6633f1acfe1e8bac0339)
+    e7e35000-e7e35fff r--      4000      1000  /system/lib/vndk-sp/libhidlmemory.so
+    e7e36000-e7e36fff rw-      5000      1000  /system/lib/vndk-sp/libhidlmemory.so
+    e7e37000-e7e39fff rw-         0      3000  anon_inode:dmabuf
+    e7e3a000-e7e3bfff rw-         0      2000  anon_inode:dmabuf
+    e7e3c000-e7e5bfff r--         0     20000  /dev/__properties__/u:object_r:dalvik_prop:s0
+    e7e5c000-e7e7bfff r--         0     20000  /dev/__properties__/u:object_r:debuggerd_prop:s0
+    e7e7c000-e7f79fff r--         0     fe000  /dev/hwbinder
+    e7f7a000-e8077fff r--         0     fe000  /dev/vndbinder
+    e8078000-e807bfff r-x         0      4000  /system/lib/libnetd_client.so (BuildId: b6fa74f2606c2582b2ea6766035f54cf)
+    e807c000-e807cfff r--      3000      1000  /system/lib/libnetd_client.so
+    e807d000-e807dfff rw-      4000      1000  /system/lib/libnetd_client.so
+    e807e000-e807efff rw-         0      1000  anon_inode:dmabuf
+    e807f000-e807ffff rw-         0      1000  anon_inode:dmabuf
+    e8080000-e817ffff rw-         0    100000  [anon:libc_malloc]
+    e8180000-e8180fff rw-         0      1000  anon_inode:dmabuf
+    e8181000-e8181fff rw-         0      1000  anon_inode:dmabuf
+    e8182000-e8182fff rw-         0      1000  anon_inode:dmabuf
+    e8183000-e8183fff rw-         0      1000  anon_inode:dmabuf
+    e8184000-e8184fff rw-         0      1000  anon_inode:dmabuf
+    e8185000-e8195fff rw-         0     11000  anon_inode:dmabuf
+    e8196000-e81b5fff r--         0     20000  /dev/__properties__/u:object_r:system_prop:s0
+    e81b6000-e81d5fff r--         0     20000  /dev/__properties__/u:object_r:pan_result_prop:s0
+    e81d6000-e81d8fff r-x         0      3000  /system/lib/libvndksupport.so (BuildId: 82c658d9a8436618e717055dbac8db4d)
+    e81d9000-e81d9fff r--      2000      1000  /system/lib/libvndksupport.so
+    e81da000-e81dafff rw-      3000      1000  /system/lib/libvndksupport.so
+    e81db000-e81dbfff rw-         0      1000  anon_inode:dmabuf
+    e81dc000-e81dcfff rw-         0      1000  anon_inode:dmabuf
+    e81dd000-e81ddfff ---         0      1000  [anon:thread signal stack guard page]
+    e81de000-e81e1fff rw-         0      4000  [anon:thread signal stack]
+    e81e2000-e81effff rw-         0      e000  anon_inode:dmabuf
+    e81f0000-e820ffff r--         0     20000  /dev/__properties__/u:object_r:dhcp_prop:s0
+    e8210000-e8224fff r-x         0     15000  /system/lib/vndk-sp/libutils.so (BuildId: dee938cf1b1aec33742de7bed5b5e63d)
+    e8225000-e8225fff ---         0      1000
+    e8226000-e8226fff r--     15000      1000  /system/lib/vndk-sp/libutils.so
+    e8227000-e8227fff rw-     16000      1000  /system/lib/vndk-sp/libutils.so
+    e8228000-e8228fff rw-         0      1000  anon_inode:dmabuf
+    e8229000-e8229fff rw-         0      1000  anon_inode:dmabuf
+    e822a000-e8233fff rw-         0      a000  anon_inode:dmabuf
+    e8234000-e8253fff r--         0     20000  /dev/__properties__/u:object_r:dumpstate_prop:s0
+    e8254000-e8274fff r-x         0     21000  /system/lib/android.hardware.camera.provider@2.4.so (BuildId: 74290267e6bdb7dc8eed20bab35eab5a) (load bias 0x1000)
+    e8275000-e8275fff ---         0      1000
+    e8276000-e8277fff r--     21000      2000  /system/lib/android.hardware.camera.provider@2.4.so
+    e8278000-e8278fff rw-     23000      1000  /system/lib/android.hardware.camera.provider@2.4.so
+    e8279000-e8286fff rw-         0      e000  anon_inode:dmabuf
+    e8287000-e8292fff r-x         0      c000  /system/lib/vndk-sp/libcutils.so (BuildId: 89a472b0f80e5e82aa929467850213e4)
+    e8293000-e8293fff ---         0      1000
+    e8294000-e8294fff r--      c000      1000  /system/lib/vndk-sp/libcutils.so
+    e8295000-e8295fff rw-      d000      1000  /system/lib/vndk-sp/libcutils.so
+    e8296000-e8296fff rw-         0      1000  anon_inode:dmabuf
+    e8297000-e8297fff rw-         0      1000  anon_inode:dmabuf
+    e8298000-e8298fff rw-         0      1000  anon_inode:dmabuf
+    e8299000-e8299fff rw-         0      1000  anon_inode:dmabuf
+    e829a000-e829afff ---         0      1000  [anon:bionic TLS guard]
+    e829b000-e829dfff rw-         0      3000  [anon:bionic TLS]
+    e829e000-e829efff ---         0      1000  [anon:bionic TLS guard]
+    e829f000-e82befff r--         0     20000  /dev/__properties__/u:object_r:radio_prop:s0
+    e82bf000-e82defff r--         0     20000  /dev/__properties__/u:object_r:wifi_log_prop:s0
+    e82df000-e82f4fff r-x         0     16000  /system/lib/vndk-sp/liblzma.so (BuildId: ea987be811126d8521429166ebe6e14b)
+    e82f5000-e82f5fff ---         0      1000
+    e82f6000-e82f6fff r--     16000      1000  /system/lib/vndk-sp/liblzma.so
+    e82f7000-e82f7fff rw-     17000      1000  /system/lib/vndk-sp/liblzma.so
+    e82f8000-e82fdfff rw-         0      6000  [anon:.bss]
+    e82fe000-e82fefff rw-         0      1000  anon_inode:dmabuf
+    e82ff000-e82fffff rw-         0      1000  anon_inode:dmabuf
+    e8300000-e8300fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8301000-e8301fff rw-         0      1000  anon_inode:dmabuf
+    e8302000-e8302fff rw-         0      1000  anon_inode:dmabuf
+    e8303000-e8309fff rw-         0      7000  anon_inode:dmabuf
+    e830a000-e830cfff r-x         0      3000  /system/lib/libdl.so (BuildId: 602d47ff935568924b0d6bc8927004a3)
+    e830d000-e830dfff r--      2000      1000  /system/lib/libdl.so
+    e830e000-e830efff rw-      3000      1000  /system/lib/libdl.so
+    e830f000-e830ffff rw-         0      1000  [anon:.bss]
+    e8310000-e8310fff rw-         0      1000  anon_inode:dmabuf
+    e8311000-e8311fff rw-         0      1000  anon_inode:dmabuf
+    e8312000-e8312fff rw-         0      1000  anon_inode:dmabuf
+    e8313000-e8313fff rw-         0      1000  anon_inode:dmabuf
+    e8314000-e8314fff rw-         0      1000  anon_inode:dmabuf
+    e8315000-e8334fff r--         0     20000  /dev/__properties__/u:object_r:log_prop:s0
+    e8335000-e8354fff r--         0     20000  /dev/__properties__/u:object_r:net_radio_prop:s0
+    e8355000-e836efff r-x         0     1a000  /system/lib/vndk-sp/libhidlbase.so (BuildId: 2d2923c4099587fbdd7b16530bc8d8bd)
+    e836f000-e836ffff ---         0      1000
+    e8370000-e8370fff r--     1a000      1000  /system/lib/vndk-sp/libhidlbase.so
+    e8371000-e8371fff rw-     1b000      1000  /system/lib/vndk-sp/libhidlbase.so
+    e8372000-e8374fff rw-         0      3000  anon_inode:dmabuf
+    e8375000-e837bfff rw-         0      7000  anon_inode:dmabuf
+    e837c000-e8390fff rw-         0     15000  anon_inode:dmabuf
+    e8391000-e83a3fff r-x         0     13000  /system/lib/vndk-sp/libbacktrace.so (BuildId: c7cc0b87ab18c31b5b06b0ae6f4b2f8b)
+    e83a4000-e83a4fff ---         0      1000
+    e83a5000-e83a5fff r--     13000      1000  /system/lib/vndk-sp/libbacktrace.so
+    e83a6000-e83a6fff rw-     14000      1000  /system/lib/vndk-sp/libbacktrace.so
+    e83a7000-e83a9fff rw-         0      3000  anon_inode:dmabuf
+    e83aa000-e83bafff rw-         0     11000  anon_inode:dmabuf
+    e83bb000-e83dafff r--         0     20000  /dev/__properties__/u:object_r:nfc_prop:s0
+    e83db000-e83ecfff r-x         0     12000  /system/lib/liblog.so (BuildId: b0c8b6f62035a083f7abc0e728adf846)
+    e83ed000-e83edfff r--     11000      1000  /system/lib/liblog.so
+    e83ee000-e83eefff rw-     12000      1000  /system/lib/liblog.so
+    e83ef000-e83effff rw-         0      1000  anon_inode:dmabuf
+    e83f0000-e83fffff rw-         0     10000  anon_inode:dmabuf
+    e8400000-e8489fff r-x         0     8a000  /system/lib/vndk-sp/libc++.so (BuildId: 6c7d12ba294545413135070c08c95338) (load bias 0x2000)
+    e848a000-e848afff ---         0      1000
+    e848b000-e848efff r--     8a000      4000  /system/lib/vndk-sp/libc++.so
+    e848f000-e848ffff rw-     8e000      1000  /system/lib/vndk-sp/libc++.so
+    e8490000-e8490fff rw-         0      1000  [anon:.bss]
+    e8491000-e8496fff rw-         0      6000  anon_inode:dmabuf
+    e8497000-e84a6fff rw-         0     10000  anon_inode:dmabuf
+    e84a7000-e84c6fff r--         0     20000  /dev/__properties__/u:object_r:audio_prop:s0
+    e84c7000-e8513fff r-x         0     4d000  /system/lib/vndk-sp/libhidltransport.so (BuildId: a06960b3681e90b533b769932da0154b) (load bias 0x2000)
+    e8514000-e8514fff ---         0      1000
+    e8515000-e8518fff r--     4d000      4000  /system/lib/vndk-sp/libhidltransport.so
+    e8519000-e8519fff rw-     51000      1000  /system/lib/vndk-sp/libhidltransport.so
+    e851a000-e851bfff rw-         0      2000  anon_inode:dmabuf
+    e851c000-e853bfff r--         0     20000  /dev/__properties__/u:object_r:persist_debug_prop:s0
+    e853c000-e855bfff r--         0     20000  /dev/__properties__/u:object_r:persist_dpm_prop:s0
+    e855c000-e8573fff r-x         0     18000  /vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so (BuildId: fce4a7f3cfd64542c0df6b12ca1b1a28)
+    e8574000-e8575fff r--     17000      2000  /vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
+    e8576000-e8576fff rw-     19000      1000  /vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
+    e8577000-e8579fff rw-         0      3000  anon_inode:dmabuf
+    e857a000-e8581fff rw-         0      8000  anon_inode:dmabuf
+    e8582000-e85c5fff r-x         0     44000  /system/lib/android.hardware.camera.device@1.0.so (BuildId: d626591ece9756658760643e80250f6d) (load bias 0x2000)
+    e85c6000-e85c8fff r--     43000      3000  /system/lib/android.hardware.camera.device@1.0.so
+    e85c9000-e85c9fff rw-     46000      1000  /system/lib/android.hardware.camera.device@1.0.so
+    e85ca000-e85d7fff rw-         0      e000  anon_inode:dmabuf
+    e85d8000-e85e7fff rw-         0     10000  anon_inode:dmabuf
+    e85e8000-e8607fff r--         0     20000  /dev/__properties__/u:object_r:fingerprint_prop:s0
+    e8608000-e8664fff r-x         0     5d000  /system/lib/libbinder.so (BuildId: 9cb51a4dfad88eba3ddecb8efb0e1cc2) (load bias 0x5000)
+    e8665000-e8665fff ---         0      1000
+    e8666000-e866dfff r--     5d000      8000  /system/lib/libbinder.so
+    e866e000-e866efff rw-     65000      1000  /system/lib/libbinder.so
+    e866f000-e868efff r--         0     20000  /dev/__properties__/u:object_r:vold_prop:s0
+    e868f000-e86a9fff r-x         0     1b000  /system/lib/vndk-sp/libhwbinder.so (BuildId: 943dd3d2305addb21374a8be52f9de5e)
+    e86aa000-e86abfff r--     1a000      2000  /system/lib/vndk-sp/libhwbinder.so
+    e86ac000-e86acfff rw-     1c000      1000  /system/lib/vndk-sp/libhwbinder.so
+    e86ad000-e86adfff rw-         0      1000  anon_inode:dmabuf
+    e86ae000-e86aefff rw-         0      1000  anon_inode:dmabuf
+    e86af000-e86b2fff rw-         0      4000  anon_inode:dmabuf
+    e86b3000-e86b9fff rw-         0      7000  anon_inode:dmabuf
+    e86ba000-e86c9fff rw-         0     10000  anon_inode:dmabuf
+    e86ca000-e86eafff r-x         0     21000  /system/lib/libm.so (BuildId: b2d331af89b0191793fca76b95d89629)
+    e86eb000-e86ebfff r--     20000      1000  /system/lib/libm.so
+    e86ec000-e86ecfff rw-     21000      1000  /system/lib/libm.so
+    e86ed000-e86edfff rw-         0      1000  anon_inode:dmabuf
+    e86ee000-e86f0fff rw-         0      3000  anon_inode:dmabuf
+    e86f1000-e86f1fff rw-         0      1000  anon_inode:dmabuf
+    e86f2000-e8711fff r--         0     20000  /dev/__properties__/u:object_r:shell_prop:s0
+    e8712000-e8725fff r-x         0     14000  /system/lib/vndk-sp/libunwind.so (BuildId: c662e611e5e445dafbbfe6db94eef764)
+    e8726000-e8726fff ---         0      1000
+    e8727000-e8727fff r--     14000      1000  /system/lib/vndk-sp/libunwind.so
+    e8728000-e8728fff rw-     15000      1000  /system/lib/vndk-sp/libunwind.so
+    e8729000-e876efff rw-         0     46000  [anon:.bss]
+    e876f000-e876ffff rw-         0      1000  anon_inode:dmabuf
+    e8770000-e8770fff rw-         0      1000  anon_inode:dmabuf
+    e8771000-e8790fff r--         0     20000  /dev/__properties__/u:object_r:restorecon_prop:s0
+    e8791000-e8799fff r-x         0      9000  /system/lib/vndk-sp/android.hardware.graphics.common@1.0.so (BuildId: 73e898e04b982f60b9b1fabb47a0a0ed)
+    e879a000-e879afff r--      8000      1000  /system/lib/vndk-sp/android.hardware.graphics.common@1.0.so
+    e879b000-e879bfff rw-      9000      1000  /system/lib/vndk-sp/android.hardware.graphics.common@1.0.so
+    e879c000-e879cfff rw-         0      1000  anon_inode:dmabuf
+    e879d000-e87acfff rw-         0     10000  anon_inode:dmabuf
+    e87ad000-e87ccfff r--         0     20000  /dev/__properties__/u:object_r:cppreopt_prop:s0
+    e87cd000-e87ecfff r--         0     20000  /dev/__properties__/u:object_r:powerctl_prop:s0
+    e87ed000-e87f4fff r-x         0      8000  /system/lib/android.hardware.camera.common@1.0.so (BuildId: 6c399b8318fd317003fc4decdde9f3a5)
+    e87f5000-e87f5fff r--      7000      1000  /system/lib/android.hardware.camera.common@1.0.so
+    e87f6000-e87f6fff rw-      8000      1000  /system/lib/android.hardware.camera.common@1.0.so
+    e87f7000-e87f7fff rw-         0      1000  anon_inode:dmabuf
+    e87f8000-e87fafff rw-         0      3000  anon_inode:dmabuf
+    e87fb000-e87fdfff rw-         0      3000  anon_inode:dmabuf
+    e87fe000-e880dfff rw-         0     10000  anon_inode:dmabuf
+    e880e000-e8815fff rw-         0      8000  anon_inode:dmabuf
+    e8816000-e88a2fff r-x         0     8d000  /system/lib/libc.so (BuildId: 0e9dddf1bf34f204cf80929930f3ed93)
+    e88a3000-e88a6fff r--     8c000      4000  /system/lib/libc.so
+    e88a7000-e88a8fff rw-     90000      2000  /system/lib/libc.so
+    e88a9000-e88a9fff rw-         0      1000  [anon:.bss]
+    e88aa000-e88aafff r--         0      1000  [anon:.bss]
+    e88ab000-e88b0fff rw-         0      6000  [anon:.bss]
+    e88b1000-e88b1fff rw-         0      1000  anon_inode:dmabuf
+    e88b2000-e88b4fff rw-         0      3000  anon_inode:dmabuf
+    e88b5000-e88b7fff rw-         0      3000  anon_inode:dmabuf
+    e88b8000-e88d7fff r--         0     20000  /dev/__properties__/u:object_r:system_radio_prop:s0
+    e88d8000-e88d8fff r-x         0      1000  /vendor/lib/android.hidl.base@1.0.so (BuildId: 6fc7d94c016ddcdf836d8813f51b4e33)
+    e88d9000-e88d9fff r--         0      1000  /vendor/lib/android.hidl.base@1.0.so (BuildId: 6fc7d94c016ddcdf836d8813f51b4e33)
+    e88da000-e88dafff rw-      1000      1000  /vendor/lib/android.hidl.base@1.0.so
+    e88db000-e88ddfff rw-         0      3000  anon_inode:dmabuf
+    e88de000-e88e5fff rw-         0      8000  anon_inode:dmabuf
+    e88e6000-e88edfff rw-         0      8000  anon_inode:dmabuf
+    e88ee000-e88f5fff rw-         0      8000  anon_inode:dmabuf
+    e88f6000-e8915fff r--         0     20000  /dev/__properties__/u:object_r:ffs_prop:s0
+    e8916000-e8923fff r-x         0      e000  /system/lib/vndk-sp/libbase.so (BuildId: 57a596d97d6af7ca235cbb0f80cd1d81)
+    e8924000-e8924fff r--      d000      1000  /system/lib/vndk-sp/libbase.so
+    e8925000-e8925fff rw-      e000      1000  /system/lib/vndk-sp/libbase.so
+    e8926000-e8926fff rw-         0      1000  anon_inode:dmabuf
+    e8927000-e8927fff rw-         0      1000  anon_inode:dmabuf
+    e8928000-e892afff rw-         0      3000  anon_inode:dmabuf
+    e892b000-e8932fff rw-         0      8000  anon_inode:dmabuf
+    e8933000-e893afff rw-         0      8000  anon_inode:dmabuf
+    e893b000-e893bfff rw-         0      1000  anon_inode:dmabuf
+    e893c000-e893dfff rw-         0      2000  anon_inode:dmabuf
+    e893e000-e893efff r--         0      1000  [anon:linker_alloc]
+    e893f000-e893ffff rw-         0      1000  anon_inode:dmabuf
+    e8940000-e8940fff ---         0      1000  [anon:thread signal stack guard page]
+    e8941000-e8944fff rw-         0      4000  [anon:thread signal stack]
+    e8945000-e8978fff r-x         0     34000  /system/lib/android.hardware.camera.device@3.2.so (BuildId: 9a3d39565b33634f90c38e1a6655c2df) (load bias 0x1000)
+    e8979000-e8979fff ---         0      1000
+    e897a000-e897cfff r--     34000      3000  /system/lib/android.hardware.camera.device@3.2.so
+    e897d000-e897dfff rw-     37000      1000  /system/lib/android.hardware.camera.device@3.2.so
+    e897e000-e897ffff rw-         0      2000  anon_inode:dmabuf
+    e8980000-e8980fff ---         0      1000  [anon:thread signal stack guard page]
+    e8981000-e8984fff rw-         0      4000  [anon:thread signal stack]
+    e8985000-e899cfff r-x         0     18000  /system/lib/android.hardware.camera.device@3.3.so (BuildId: 9e855c6a8c1036569fb50668a0b2a9bd)
+    e899d000-e899efff r--     17000      2000  /system/lib/android.hardware.camera.device@3.3.so
+    e899f000-e899ffff rw-     19000      1000  /system/lib/android.hardware.camera.device@3.3.so
+    e89a0000-e89a0fff ---         0      1000  [anon:bionic TLS guard]
+    e89a1000-e89a3fff rw-         0      3000  [anon:bionic TLS]
+    e89a4000-e89a4fff ---         0      1000  [anon:bionic TLS guard]
+    e89a5000-e89a5fff rw-         0      1000  [anon:linker_alloc_vector]
+    e89a6000-e89c5fff r--         0     20000  /dev/__properties__/u:object_r:default_prop:s0
+    e89c6000-e89e5fff r--         0     20000  /dev/__properties__/properties_serial
+    e89e6000-e89e6fff rw-         0      1000  [anon:linker_alloc]
+    e89e7000-e89e8fff rw-         0      2000  anon_inode:dmabuf
+    e89e9000-e89e9fff ---         0      1000  [anon:thread signal stack guard page]
+    e89ea000-e89edfff rw-         0      4000  [anon:thread signal stack]
+    e89ee000-e89eefff ---         0      1000  [anon:bionic TLS guard]
+    e89ef000-e89f1fff rw-         0      3000  [anon:bionic TLS]
+    e89f2000-e89f2fff ---         0      1000  [anon:bionic TLS guard]
+    e89f3000-e89f4fff r--         0      2000  [anon:linker_alloc]
+    e89f5000-e89f5fff ---         0      1000  [anon:thread signal stack guard page]
+    e89f6000-e89f9fff rw-         0      4000  [anon:thread signal stack]
+    e89fa000-e89fafff rw-         0      1000  [anon:linker_alloc]
+    e89fb000-e89fbfff rw-         0      1000  anon_inode:dmabuf
+    e89fc000-e89fdfff rw-         0      2000  anon_inode:dmabuf
+    e89fe000-e89fefff ---         0      1000  [anon:bionic TLS guard]
+    e89ff000-e8a01fff rw-         0      3000  [anon:bionic TLS]
+    e8a02000-e8a02fff ---         0      1000  [anon:bionic TLS guard]
+    e8a03000-e8a03fff ---         0      1000  [anon:thread signal stack guard page]
+    e8a04000-e8a07fff rw-         0      4000  [anon:thread signal stack]
+    e8a08000-e8a08fff ---         0      1000  [anon:bionic TLS guard]
+    e8a09000-e8a0bfff rw-         0      3000  [anon:bionic TLS]
+    e8a0c000-e8a0cfff ---         0      1000  [anon:bionic TLS guard]
+    e8a0d000-e8a0dfff rw-         0      1000  [anon:linker_alloc_vector]
+    e8a0e000-e8a0efff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8a0f000-e8a0ffff ---         0      1000  [anon:thread signal stack guard page]
+    e8a10000-e8a13fff rw-         0      4000  [anon:thread signal stack]
+    e8a14000-e8a14fff ---         0      1000  [anon:thread signal stack guard page]
+    e8a15000-e8a18fff rw-         0      4000  [anon:thread signal stack]
+    e8a19000-e8a19fff ---         0      1000  [anon:bionic TLS guard]
+    e8a1a000-e8a1cfff rw-         0      3000  [anon:bionic TLS]
+    e8a1d000-e8a1dfff ---         0      1000  [anon:bionic TLS guard]
+    e8a1e000-e8a1efff r--         0      1000  [anon:linker_alloc]
+    e8a1f000-e8a1ffff rw-         0      1000  anon_inode:dmabuf
+    e8a20000-e8a21fff rw-         0      2000  anon_inode:dmabuf
+    e8a22000-e8a22fff r--         0      1000  [anon:linker_alloc]
+    e8a23000-e8a23fff rw-         0      1000  anon_inode:dmabuf
+    e8a24000-e8a25fff rw-         0      2000  anon_inode:dmabuf
+    e8a26000-e8a26fff ---         0      1000  [anon:bionic TLS guard]
+    e8a27000-e8a29fff rw-         0      3000  [anon:bionic TLS]
+    e8a2a000-e8a2afff ---         0      1000  [anon:bionic TLS guard]
+    e8a2b000-e8a2bfff r--         0      1000  [anon:linker_alloc]
+    e8a2c000-e8a2cfff rw-         0      1000  [anon:linker_alloc_vector]
+    e8a2d000-e8a2dfff rw-         0      1000  anon_inode:dmabuf
+    e8a2e000-e8a2efff ---         0      1000  [anon:thread signal stack guard page]
+    e8a2f000-e8a32fff rw-         0      4000  [anon:thread signal stack]
+    e8a33000-e8a33fff rw-         0      1000  [anon:linker_alloc_vector]
+    e8a34000-e8a34fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8a35000-e8a35fff ---         0      1000  [anon:bionic TLS guard]
+    e8a36000-e8a38fff rw-         0      3000  [anon:bionic TLS]
+    e8a39000-e8a3afff ---         0      2000  [anon:bionic TLS guard]
+    e8a3b000-e8a3dfff rw-         0      3000  [anon:bionic TLS]
+    e8a3e000-e8a3efff ---         0      1000  [anon:bionic TLS guard]
+    e8a3f000-e8a3ffff r--         0      1000  [anon:linker_alloc]
+    e8a40000-e8a40fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    e8a41000-e8a41fff r--         0      1000  [anon:linker_alloc]
+    e8a42000-e8a42fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    e8a43000-e8a43fff rw-         0      1000  [anon:linker_alloc_vector]
+    e8a44000-e8a44fff rw-         0      1000  [anon:arc4random data]
+    e8a45000-e8a45fff r--         0      1000  [anon:linker_alloc]
+    e8a46000-e8a46fff ---         0      1000  [anon:thread signal stack guard page]
+    e8a47000-e8a4afff rw-         0      4000  [anon:thread signal stack]
+    e8a4b000-e8a4bfff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8a4c000-e8a6bfff r--         0     20000  /dev/__properties__/u:object_r:camera_prop:s0
+    e8a6c000-e8a8bfff r--         0     20000  /dev/__properties__/u:object_r:debug_gralloc_prop:s0
+    e8a8c000-e8a8cfff r--         0      1000  [anon:linker_alloc]
+    e8a8d000-e8a8dfff rw-         0      1000  [anon:linker_alloc]
+    e8a8e000-e8a8efff r--         0      1000  [anon:linker_alloc]
+    e8a8f000-e8a8ffff ---         0      1000  [anon:bionic TLS guard]
+    e8a90000-e8a92fff rw-         0      3000  [anon:bionic TLS]
+    e8a93000-e8a93fff ---         0      1000  [anon:bionic TLS guard]
+    e8a94000-e8a94fff ---         0      1000  [anon:thread signal stack guard page]
+    e8a95000-e8a98fff rw-         0      4000  [anon:thread signal stack]
+    e8a99000-e8a99fff ---         0      1000  [anon:bionic TLS guard]
+    e8a9a000-e8a9cfff rw-         0      3000  [anon:bionic TLS]
+    e8a9d000-e8a9dfff ---         0      1000  [anon:bionic TLS guard]
+    e8a9e000-e8a9efff ---         0      1000  [anon:thread signal stack guard page]
+    e8a9f000-e8aa2fff rw-         0      4000  [anon:thread signal stack]
+    e8aa3000-e8aa3fff ---         0      1000  [anon:bionic TLS guard]
+    e8aa4000-e8aa6fff rw-         0      3000  [anon:bionic TLS]
+    e8aa7000-e8aa7fff ---         0      1000  [anon:bionic TLS guard]
+    e8aa8000-e8ac7fff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    e8ac8000-e8ae7fff r--         0     20000  /dev/__properties__/u:object_r:hwservicemanager_prop:s0
+    e8ae8000-e8b07fff r--         0     20000  /dev/__properties__/u:object_r:log_tag_prop:s0
+    e8b08000-e8b27fff r--         0     20000  /dev/__properties__/u:object_r:logd_prop:s0
+    e8b28000-e8b47fff r--         0     20000  /dev/__properties__/u:object_r:default_prop:s0
+    e8b48000-e8b48fff rw-         0      1000  [anon:linker_alloc_vector]
+    e8b49000-e8b4afff r--         0      2000  [anon:linker_alloc]
+    e8b4b000-e8b4bfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    e8b4c000-e8b4cfff r--         0      1000  [anon:linker_alloc]
+    e8b4d000-e8b4dfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    e8b4e000-e8b4efff rw-         0      1000  [anon:linker_alloc]
+    e8b4f000-e8b6efff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    e8b6f000-e8b8efff r--         0     20000  /dev/__properties__/properties_serial
+    e8b8f000-e8b8ffff r--         0      1000  [anon:linker_alloc]
+    e8b90000-e8b90fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8b91000-e8b91fff r--         0      1000  [anon:atexit handlers]
+    e8b92000-e8b92fff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8b93000-e8b93fff rw-         0      1000  [anon:linker_alloc_vector]
+    e8b94000-e8b94fff ---         0      1000
+    e8b95000-e8b95fff rw-         0      1000
+    e8b96000-e8b96fff ---         0      1000
+    e8b97000-e8b97fff rw-         0      1000  [anon:linker_alloc_lob]
+    e8b98000-e8b99fff r--         0      2000  [anon:linker_alloc]
+    e8b9a000-e8b9afff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8b9b000-e8b9bfff r--         0      1000  [anon:linker_alloc]
+    e8b9c000-e8b9cfff rw-         0      1000  [anon:linker_alloc_small_objects]
+    e8b9d000-e8b9dfff r--         0      1000  [anon:atexit handlers]
+    e8b9e000-e8b9efff ---         0      1000  [anon:thread signal stack guard page]
+    e8b9f000-e8ba2fff rw-         0      4000  [anon:thread signal stack]
+    e8ba3000-e8ba3fff ---         0      1000  [anon:bionic TLS guard]
+    e8ba4000-e8ba6fff rw-         0      3000  [anon:bionic TLS]
+    e8ba7000-e8ba7fff ---         0      1000  [anon:bionic TLS guard]
+    e8ba8000-e8c30fff r-x         0     89000  /system/bin/linker (BuildId: fa71ff3cd77eb7b4babd7a8d6e1eca67)
+    e8c31000-e8c31fff rw-         0      1000  [anon:arc4random data]
+    e8c32000-e8c33fff r--     89000      2000  /system/bin/linker
+    e8c34000-e8c34fff rw-     8b000      1000  /system/bin/linker
+    e8c35000-e8c7cfff rw-         0     48000
+    e8c7d000-e8c7dfff r--         0      1000
+    e8c7e000-e8c83fff rw-         0      6000
+    ffc18000-ffcc7fff rw-         0     b0000  [stack]
+    ffff0000-ffff0fff r-x         0      1000  [vectors]
+--------- tail end of log main
+03-14 14:16:56.491   587  1113 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :3 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.510   587  1114 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+03-14 14:16:56.510   587  1114 E CamX    : [ERROR][STATS_AEC] caeccoredatamanager.cpp:1518: getFrameHistory No start configuration is recorded in the history! 
+03-14 14:16:56.510   587  1114 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :4 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.512   587  1114 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 587, name: provider@2.4-se  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x24b
+    r0 00000005  r1 c0306201  r2 ffcc6a70  r3 ffcc6a64
+    r4 c0306201  r5 ffcc6a70  r6 e80b9000  r7 00000036
+    r8 00000000  r9 e80b9030  sl ffcc6a90  fp ffcc6a78
+    ip 00000000  sp ffcc6a50  lr e883440f  pc e885f9cc  cpsr 20010010
+    d0  0000000000000010  d1  0000000000000008
+    d2  0000000000000000  d3  0000000000000000
+    d4  00000027305cb74d  d5  00000027c012a9b9
+    d6  000000003e2aaaab  d7  0000000040400000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 0000000000000002  d19 000000000000000c
+    d20 0000000400000014  d21 0000000400000015
+    d22 3d59fef311f12b36  d23 3dbb9438ca9aadd5
+    d24 3fc8f17883abfaa2  d25 bfcf49f55ad93100
+    d26 000022c0000002c0  d27 000062c0000042c0
+    d28 050b5827202fc000  d29 054cd827202fc000
+    d30 000000000000006b  d31 000000000000006b
+    scr 60000013
+
+backtrace:
+    #00 pc 000499cc  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001e40b  /system/lib/libc.so (ioctl+38)
+    #02 pc 00010111  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+204)
+    #03 pc 0001021d  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::getAndExecuteCommand()+8)
+    #04 pc 0001083f  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+38)
+    #05 pc 00000d9b  /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+    #06 pc 00000cf3  /vendor/bin/hw/android.hardware.camera.provider@2.4-service (main+98)
+    #07 pc 0007a899  /system/lib/libc.so (__libc_init+48)
+    #08 pc 00000bb0  /vendor/bin/hw/android.hardware.camera.provider@2.4-service (_start_main+88)
+
+stack:
+         ffcc6a10  00000000
+         ffcc6a14  00010001
+         ffcc6a18  e869ffc5  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::freeBuffer(android::hardware::Parcel*, unsigned char const*, unsigned int, unsigned long long const*, unsigned int, void*))
+         ffcc6a1c  e80b9000  [anon:libc_malloc]
+         ffcc6a20  e8097e50  [anon:libc_malloc]
+         ffcc6a24  00000000
+         ffcc6a28  e80adb30  [anon:libc_malloc]
+         ffcc6a2c  00000000
+         ffcc6a30  5ee6e410
+         ffcc6a34  00000004
+         ffcc6a38  e80b9030  [anon:libc_malloc]
+         ffcc6a3c  e80b9074  [anon:libc_malloc]
+         ffcc6a40  00000000
+         ffcc6a44  00000000
+         ffcc6a48  e80b9030  [anon:libc_malloc]
+         ffcc6a4c  ffcc6a90  [stack]
+    #00  ffcc6a50  ffcc6a64  [stack]
+         ........  ........
+    #01  ffcc6a50  ffcc6a64  [stack]
+         ffcc6a54  5ee6e410
+         ffcc6a58  00000000
+         ffcc6a5c  e869f115  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+208)
+         ffcc6a60  ffcc6a70  [stack]
+         ffcc6a64  00000000
+    #02  ffcc6a68  e80adc70  [anon:libc_malloc]
+         ffcc6a6c  e80b9074  [anon:libc_malloc]
+         ffcc6a70  00000000
+         ffcc6a74  00000000
+         ffcc6a78  00000000
+         ffcc6a7c  00000000
+         ffcc6a80  e80c0100  [anon:libc_malloc]
+         ffcc6a84  00000000
+         ffcc6a88  00000100
+         ffcc6a8c  00000000
+         ffcc6a90  00000000
+         ffcc6a94  00000000
+         ffcc6a98  e80c0000  [anon:libc_malloc]
+         ffcc6a9c  00000000
+         ffcc6aa0  5ee6e410
+         ffcc6aa4  e80b9000  [anon:libc_malloc]
+         ........  ........
+    #03  ffcc6ac8  00000000
+         ffcc6acc  00000000
+         ffcc6ad0  00000000
+         ffcc6ad4  e80b9000  [anon:libc_malloc]
+         ffcc6ad8  00000001
+         ffcc6adc  e80b9074  [anon:libc_malloc]
+         ffcc6ae0  ffcc6b7c  [stack]
+         ffcc6ae4  e869f843  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+42)
+    #04  ffcc6ae8  e8093100  [anon:libc_malloc]
+         ffcc6aec  5ee6e410
+         ffcc6af0  00000000
+         ffcc6af4  ffcc6b74  [stack]
+         ffcc6af8  00000001
+         ffcc6afc  ace8dd9f  /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+    #05  ffcc6b00  67656c10
+         ffcc6b04  2f796361
+         ffcc6b08  00000030
+         ffcc6b0c  5ee6e410
+         ffcc6b10  ace8dc91  /vendor/bin/hw/android.hardware.camera.provider@2.4-service (main)
+         ffcc6b14  ace8dcf7  /vendor/bin/hw/android.hardware.camera.provider@2.4-service (main+102)
+    #06  ffcc6b18  67656c10
+         ffcc6b1c  2f796361
+         ffcc6b20  00000030
+         ffcc6b24  00000001
+         ffcc6b28  e8093000  [anon:libc_malloc]
+         ffcc6b2c  5ee6e410
+         ffcc6b30  ace8dc91  /vendor/bin/hw/android.hardware.camera.provider@2.4-service (main)
+         ffcc6b34  e889089b  /system/lib/libc.so (__libc_init+50)
+    #07  ffcc6b38  e8b9af30  [anon:linker_alloc_small_objects]
+         ffcc6b3c  00000000
+         ffcc6b40  00000000
+         ffcc6b44  00000000
+         ffcc6b48  00000000
+         ffcc6b4c  ace8dbb4  /vendor/bin/hw/android.hardware.camera.provider@2.4-service (_start_main+92)
+    #08  ffcc6b50  00000000
+         ffcc6b54  ffcc6b70  [stack]
+         ffcc6b58  00000000
+         ffcc6b5c  ace90da8  /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+         ffcc6b60  ace90db0  /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+         ffcc6b64  ace90db8  /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+         ffcc6b68  00000000
+         ffcc6b6c  e8bba8c9  /system/bin/linker (__dl__ZN6soinfoD1Ev+52)
+         ffcc6b70  00000001
+         ffcc6b74  ffcc7ac1  [stack]
+         ffcc6b78  00000000
+         ffcc6b7c  ffcc7afd  [stack]
+         ffcc6b80  ffcc7b47  [stack]
+         ffcc6b84  ffcc7b62  [stack]
+         ffcc6b88  ffcc7b75  [stack]
+         ffcc6b8c  ffcc7b8a  [stack]
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 714, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x2ca
+    r0 e70f4ba4  r1 00000015  r2 00000000  r3 00000000
+    r4 00000000  r5 00000000  r6 e6dc85e3  r7 00000150
+    r8 001a6274  r9 e6dcaa5a  sl e6d98d7d  fp e6de9aa0
+    ip e69ff640  sp e69ff630  lr e8835d25  pc e885fa64  cpsr 60070010
+    d0  0000002eae6f7367  d1  000000000000121d
+    d2  0000000000000000  d3  0000000000000000
+    d4  6a626f3a75206563  d5  65763a725f746365
+    d6  6364715f726f646e  d7  706f72705f73736d
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 42475737b9b38000  d19 bfe0000000000000
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000002  d23 0000000000000000
+    d24 0000228100000281  d25 0000628100004281
+    d26 0000228000000280  d27 0000628000004280
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 80000010
+
+backtrace:
+    #00 pc 00049a64  /system/lib/libc.so (__ppoll+16)
+    #01 pc 0001fd21  /system/lib/libc.so (poll+48)
+    #02 pc 00268f79  /vendor/lib/hw/camera.qcom.so (CSLHwInstancePollThreadFunc(void*)+228)
+    #03 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #04 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e69ff5f0  00000000
+         e69ff5f4  00000000
+         e69ff5f8  00000000
+         e69ff5fc  00000000
+         e69ff600  00000000
+         e69ff604  00000000
+         e69ff608  00000000
+         e69ff60c  00000000
+         e69ff610  00000000
+         e69ff614  00000000
+         e69ff618  00000000
+         e69ff61c  00000000
+         e69ff620  00000000
+         e69ff624  e205b000  [anon:libc_malloc]
+         e69ff628  e217dd00  [anon:libc_malloc]
+         e69ff62c  e217dd08  [anon:libc_malloc]
+    #00  e69ff630  00000015
+         e69ff634  e70f4ba4  [anon:.bss]
+         e69ff638  00000000
+         e69ff63c  00000000
+    #01  e69ff640  00000000
+         e69ff644  00000000
+         e69ff648  e6dc85e3  /vendor/lib/hw/camera.qcom.so
+         e69ff64c  e883440f  /system/lib/libc.so (ioctl+42)
+         e69ff650  5ee6e410
+         e69ff654  e6dc85e3  /vendor/lib/hw/camera.qcom.so
+         e69ff658  e205b000  [anon:libc_malloc]
+         e69ff65c  e6dcaa97  /vendor/lib/hw/camera.qcom.so
+         e69ff660  e6de9b44  /vendor/lib/hw/camera.qcom.so
+         e69ff664  e6d23f7d  /vendor/lib/hw/camera.qcom.so (CSLHwInstancePollThreadFunc(void*)+232)
+    #02  e69ff668  00000000
+         e69ff66c  00000000
+         e69ff670  00000000
+         e69ff674  00000000
+         e69ff678  00000000
+         e69ff67c  00000000
+         e69ff680  00000000
+         e69ff684  00000001
+         e69ff688  e69ff6c0
+         e69ff68c  00000001
+         e69ff690  e205b018  [anon:libc_malloc]
+         e69ff694  e205b020  [anon:libc_malloc]
+         e69ff698  e69ff6c8
+         e69ff69c  00000000
+         e69ff6a0  e205b010  [anon:libc_malloc]
+         e69ff6a4  e205b008  [anon:libc_malloc]
+         ........  ........
+    #03  e69ff958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e69ff95c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #04  e69ff960  e69ff978
+         e69ff964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e69ff968  e69ff970
+         e69ff96c  00000000
+         e69ff970  e8c7e4a4
+         e69ff974  e6902970
+         e69ff978  000002ca
+         e69ff97c  0000024b
+         e69ff980  00000000
+         e69ff984  e6903000  [anon:thread stack guard page]
+         e69ff988  000fc970
+         e69ff98c  00001000
+         e69ff990  00000000
+         e69ff994  00000000
+         e69ff998  00000000
+         e69ff99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 718, name: SyncManager_0  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x2ce
+    r0 e80d36e4  r1 00000089  r2 000174c4  r3 00000000
+    r4 00000000  r5 ffffffff  r6 00000000  r7 000000f0
+    r8 e80d8680  r9 e69029c8  sl 000174c4  fp 000174c4
+    ip e6901ea8  sp e6901e98  lr e885dc15  pc e882f04c  cpsr 00070010
+    d0  0000000000000000  d1  0000000000000000
+    d2  00000ff600000ff5  d3  00000ff800000ff7
+    d4  6a626f3a75206563  d5  65763a725f746365
+    d6  6364715f726f646e  d7  706f72705f73736d
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 e8875255e8874f71  d17 e8875261e8875259
+    d18 e8875269e8875261  d19 e8875275e8875271
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000002  d23 0000000000000000
+    d24 00000ffe00000ffd  d25 0000100000000fff
+    d26 00000fed00000fec  d27 00000fef00000fee
+    d28 00000fee00000fed  d29 00000ff000000fef
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00 pc 0001904c  /system/lib/libc.so (syscall+28)
+    #01 pc 00047c11  /system/lib/libc.so (__pthread_cond_timedwait(pthread_cond_internal_t*, pthread_mutex_t*, bool, timespec const*)+102)
+    #02 pc 00158239  /vendor/lib/hw/camera.qcom.so (CamX::Condition::Wait(pthread_mutex_t*)+140)
+    #03 pc 001987b9  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::DoWork()+112)
+    #04 pc 00198741  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::WorkerThreadBody(void*)+4)
+    #05 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #06 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e6901e58  00000000
+         e6901e5c  00000000
+         e6901e60  ffffffff
+         e6901e64  00000000
+         e6901e68  000002ce
+         e6901e6c  00004002
+         e6901e70  00000089
+         e6901e74  00000000
+         e6901e78  00004001
+         e6901e7c  e6a4c288  [anon:libc_malloc]
+         e6901e80  5ee6e410
+         e6901e84  5ee6e410
+         e6901e88  e6901ed4
+         e6901e8c  00000000
+         e6901e90  00000000
+         e6901e94  e80d36e0  [anon:libc_malloc]
+    #00  e6901e98  00000000
+         e6901e9c  00000000
+         e6901ea0  e80d36e4  [anon:libc_malloc]
+         e6901ea4  00000000
+    #01  e6901ea8  00000000
+         e6901eac  00000000
+         e6901eb0  ffffffff
+         e6901eb4  00000000
+         e6901eb8  00000000
+         e6901ebc  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e6901ec0  e80d36e0  [anon:libc_malloc]
+         e6901ec4  00000000
+         e6901ec8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e6901ecc  e80d8680  [anon:libc_malloc]
+         e6901ed0  e6902128
+         e6901ed4  fffffd18
+         e6901ed8  e6a6f000  [anon:libc_malloc]
+         e6901edc  e6c1323d  /vendor/lib/hw/camera.qcom.so (CamX::Condition::Wait(pthread_mutex_t*)+144)
+    #02  e6901ee0  e6a7712c  [anon:libc_malloc]
+         e6901ee4  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e6901ee8  00000000
+         e6901eec  00000000
+         e6901ef0  00000000
+         e6901ef4  00000000
+         e6901ef8  00000000
+         e6901efc  00000000
+         e6901f00  00000000
+         e6901f04  00000000
+         e6901f08  00000000
+         e6901f0c  00000000
+         e6901f10  00000000
+         e6901f14  00000000
+         e6901f18  00000000
+         e6901f1c  00000000
+         ........  ........
+    #03  e6902100  00000000
+         e6902104  e6a6f114  [anon:libc_malloc]
+         e6902108  e6a73120  [anon:libc_malloc]
+         e690210c  e6a7712c  [anon:libc_malloc]
+         e6902110  e6a7b138  [anon:libc_malloc]
+         e6902114  00000000
+         e6902118  00000000
+         e690211c  00000000
+         e6902120  e6a7b13c  [anon:libc_malloc]
+         e6902124  00000000
+         e6902128  00000000
+         e690212c  00000000
+         e6902130  00000000
+         e6902134  00000000
+         e6902138  00000000
+         e690213c  00000000
+         ........  ........
+    #04  e6902950  00000078
+         e6902954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #05  e6902958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e690295c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #06  e6902960  e6902978
+         e6902964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e6902968  e6902970
+         e690296c  00000000
+         e6902970  e69ff970
+         e6902974  e6805970
+         e6902978  000002ce
+         e690297c  0000024b
+         e6902980  00000000
+         e6902984  e6806000  [anon:thread stack guard page]
+         e6902988  000fc970
+         e690298c  00001000
+         e6902990  00000000
+         e6902994  00000000
+         e6902998  00000000
+         e690299c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 719, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x2cf
+    r0 e6805910  r1 00000002  r2 00000000  r3 00000000
+    r4 00000000  r5 00000000  r6 5ee6e410  r7 00000150
+    r8 e6dac0b2  r9 e68056f0  sl e6805910  fp e6dccfc2
+    ip e68056b0  sp e68056a0  lr e8835d25  pc e885fa64  cpsr 60070010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  6a626f3a75206563  d5  65763a725f746365
+    d6  6364715f726f646e  d7  706f72705f73736d
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 e8875255e8874f71  d17 e8875261e8875259
+    d18 e8875269e8875261  d19 e8875275e8875271
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000002  d23 0000000000000000
+    d24 00000ffe00000ffd  d25 0000100000000fff
+    d26 00000fed00000fec  d27 00000fef00000fee
+    d28 00000fee00000fed  d29 00000ff000000fef
+    d30 0000000000000000  d31 0000000000000000
+    scr 60000010
+
+backtrace:
+    #00 pc 00049a64  /system/lib/libc.so (__ppoll+16)
+    #01 pc 0001fd21  /system/lib/libc.so (poll+48)
+    #02 pc 0026ed8b  /vendor/lib/hw/camera.qcom.so (CamX::SyncManager::SyncManagerPollMethod(void*)+142)
+    #03 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #04 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e6805660  a18c4600
+         e6805664  ffffffeb
+         e6805668  f1482000
+         e680566c  ffffff84
+         e6805670  a18c4d28
+         e6805674  ffffffeb
+         e6805678  bd563800
+         e680567c  ffffffeb
+         e6805680  00000000
+         e6805684  00005d30
+         e6805688  000000ce
+         e680568c  00000000
+         e6805690  11167d7a
+         e6805694  00000000
+         e6805698  00000000
+         e680569c  00000000
+    #00  e68056a0  00000002
+         e68056a4  e6805910
+         e68056a8  00000000
+         e68056ac  00000000
+    #01  e68056b0  00000000
+         e68056b4  00000000
+         e68056b8  5ee6e410
+         e68056bc  e6de9aa0  /vendor/lib/hw/camera.qcom.so
+         e68056c0  5ee6e410
+         e68056c4  e6de9aa0  /vendor/lib/hw/camera.qcom.so
+         e68056c8  e217da00  [anon:libc_malloc]
+         e68056cc  00000000
+         e68056d0  e6dcd251  /vendor/lib/hw/camera.qcom.so
+         e68056d4  e6d29d8f  /vendor/lib/hw/camera.qcom.so (CamX::SyncManager::SyncManagerPollMethod(void*)+146)
+    #02  e68056d8  e6d29cb5  /vendor/lib/hw/camera.qcom.so (CamX::SyncManager::StoppedCbDispatchJob(void*))
+         e68056dc  e68056f0
+         e68056e0  00000000
+         e68056e4  00000000
+         e68056e8  e6dedf40  /vendor/lib/hw/camera.qcom.so
+         e68056ec  e6dedee8  /vendor/lib/hw/camera.qcom.so
+         e68056f0  e217da00  [anon:libc_malloc]
+         e68056f4  00000000
+         e68056f8  00000000
+         e68056fc  00000000
+         e6805700  00000000
+         e6805704  00000000
+         e6805708  00000000
+         e680570c  00000000
+         e6805710  00000000
+         e6805714  00000000
+         ........  ........
+    #03  e6805958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e680595c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #04  e6805960  e6805978
+         e6805964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e6805968  e6805970
+         e680596c  00000000
+         e6805970  e6902970
+         e6805974  e581f970
+         e6805978  000002cf
+         e680597c  0000024b
+         e6805980  00000000
+         e6805984  e6709000  [anon:thread stack guard page]
+         e6805988  000fc970
+         e680598c  00001000
+         e6805990  00000000
+         e6805994  00000000
+         e6805998  00000000
+         e680599c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 1112, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x458
+    r0 e5c51700  r1 00000089  r2 045b4002  r3 00000000
+    r4 00000000  r5 ffffffff  r6 3000003d  r7 000000f0
+    r8 0000045b  r9 00000000  sl 00000002  fp 00004000
+    ip e5819ac0  sp e5819ab0  lr e885eb7b  pc e882f04c  cpsr 000f0010
+    d0  00000000e518f390  d1  0000000000000000
+    d2  0000000000000000  d3  4507000045700000
+    d4  0000002744800000  d5  0000002720000000
+    d6  00000000000005ac  d7  000000000000066c
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 41de80af70000000  d19 fffffffcfffffffc
+    d20 0000000400000004  d21 0000000400000004
+    d22 0000000000000000  d23 0000000000000000
+    d24 050b5827202fc06b  d25 054cd827202fc06b
+    d26 000000000000006b  d27 0000000000000000
+    d28 050b5827202fc000  d29 054cd827202fc000
+    d30 000000000000006b  d31 000000000000006b
+    scr 20000093
+
+backtrace:
+    #00 pc 0001904c  /system/lib/libc.so (syscall+28)
+    #01 pc 00048b77  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+518)
+    #02 pc 001578bd  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Lock()+80)
+    #03 pc 002142ff  /vendor/lib/hw/camera.qcom.so (CamX::Node::ProcessRequest(CamX::NodeProcessRequestData*, unsigned long long)+62)
+    #04 pc 0023b0e9  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerCore(CamX::Dependency*)+296)
+    #05 pc 0023ae53  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerWrapper(void*)+26)
+    #06 pc 00199019  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::ProcessJobQueue()+164)
+    #07 pc 001987e5  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::DoWork()+156)
+    #08 pc 00198741  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::WorkerThreadBody(void*)+4)
+    #09 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #10 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e5819a70  01000000
+         e5819a74  00004001
+         e5819a78  e5819aa0
+         e5819a7c  e8830fc1  /system/lib/libc.so (should_trace()+60)
+         e5819a80  e5819ae0
+         e5819a84  e885ebb0  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+575)
+         e5819a88  e5819aa0
+         e5819a8c  e8830f03  /system/lib/libc.so (bionic_trace_begin(char const*)+26)
+         e5819a90  5ee6e410
+         e5819a94  e5819ae0
+         e5819a98  3b9ac9ff
+         e5819a9c  00004001
+         e5819aa0  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5819aa4  00000000
+         e5819aa8  00000004
+         e5819aac  00000000
+    #00  e5819ab0  e5c51700  [anon:libc_malloc]
+         e5819ab4  3b9ac9ff
+         e5819ab8  e581f9c8
+         e5819abc  00004002
+    #01  e5819ac0  00000000
+         e5819ac4  00000000
+         e5819ac8  ffffffff
+         e5819acc  3000003d
+         e5819ad0  00000458
+         e5819ad4  00004002
+         e5819ad8  00000089
+         e5819adc  00000000
+         e5819ae0  e581f900
+         e5819ae4  00000000
+         e5819ae8  5ee6e410
+         e5819aec  e5c51700  [anon:libc_malloc]
+         e5819af0  00000004
+         e5819af4  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5819af8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5819afc  00000000
+         ........  ........
+    #02  e5819b10  00000000
+         e5819b14  00000000
+         e5819b18  00000000
+         e5819b1c  00000000
+         e5819b20  00000000
+         e5819b24  00000000
+         e5819b28  00000000
+         e5819b2c  00000000
+         e5819b30  00000000
+         e5819b34  00000000
+         e5819b38  00000000
+         e5819b3c  00000000
+         e5819b40  00000000
+         e5819b44  00000000
+         e5819b48  00000000
+         e5819b4c  00000000
+         ........  ........
+    #03  e5819d28  3000003d
+         e5819d2c  00000001
+         e5819d30  e5819d70
+         e5819d34  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5819d38  e30f31e0  [anon:libc_malloc]
+         e5819d3c  00000000
+         e5819d40  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5819d44  00000002
+         e5819d48  00000000
+         e5819d4c  e4a80050  [anon:libc_malloc]
+         e5819d50  00000000
+         e5819d54  00000000
+         e5819d58  e581a1c0
+         e5819d5c  e4a801d0  [anon:libc_malloc]
+         e5819d60  e3fe42c8  [anon:libc_malloc]
+         e5819d64  80180000
+         ........  ........
+    #04  e5819f98  e4d7d000  [anon:libc_malloc]
+         e5819f9c  e581a1c8
+         e5819fa0  00000000
+         e5819fa4  00000000
+         e5819fa8  00000000
+         e5819fac  00000000
+         e5819fb0  00000000
+         e5819fb4  00000000
+         e5819fb8  00000000
+         e5819fbc  5ee6e410
+         e5819fc0  00000000
+         e5819fc4  00000000
+         e5819fc8  00000000
+         e5819fcc  00000000
+         e5819fd0  00000000
+         e5819fd4  00000000
+         ........  ........
+    #05  e581eca0  e5abb000  [anon:libc_malloc]
+         e581eca4  e6cc6229  /vendor/lib/hw/camera.qcom.so (CamX::MetadataPool::MetadataPoolThreadCb(void*)+24)
+         e581eca8  00000000
+         e581ecac  00000000
+         e581ecb0  00000000
+         e581ecb4  00000000
+         e581ecb8  00000000
+         e581ecbc  00000000
+         e581ecc0  00000000
+         e581ecc4  00000000
+         e581ecc8  00000000
+         e581eccc  00000000
+         e581ecd0  00000000
+         e581ecd4  00000000
+         e581ecd8  00000000
+         e581ecdc  00000000
+         ........  ........
+    #06  e581eec0  e5b6e820  [anon:libc_malloc]
+         e581eec4  00000000
+         e581eec8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e581eecc  e5be1220  [anon:libc_malloc]
+         e581eed0  e5be1220  [anon:libc_malloc]
+         e581eed4  e58a9300  [anon:libc_malloc]
+         e581eed8  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e581eedc  e5ac7138  [anon:libc_malloc]
+         e581eee0  e5ac312c  [anon:libc_malloc]
+         e581eee4  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e581eee8  00000000
+         e581eeec  00000000
+         e581eef0  00000000
+         e581eef4  00000000
+         e581eef8  00000000
+         e581eefc  00000000
+         ........  ........
+    #07  e581f100  00000000
+         e581f104  e5abb114  [anon:libc_malloc]
+         e581f108  e5abf120  [anon:libc_malloc]
+         e581f10c  e5ac312c  [anon:libc_malloc]
+         e581f110  e5ac7138  [anon:libc_malloc]
+         e581f114  00000000
+         e581f118  00000000
+         e581f11c  00000000
+         e581f120  e5ac713c  [anon:libc_malloc]
+         e581f124  00000000
+         e581f128  e5aacac0  [anon:libc_malloc]
+         e581f12c  00000000
+         e581f130  00000000
+         e581f134  00000000
+         e581f138  00000000
+         e581f13c  00000000
+         ........  ........
+    #08  e581f950  00000078
+         e581f954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #09  e581f958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e581f95c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #10  e581f960  e581f978
+         e581f964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e581f968  e581f970
+         e581f96c  00000000
+         e581f970  e6805970
+         e581f974  e5722970
+         e581f978  00000458
+         e581f97c  0000024b
+         e581f980  00000000
+         e581f984  e5723000  [anon:thread stack guard page]
+         e581f988  000fc970
+         e581f98c  00001000
+         e581f990  00000000
+         e581f994  00000000
+         e581f998  00000000
+         e581f99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 1113, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x459
+    r0 e5c51700  r1 00000089  r2 045b4002  r3 00000000
+    r4 00000000  r5 ffffffff  r6 00000000  r7 000000f0
+    r8 0000045b  r9 00000000  sl 00000002  fp 00004000
+    ip e571cac0  sp e571cab0  lr e885eb7b  pc e882f04c  cpsr 000f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000000000000000  d5  0000000000000000
+    d6  0000000000000000  d7  0000000000000000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 3000000a30000000  d17 3000000b30000002
+    d18 300000193000000d  d19 3000002a30000030
+    d20 0000000000000000  d21 0000000000000000
+    d22 0000000000000000  d23 0000000000000000
+    d24 3f755ec060000000  d25 3f755ec060000000
+    d26 3f755ec060000000  d27 3f755ec060000000
+    d28 4050000000000000  d29 4050000000000000
+    d30 403e000000000000  d31 403e100000000000
+    scr 80000093
+
+backtrace:
+    #00 pc 0001904c  /system/lib/libc.so (syscall+28)
+    #01 pc 00048b77  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+518)
+    #02 pc 001578bd  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Lock()+80)
+    #03 pc 002142ff  /vendor/lib/hw/camera.qcom.so (CamX::Node::ProcessRequest(CamX::NodeProcessRequestData*, unsigned long long)+62)
+    #04 pc 0023b0e9  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerCore(CamX::Dependency*)+296)
+    #05 pc 0023ae53  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerWrapper(void*)+26)
+    #06 pc 00199019  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::ProcessJobQueue()+164)
+    #07 pc 001987e5  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::DoWork()+156)
+    #08 pc 00198741  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::WorkerThreadBody(void*)+4)
+    #09 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #10 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e571ca70  01000000
+         e571ca74  00004002
+         e571ca78  e571caa0
+         e571ca7c  e8830fc1  /system/lib/libc.so (should_trace()+60)
+         e571ca80  e571cae0
+         e571ca84  e885ebb0  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+575)
+         e571ca88  e571caa0
+         e571ca8c  e8830f03  /system/lib/libc.so (bionic_trace_begin(char const*)+26)
+         e571ca90  5ee6e410
+         e571ca94  e571cae0
+         e571ca98  3b9ac9ff
+         e571ca9c  00004002
+         e571caa0  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e571caa4  00000000
+         e571caa8  00000006
+         e571caac  00000000
+    #00  e571cab0  e5c51700  [anon:libc_malloc]
+         e571cab4  3b9ac9ff
+         e571cab8  e57229c8
+         e571cabc  00004002
+    #01  e571cac0  00000000
+         e571cac4  00000000
+         e571cac8  ffffffff
+         e571cacc  00000000
+         e571cad0  00000459
+         e571cad4  00004002
+         e571cad8  00000089
+         e571cadc  00000000
+         e571cae0  e4a80000  [anon:libc_malloc]
+         e571cae4  00000006
+         e571cae8  5ee6e410
+         e571caec  e5c51700  [anon:libc_malloc]
+         e571caf0  00000006
+         e571caf4  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e571caf8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e571cafc  00000000
+         ........  ........
+    #02  e571cb10  e88af9c4  [anon:.bss]
+         e571cb14  00000007
+         e571cb18  e810de80  [anon:libc_malloc]
+         e571cb1c  e5de5d08  [anon:libc_malloc]
+         e571cb20  00000004
+         e571cb24  e810e3c0  [anon:libc_malloc]
+         e571cb28  e88a8941  /system/lib/libc.so
+         e571cb2c  fffffffc
+         e571cb30  e810e3d8  [anon:libc_malloc]
+         e571cb34  00000000
+         e571cb38  e58fe038  [anon:libc_malloc]
+         e571cb3c  00000001
+         e571cb40  e58fe038  [anon:libc_malloc]
+         e571cb44  00000000
+         e571cb48  e5de5d08  [anon:libc_malloc]
+         e571cb4c  e5aab580  [anon:libc_malloc]
+         ........  ........
+    #03  e571cd28  5ee6e410
+         e571cd2c  e30f31e0  [anon:libc_malloc]
+         e571cd30  e168bc00  [anon:libc_malloc]
+         e571cd34  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e571cd38  e30f31e0  [anon:libc_malloc]
+         e571cd3c  00000000
+         e571cd40  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e571cd44  00000000
+         e571cd48  00000000
+         e571cd4c  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e571cd50  00000000
+         e571cd54  00000000
+         e571cd58  e571d1c0
+         e571cd5c  e4a80270  [anon:libc_malloc]
+         e571cd60  e3fe42c8  [anon:libc_malloc]
+         e571cd64  80180000
+         ........  ........
+    #04  e571cf98  e4a80000  [anon:libc_malloc]
+         e571cf9c  e571d1c8
+         e571cfa0  00000000
+         e571cfa4  00000000
+         e571cfa8  00000000
+         e571cfac  00000000
+         e571cfb0  00000000
+         e571cfb4  00000000
+         e571cfb8  00000000
+         e571cfbc  5ee6e410
+         e571cfc0  00000000
+         e571cfc4  00000000
+         e571cfc8  00000000
+         e571cfcc  00000000
+         e571cfd0  00000000
+         e571cfd4  00000000
+         ........  ........
+    #05  e5721ca0  e5abb000  [anon:libc_malloc]
+         e5721ca4  e6cc6229  /vendor/lib/hw/camera.qcom.so (CamX::MetadataPool::MetadataPoolThreadCb(void*)+24)
+         e5721ca8  00000000
+         e5721cac  00000000
+         e5721cb0  00000000
+         e5721cb4  00000000
+         e5721cb8  00000000
+         e5721cbc  00000000
+         e5721cc0  00000000
+         e5721cc4  00000000
+         e5721cc8  00000000
+         e5721ccc  00000000
+         e5721cd0  00000000
+         e5721cd4  00000000
+         e5721cd8  00000000
+         e5721cdc  00000000
+         ........  ........
+    #06  e5721ec0  e5b6e820  [anon:libc_malloc]
+         e5721ec4  00000000
+         e5721ec8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5721ecc  e5be1220  [anon:libc_malloc]
+         e5721ed0  e5be1220  [anon:libc_malloc]
+         e5721ed4  e58a9ae0  [anon:libc_malloc]
+         e5721ed8  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5721edc  e5ac7138  [anon:libc_malloc]
+         e5721ee0  e5ac312c  [anon:libc_malloc]
+         e5721ee4  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e5721ee8  00000000
+         e5721eec  00000000
+         e5721ef0  00000000
+         e5721ef4  00000000
+         e5721ef8  00000000
+         e5721efc  00000000
+         ........  ........
+    #07  e5722100  00000000
+         e5722104  e5abb114  [anon:libc_malloc]
+         e5722108  e5abf120  [anon:libc_malloc]
+         e572210c  e5ac312c  [anon:libc_malloc]
+         e5722110  e5ac7138  [anon:libc_malloc]
+         e5722114  00000000
+         e5722118  00000000
+         e572211c  00000000
+         e5722120  e5ac713c  [anon:libc_malloc]
+         e5722124  00000000
+         e5722128  e5aac580  [anon:libc_malloc]
+         e572212c  00000000
+         e5722130  00000000
+         e5722134  00000000
+         e5722138  00000000
+         e572213c  00000000
+         ........  ........
+    #08  e5722950  00000078
+         e5722954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #09  e5722958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e572295c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #10  e5722960  e5722978
+         e5722964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e5722968  e5722970
+         e572296c  00000000
+         e5722970  e581f970
+         e5722974  e5625970
+         e5722978  00000459
+         e572297c  0000024b
+         e5722980  00000000
+         e5722984  e5626000  [anon:thread stack guard page]
+         e5722988  000fc970
+         e572298c  00001000
+         e5722990  00000000
+         e5722994  00000000
+         e5722998  00000000
+         e572299c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 1114, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x45a
+    r0 e5c51700  r1 00000089  r2 045b4002  r3 00000000
+    r4 00000000  r5 ffffffff  r6 00000000  r7 000000f0
+    r8 0000045b  r9 00000000  sl 00000002  fp 00004000
+    ip e561fac0  sp e561fab0  lr e885eb7b  pc e882f04c  cpsr 000f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  0000002744800000  d5  0000002720000000
+    d6  00000000000005ac  d7  000000000000066c
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 e8875255e8874f71  d17 e8875261e8875259
+    d18 e8875269e8875261  d19 e8875275e8875271
+    d20 0000000400000004  d21 0000000400000004
+    d22 0000000000000000  d23 0000000000000000
+    d24 050b5827202fc06b  d25 054cd827202fc06b
+    d26 000000000000006b  d27 0000000000000000
+    d28 050b5827202fc000  d29 054cd827202fc000
+    d30 000000000000006b  d31 000000000000006b
+    scr 20000093
+
+backtrace:
+    #00 pc 0001904c  /system/lib/libc.so (syscall+28)
+    #01 pc 00048b77  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+518)
+    #02 pc 001578bd  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Lock()+80)
+    #03 pc 002142ff  /vendor/lib/hw/camera.qcom.so (CamX::Node::ProcessRequest(CamX::NodeProcessRequestData*, unsigned long long)+62)
+    #04 pc 0023b0e9  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerCore(CamX::Dependency*)+296)
+    #05 pc 0023ae53  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerWrapper(void*)+26)
+    #06 pc 00199019  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::ProcessJobQueue()+164)
+    #07 pc 001987e5  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::DoWork()+156)
+    #08 pc 00198741  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::WorkerThreadBody(void*)+4)
+    #09 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #10 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e561fa70  01000000
+         e561fa74  00004002
+         e561fa78  e561faa0
+         e561fa7c  e8830fc1  /system/lib/libc.so (should_trace()+60)
+         e561fa80  e561fae0
+         e561fa84  e885ebb0  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+575)
+         e561fa88  e561faa0
+         e561fa8c  e8830f03  /system/lib/libc.so (bionic_trace_begin(char const*)+26)
+         e561fa90  5ee6e410
+         e561fa94  e561fae0
+         e561fa98  3b9ac9ff
+         e561fa9c  00004002
+         e561faa0  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e561faa4  00000000
+         e561faa8  00000007
+         e561faac  00000000
+    #00  e561fab0  e5c51700  [anon:libc_malloc]
+         e561fab4  3b9ac9ff
+         e561fab8  e56259c8
+         e561fabc  00004002
+    #01  e561fac0  00000000
+         e561fac4  00000000
+         e561fac8  ffffffff
+         e561facc  00000000
+         e561fad0  0000045a
+         e561fad4  00004002
+         e561fad8  00000089
+         e561fadc  00000000
+         e561fae0  e8100100  [anon:libc_malloc]
+         e561fae4  e810010c  [anon:libc_malloc]
+         e561fae8  5ee6e410
+         e561faec  e5c51700  [anon:libc_malloc]
+         e561faf0  00000007
+         e561faf4  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e561faf8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e561fafc  00000000
+         ........  ........
+    #02  e561fb10  e88af9c4  [anon:.bss]
+         e561fb14  00000007
+         e561fb18  e8100100  [anon:libc_malloc]
+         e561fb1c  e5de5d88  [anon:libc_malloc]
+         e561fb20  00000004
+         e561fb24  e8100640  [anon:libc_malloc]
+         e561fb28  e88a8941  /system/lib/libc.so
+         e561fb2c  fffffffc
+         e561fb30  e8100658  [anon:libc_malloc]
+         e561fb34  00000000
+         e561fb38  e4dff038  [anon:libc_malloc]
+         e561fb3c  00000001
+         e561fb40  e4dff038  [anon:libc_malloc]
+         e561fb44  00000000
+         e561fb48  e5de5d88  [anon:libc_malloc]
+         e561fb4c  e5aab580  [anon:libc_malloc]
+         ........  ........
+    #03  e561fd28  5ee6e410
+         e561fd2c  e30f31e0  [anon:libc_malloc]
+         e561fd30  df231000  [anon:libc_malloc]
+         e561fd34  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e561fd38  e30f31e0  [anon:libc_malloc]
+         e561fd3c  00000000
+         e561fd40  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e561fd44  00000000
+         e561fd48  00000000
+         e561fd4c  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e561fd50  00000000
+         e561fd54  00000000
+         e561fd58  e56201c0
+         e561fd5c  e4a80298  [anon:libc_malloc]
+         e561fd60  e3fe42c8  [anon:libc_malloc]
+         e561fd64  80180000
+         ........  ........
+    #04  e561ff98  e4a80000  [anon:libc_malloc]
+         e561ff9c  e56201c8
+         e561ffa0  00000000
+         e561ffa4  00000000
+         e561ffa8  00000000
+         e561ffac  00000000
+         e561ffb0  00000000
+         e561ffb4  00000000
+         e561ffb8  00000000
+         e561ffbc  5ee6e410
+         e561ffc0  00000000
+         e561ffc4  00000000
+         e561ffc8  00000000
+         e561ffcc  00000000
+         e561ffd0  00000000
+         e561ffd4  00000000
+         ........  ........
+    #05  e5624ca0  e5abb000  [anon:libc_malloc]
+         e5624ca4  e6cc6229  /vendor/lib/hw/camera.qcom.so (CamX::MetadataPool::MetadataPoolThreadCb(void*)+24)
+         e5624ca8  00000000
+         e5624cac  00000000
+         e5624cb0  00000000
+         e5624cb4  00000000
+         e5624cb8  00000000
+         e5624cbc  00000000
+         e5624cc0  00000000
+         e5624cc4  00000000
+         e5624cc8  00000000
+         e5624ccc  00000000
+         e5624cd0  00000000
+         e5624cd4  00000000
+         e5624cd8  00000000
+         e5624cdc  00000000
+         ........  ........
+    #06  e5624ec0  e5b6e820  [anon:libc_malloc]
+         e5624ec4  00000000
+         e5624ec8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5624ecc  e5be1220  [anon:libc_malloc]
+         e5624ed0  e5be1220  [anon:libc_malloc]
+         e5624ed4  e58a9a00  [anon:libc_malloc]
+         e5624ed8  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5624edc  e5ac7138  [anon:libc_malloc]
+         e5624ee0  e5ac312c  [anon:libc_malloc]
+         e5624ee4  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e5624ee8  00000000
+         e5624eec  00000000
+         e5624ef0  00000000
+         e5624ef4  00000000
+         e5624ef8  00000000
+         e5624efc  00000000
+         ........  ........
+    #07  e5625100  00000000
+         e5625104  e5abb114  [anon:libc_malloc]
+         e5625108  e5abf120  [anon:libc_malloc]
+         e562510c  e5ac312c  [anon:libc_malloc]
+         e5625110  e5ac7138  [anon:libc_malloc]
+         e5625114  00000000
+         e5625118  00000000
+         e562511c  00000000
+         e5625120  e5ac713c  [anon:libc_malloc]
+         e5625124  00000000
+         e5625128  e5aac700  [anon:libc_malloc]
+         e562512c  00000000
+         e5625130  00000000
+         e5625134  00000000
+         e5625138  00000000
+         e562513c  00000000
+         ........  ........
+    #08  e5625950  00000078
+         e5625954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #09  e5625958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e562595c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #10  e5625960  e5625978
+         e5625964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e5625968  e5625970
+         e562596c  00000000
+         e5625970  e5722970
+         e5625974  e5528970
+         e5625978  0000045a
+         e562597c  0000024b
+         e5625980  00000000
+         e5625984  e5529000  [anon:thread stack guard page]
+         e5625988  000fc970
+         e562598c  00001000
+         e5625990  00000000
+         e5625994  00000000
+         e5625998  00000000
+         e562599c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 1116, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x45c
+    r0 e5c51700  r1 00000089  r2 045b4002  r3 00000000
+    r4 00000000  r5 ffffffff  r6 00000000  r7 000000f0
+    r8 0000045b  r9 00000000  sl 00000002  fp 00004000
+    ip e5425ac0  sp e5425ab0  lr e885eb7b  pc e882f04c  cpsr 000f0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  43666666305cb74d  d5  42800000c012a9b9
+    d6  436600003e2aaaab  d7  4280000040400000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 3000000a30000000  d17 3000000b30000002
+    d18 300000193000000d  d19 3000002a30000030
+    d20 000e0018000e0002  d21 000e001a000e0001
+    d22 0000000000000000  d23 0000000000000000
+    d24 3fc9229556ef9664  d25 bfced8df90450400
+    d26 0000240000000400  d27 0000640000004400
+    d28 fe044500f61b3480  d29 f0424a00f81c4d00
+    d30 0a1fbd82017f3cf8  d31 019e40fb055effff
+    scr 60000093
+
+backtrace:
+    #00 pc 0001904c  /system/lib/libc.so (syscall+28)
+    #01 pc 00048b77  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+518)
+    #02 pc 001578bd  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Lock()+80)
+    #03 pc 002142ff  /vendor/lib/hw/camera.qcom.so (CamX::Node::ProcessRequest(CamX::NodeProcessRequestData*, unsigned long long)+62)
+    #04 pc 0023b0e9  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerCore(CamX::Dependency*)+296)
+    #05 pc 0023ae53  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerWrapper(void*)+26)
+    #06 pc 00199019  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::ProcessJobQueue()+164)
+    #07 pc 001987e5  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::DoWork()+156)
+    #08 pc 00198741  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::WorkerThreadBody(void*)+4)
+    #09 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #10 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e5425a70  01000000
+         e5425a74  00004002
+         e5425a78  e5425aa0
+         e5425a7c  e8830fc1  /system/lib/libc.so (should_trace()+60)
+         e5425a80  e5425ae0
+         e5425a84  e885ebb0  /system/lib/libc.so (__pthread_mutex_lock_with_timeout(pthread_mutex_internal_t*, bool, timespec const*)+575)
+         e5425a88  e5425aa0
+         e5425a8c  e8830f03  /system/lib/libc.so (bionic_trace_begin(char const*)+26)
+         e5425a90  5ee6e410
+         e5425a94  e5425ae0
+         e5425a98  3b9ac9ff
+         e5425a9c  00004002
+         e5425aa0  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5425aa4  00000000
+         e5425aa8  00000005
+         e5425aac  00000000
+    #00  e5425ab0  e5c51700  [anon:libc_malloc]
+         e5425ab4  3b9ac9ff
+         e5425ab8  e542b9c8
+         e5425abc  00004002
+    #01  e5425ac0  00000000
+         e5425ac4  00000000
+         e5425ac8  ffffffff
+         e5425acc  00000000
+         e5425ad0  0000045c
+         e5425ad4  00004002
+         e5425ad8  00000089
+         e5425adc  00000000
+         e5425ae0  e4a80000  [anon:libc_malloc]
+         e5425ae4  00000005
+         e5425ae8  5ee6e410
+         e5425aec  e5c51700  [anon:libc_malloc]
+         e5425af0  00000005
+         e5425af4  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5425af8  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5425afc  00000000
+         ........  ........
+    #02  e5425b10  e88af9c4  [anon:.bss]
+         e5425b14  00000007
+         e5425b18  e810de80  [anon:libc_malloc]
+         e5425b1c  e5de5f08  [anon:libc_malloc]
+         e5425b20  00000004
+         e5425b24  e810e3c0  [anon:libc_malloc]
+         e5425b28  e88a8941  /system/lib/libc.so
+         e5425b2c  fffffffc
+         e5425b30  e810e3d8  [anon:libc_malloc]
+         e5425b34  00000000
+         e5425b38  e3eff038  [anon:libc_malloc]
+         e5425b3c  00000001
+         e5425b40  e3eff038  [anon:libc_malloc]
+         e5425b44  00000000
+         e5425b48  e5de5f08  [anon:libc_malloc]
+         e5425b4c  e5aab580  [anon:libc_malloc]
+         ........  ........
+    #03  e5425d28  00000000
+         e5425d2c  00000000
+         e5425d30  00000000
+         e5425d34  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5425d38  e30f31e0  [anon:libc_malloc]
+         e5425d3c  00000000
+         e5425d40  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5425d44  00000000
+         e5425d48  00000000
+         e5425d4c  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e5425d50  00000000
+         e5425d54  00000000
+         e5425d58  e54261c0
+         e5425d5c  e4a80248  [anon:libc_malloc]
+         e5425d60  e3fe42c8  [anon:libc_malloc]
+         e5425d64  80180000
+         ........  ........
+    #04  e5425f98  e4a80000  [anon:libc_malloc]
+         e5425f9c  e54261c8
+         e5425fa0  00000000
+         e5425fa4  00000000
+         e5425fa8  00000000
+         e5425fac  00000000
+         e5425fb0  00000000
+         e5425fb4  00000000
+         e5425fb8  00000000
+         e5425fbc  5ee6e410
+         e5425fc0  00000000
+         e5425fc4  00000000
+         e5425fc8  00000000
+         e5425fcc  00000000
+         e5425fd0  00000000
+         e5425fd4  00000000
+         ........  ........
+    #05  e542aca0  e5abb000  [anon:libc_malloc]
+         e542aca4  e6cc6229  /vendor/lib/hw/camera.qcom.so (CamX::MetadataPool::MetadataPoolThreadCb(void*)+24)
+         e542aca8  00000000
+         e542acac  00000000
+         e542acb0  00000000
+         e542acb4  00000000
+         e542acb8  00000000
+         e542acbc  00000000
+         e542acc0  00000000
+         e542acc4  00000000
+         e542acc8  00000000
+         e542accc  00000000
+         e542acd0  00000000
+         e542acd4  00000000
+         e542acd8  00000000
+         e542acdc  00000000
+         ........  ........
+    #06  e542aec0  00000000
+         e542aec4  00000000
+         e542aec8  00000000
+         e542aecc  e5be1220  [anon:libc_malloc]
+         e542aed0  e5be1220  [anon:libc_malloc]
+         e542aed4  e58a9878  [anon:libc_malloc]
+         e542aed8  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e542aedc  e5ac7138  [anon:libc_malloc]
+         e542aee0  e5ac312c  [anon:libc_malloc]
+         e542aee4  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e542aee8  00000000
+         e542aeec  00000000
+         e542aef0  00000000
+         e542aef4  00000000
+         e542aef8  00000000
+         e542aefc  00000000
+         ........  ........
+    #07  e542b100  00000000
+         e542b104  e5abb114  [anon:libc_malloc]
+         e542b108  e5abf120  [anon:libc_malloc]
+         e542b10c  e5ac312c  [anon:libc_malloc]
+         e542b110  e5ac7138  [anon:libc_malloc]
+         e542b114  00000000
+         e542b118  00000000
+         e542b11c  00000000
+         e542b120  e5ac713c  [anon:libc_malloc]
+         e542b124  00000000
+         e542b128  e5aaca00  [anon:libc_malloc]
+         e542b12c  00000000
+         e542b130  00000000
+         e542b134  00000000
+         e542b138  00000000
+         e542b13c  00000000
+         ........  ........
+    #08  e542b950  00000078
+         e542b954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #09  e542b958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e542b95c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #10  e542b960  e542b978
+         e542b964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e542b968  e542b970
+         e542b96c  00000000
+         e542b970  e5528970
+         e542b974  e532e970
+         e542b978  0000045c
+         e542b97c  0000024b
+         e542b980  00000000
+         e542b984  e532f000  [anon:thread stack guard page]
+         e542b988  000fc970
+         e542b98c  00001000
+         e542b990  00000000
+         e542b994  00000000
+         e542b998  00000000
+         e542b99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 1119, name: HwBinder:587_1  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x45f
+    r0 00000005  r1 c0306201  r2 e532e888  r3 e532e87c
+    r4 c0306201  r5 e532e888  r6 e5183000  r7 00000036
+    r8 00000000  r9 e5183030  sl e532e8a8  fp e532e890
+    ip 00000000  sp e532e868  lr e883440f  pc e885f9cc  cpsr 20000010
+    d0  4242424242424242  d1  4242424242424242
+    d2  ffffffffffffffff  d3  ffffffffffffffff
+    d4  beda9edfbe1bbd67  d5  3f49c10343000000
+    d6  3f2efa443f000000  d7  3eb71437bf299993
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 e508300000000001  d17 00001000000fc970
+    d18 0000000000000000  d19 000001c0000001c0
+    d20 0000000800000008  d21 0000000800000008
+    d22 0000000400000004  d23 0000000400000004
+    d24 000021c1000001c1  d25 000061c1000041c1
+    d26 000021c0000001c0  d27 000061c0000041c0
+    d28 0000000000000000  d29 0000000000000000
+    d30 0000000000000000  d31 0000000000000000
+    scr 20000010
+
+backtrace:
+    #00 pc 000499cc  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001e40b  /system/lib/libc.so (ioctl+38)
+    #02 pc 00010111  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+204)
+    #03 pc 0001021d  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::getAndExecuteCommand()+8)
+    #04 pc 0001083f  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+38)
+    #05 pc 00017629  /system/lib/vndk-sp/libhwbinder.so (android::hardware::PoolThread::threadLoop()+12)
+    #06 pc 0000d2c5  /system/lib/vndk-sp/libutils.so (android::Thread::_threadLoop(void*)+144)
+    #07 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #08 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e532e828  e88afcd4  [anon:.bss]
+         e532e82c  00000069
+         e532e830  e810de80  [anon:libc_malloc]
+         e532e834  e5bf8508  [anon:libc_malloc]
+         e532e838  00000004
+         e532e83c  e810e970  [anon:libc_malloc]
+         e532e840  e88a8941  /system/lib/libc.so
+         e532e844  fffffffc
+         e532e848  5ee6e410
+         e532e84c  00000004
+         e532e850  e5183030  [anon:libc_malloc]
+         e532e854  e5183000  [anon:libc_malloc]
+         e532e858  00000000
+         e532e85c  00000000
+         e532e860  e5183030  [anon:libc_malloc]
+         e532e864  e532e8a8
+    #00  e532e868  e532e87c
+         ........  ........
+    #01  e532e868  e532e87c
+         e532e86c  5ee6e410
+         e532e870  00000000
+         e532e874  e869f115  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+208)
+         e532e878  e532e888
+         e532e87c  00000000
+    #02  e532e880  0000000f
+         e532e884  e5183074  [anon:libc_malloc]
+         e532e888  00000000
+         e532e88c  00000000
+         e532e890  00000000
+         e532e894  00000000
+         e532e898  e518a100  [anon:libc_malloc]
+         e532e89c  00000000
+         e532e8a0  00000100
+         e532e8a4  00000000
+         e532e8a8  00000000
+         e532e8ac  00000000
+         e532e8b0  e518a000  [anon:libc_malloc]
+         e532e8b4  00000000
+         e532e8b8  5ee6e410
+         e532e8bc  e5183000  [anon:libc_malloc]
+         ........  ........
+    #03  e532e8e0  e5183030  [anon:libc_malloc]
+         e532e8e4  e5183074  [anon:libc_malloc]
+         e532e8e8  00000000
+         e532e8ec  e5183000  [anon:libc_malloc]
+         e532e8f0  00000000
+         e532e8f4  e5183074  [anon:libc_malloc]
+         e532e8f8  00000000
+         e532e8fc  e869f843  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+42)
+    #04  e532e900  e809f240  [anon:libc_malloc]
+         e532e904  00000000
+         e532e908  e809f240  [anon:libc_malloc]
+         e532e90c  00000000
+         e532e910  e532e970
+         e532e914  e86a662d  /system/lib/vndk-sp/libhwbinder.so (android::hardware::PoolThread::threadLoop()+16)
+    #05  e532e918  e809f240  [anon:libc_malloc]
+         e532e91c  e821d2c7  /system/lib/vndk-sp/libutils.so (android::Thread::_threadLoop(void*)+146)
+    #06  e532e920  e809f240  [anon:libc_malloc]
+         e532e924  e8097eb0  [anon:libc_malloc]
+         e532e928  e809f240  [anon:libc_malloc]
+         e532e92c  e8097e40  [anon:libc_malloc]
+         e532e930  e809f240  [anon:libc_malloc]
+         e532e934  5ee6e410
+         e532e938  e532e970
+         e532e93c  e532e970
+         e532e940  e532e970
+         e532e944  00000078
+         e532e948  0000024b
+         e532e94c  0000024b
+         e532e950  e821cf01  /system/lib/vndk-sp/libutils.so (thread_data_t::trampoline(thread_data_t const*))
+         e532e954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #07  e532e958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e532e95c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #08  e532e960  e532e978
+         e532e964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e532e968  e532e970
+         e532e96c  00000000
+         e532e970  e542b970
+         e532e974  e517f970
+         e532e978  0000045f
+         e532e97c  0000024b
+         e532e980  00000001
+         e532e984  e5232000  [anon:thread stack guard page]
+         e532e988  000fc970
+         e532e98c  00001000
+         e532e990  00000000
+         e532e994  00000000
+         e532e998  00000003
+         e532e99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 1120, name: HwBinder:587_2  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0x460
+    r0 00000005  r1 c0306201  r2 e517f888  r3 e517f87c
+    r4 c0306201  r5 e517f888  r6 e80bcaa0  r7 00000036
+    r8 00000000  r9 e80bcad0  sl e517f8a8  fp e517f890
+    ip 00000000  sp e517f868  lr e883440f  pc e885f9cc  cpsr 20070010
+    d0  e5c1e580e5c1d400  d1  e5c1c280e20d0780
+    d2  2e6172656d61632e  d3  72656469766f7270
+    d4  00000027305cb74d  d5  00000027c012a9b9
+    d6  000000003e2aaaab  d7  0000000040400000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 e5de430000000010
+    d18 0000000000100000  d19 e8875275e8875271
+    d20 0000000400000019  d21 000000040000001a
+    d22 3d59fef311f12b36  d23 3dbb9438ca9aadd5
+    d24 3fc8f17883abfaa2  d25 bfcf49f55ad93100
+    d26 0000240000000400  d27 0000640000004400
+    d28 050b5827202fc000  d29 054cd827202fc000
+    d30 000000000000006b  d31 000000000000006b
+    scr 60000013
+
+backtrace:
+    #00 pc 000499cc  /system/lib/libc.so (__ioctl+8)
+    #01 pc 0001e40b  /system/lib/libc.so (ioctl+38)
+    #02 pc 00010111  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+204)
+    #03 pc 0001021d  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::getAndExecuteCommand()+8)
+    #04 pc 0001083f  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+38)
+    #05 pc 00017629  /system/lib/vndk-sp/libhwbinder.so (android::hardware::PoolThread::threadLoop()+12)
+    #06 pc 0000d2c5  /system/lib/vndk-sp/libutils.so (android::Thread::_threadLoop(void*)+144)
+    #07 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #08 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e517f828  e80adda0  [anon:libc_malloc]
+         e517f82c  e517f928
+         e517f830  0000045f
+         e517f834  e88830c5  /system/lib/libc.so (je_free+76)
+         e517f838  e80ed1b0  [anon:libc_malloc]
+         e517f83c  e80ed0e0  [anon:libc_malloc]
+         e517f840  e5bf8580  [anon:libc_malloc]
+         e517f844  e5bafaa0  [anon:libc_malloc]
+         e517f848  5ee6e410
+         e517f84c  00000004
+         e517f850  e80bcad0  [anon:libc_malloc]
+         e517f854  e80bcaa0  [anon:libc_malloc]
+         e517f858  00000000
+         e517f85c  00000000
+         e517f860  e80bcad0  [anon:libc_malloc]
+         e517f864  e517f8a8
+    #00  e517f868  e517f87c
+         ........  ........
+    #01  e517f868  e517f87c
+         e517f86c  5ee6e410
+         e517f870  00000000
+         e517f874  e869f115  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+208)
+         e517f878  e517f888
+         e517f87c  00000000
+    #02  e517f880  e80add60  [anon:libc_malloc]
+         e517f884  e80bcb14  [anon:libc_malloc]
+         e517f888  00000000
+         e517f88c  00000000
+         e517f890  00000000
+         e517f894  00000000
+         e517f898  e80ee300  [anon:libc_malloc]
+         e517f89c  00000000
+         e517f8a0  00000100
+         e517f8a4  00000000
+         e517f8a8  00000000
+         e517f8ac  00000000
+         e517f8b0  e80c0200  [anon:libc_malloc]
+         e517f8b4  00000000
+         e517f8b8  5ee6e410
+         e517f8bc  e80bcaa0  [anon:libc_malloc]
+         ........  ........
+    #03  e517f8e0  e517f928
+         e517f8e4  0000045f
+         e517f8e8  e821cf01  /system/lib/vndk-sp/libutils.so (thread_data_t::trampoline(thread_data_t const*))
+         e517f8ec  e80bcaa0  [anon:libc_malloc]
+         e517f8f0  00000000
+         e517f8f4  e80bcb14  [anon:libc_malloc]
+         e517f8f8  00000000
+         e517f8fc  e869f843  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+42)
+    #04  e517f900  e518c000  [anon:libc_malloc]
+         e517f904  00000000
+         e517f908  e518c000  [anon:libc_malloc]
+         e517f90c  00000000
+         e517f910  e517f970
+         e517f914  e86a662d  /system/lib/vndk-sp/libhwbinder.so (android::hardware::PoolThread::threadLoop()+16)
+    #05  e517f918  e518c000  [anon:libc_malloc]
+         e517f91c  e821d2c7  /system/lib/vndk-sp/libutils.so (android::Thread::_threadLoop(void*)+146)
+    #06  e517f920  e518c000  [anon:libc_malloc]
+         e517f924  e518f020  [anon:libc_malloc]
+         e517f928  e518c000  [anon:libc_malloc]
+         e517f92c  e518f000  [anon:libc_malloc]
+         e517f930  e518c000  [anon:libc_malloc]
+         e517f934  5ee6e410
+         e517f938  e517f970
+         e517f93c  e517f970
+         e517f940  e517f970
+         e517f944  00000078
+         e517f948  0000024b
+         e517f94c  0000045f
+         e517f950  e821cf01  /system/lib/vndk-sp/libutils.so (thread_data_t::trampoline(thread_data_t const*))
+         e517f954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #07  e517f958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e517f95c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #08  e517f960  e517f978
+         e517f964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e517f968  e517f970
+         e517f96c  00000000
+         e517f970  e532e970
+         e517f974  df540970
+         e517f978  00000460
+         e517f97c  0000024b
+         e517f980  00000001
+         e517f984  e5083000  [anon:thread stack guard page]
+         e517f988  000fc970
+         e517f98c  00001000
+         e517f990  00000000
+         e517f994  00000000
+         e517f998  00000003
+         e517f99c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 2743, name: provider@2.4-se  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0xab7
+    r0 e5baffec  r1 00000089  r2 00000000  r3 00000000
+    r4 00000000  r5 ffffffff  r6 00000000  r7 000000f0
+    r8 e5bafff0  r9 df5409c8  sl 00000000  fp 00000000
+    ip df5408a8  sp df540898  lr e885dc15  pc e882f04c  cpsr 000b0010
+    d0  0000000000000000  d1  0000000000000000
+    d2  0000000000000000  d3  0000000000000000
+    d4  00000027305cb74d  d5  00000027c012a9b9
+    d6  000000003e2aaaab  d7  0000000040400000
+    d8  000004170000024b  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 df44400000000000  d17 00001000000fc970
+    d18 0000000000000000  d19 0000000000000007
+    d20 0000000100000000  d21 0000000000000001
+    d22 3d59fef311f12b36  d23 3dbb9438ca9aadd5
+    d24 3fc8f17883abfaa2  d25 bfcf49f55ad93100
+    d26 000022c0000002c0  d27 000062c0000042c0
+    d28 050b5827202fc000  d29 054cd827202fc000
+    d30 000000000000006b  d31 000000000000006b
+    scr 60000013
+
+backtrace:
+    #00 pc 0001904c  /system/lib/libc.so (syscall+28)
+    #01 pc 00047c11  /system/lib/libc.so (__pthread_cond_timedwait(pthread_cond_internal_t*, pthread_mutex_t*, bool, timespec const*)+102)
+    #02 pc 0004bf31  /system/lib/vndk-sp/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+8)
+    #03 pc 00016ebf  /system/lib/vndk-sp/libhidlbase.so (android::hardware::details::SynchronizedQueue<std::__1::function<void ()>>::wait_pop()+42)
+    #04 pc 00016e15  /system/lib/vndk-sp/libhidlbase.so (_ZNSt3__114__thread_proxyINS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEZN7android8hardware7details10TaskRunner5startEjE3$_0EEEEEPvSD_+60)
+    #05 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #06 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         df540858  00000000
+         df54085c  00000000
+         df540860  00000000
+         df540864  00000000
+         df540868  00000000
+         df54086c  00000000
+         df540870  00000000
+         df540874  00000000
+         df540878  00000000
+         df54087c  00000000
+         df540880  00000000
+         df540884  00000000
+         df540888  00000000
+         df54088c  00000000
+         df540890  00000000
+         df540894  df540908
+    #00  df540898  00000000
+         df54089c  00000000
+         df5408a0  e5baffec  [anon:libc_malloc]
+         df5408a4  00000000
+    #01  df5408a8  00000000
+         df5408ac  00000000
+         df5408b0  ffffffff
+         df5408b4  00000000
+         df5408b8  00000000
+         df5408bc  e5baffec  [anon:libc_malloc]
+         df5408c0  df540908
+         df5408c4  df5408ec
+         df5408c8  df540908
+         df5408cc  e14ff2d0  [anon:libc_malloc]
+         df5408d0  0000024b
+         df5408d4  e836bdd9  /system/lib/vndk-sp/libhidlbase.so (_ZNSt3__114__thread_proxyINS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEZN7android8hardware7details10TaskRunner5startEjE3$_0EEEEEPvSD_)
+         df5408d8  00000002
+         df5408dc  e8449f35  /system/lib/vndk-sp/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+12)
+    #02  df5408e0  df540908
+         df5408e4  e836bec3  /system/lib/vndk-sp/libhidlbase.so (android::hardware::details::SynchronizedQueue<std::__1::function<void ()>>::wait_pop()+46)
+    #03  df5408e8  e14ff2d0  [anon:libc_malloc]
+         df5408ec  e5bafff0  [anon:libc_malloc]
+         df5408f0  00000001
+         df5408f4  5ee6e410
+         df5408f8  00000000
+         df5408fc  e14ff2d4  [anon:libc_malloc]
+         df540900  df540920
+         df540904  e836be19  /system/lib/vndk-sp/libhidlbase.so (_ZNSt3__114__thread_proxyINS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEZN7android8hardware7details10TaskRunner5startEjE3$_0EEEEEPvSD_+64)
+    #04  df540908  df540970
+         df54090c  df540970
+         df540910  00000078
+         df540914  e883a591  /system/lib/libc.so (mmap+28)
+         df540918  ffffffff
+         df54091c  00000000
+         df540920  e81dd000  [anon:thread signal stack guard page]
+         df540924  53564d41
+         df540928  00000000
+         df54092c  00000078
+         df540930  00000000
+         df540934  00000000
+         df540938  e81de000  [anon:thread signal stack]
+         df54093c  5ee6e410
+         df540940  df540970
+         df540944  df540970
+         ........  ........
+    #05  df540958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         df54095c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #06  df540960  df540978
+         df540964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         df540968  df540970
+         df54096c  00000000
+         df540970  e517f970
+         df540974  e5082970
+         df540978  00000ab7
+         df54097c  0000024b
+         df540980  00000000
+         df540984  df444000  [anon:thread stack guard page]
+         df540988  000fc970
+         df54098c  00001000
+         df540990  00000000
+         df540994  00000000
+         df540998  00000003
+         df54099c  00000000
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 587, tid: 2749, name: HwBinder:587_3  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+signal 5 (SIGTRAP), code -32763 (PTRACE_EVENT_STOP), fault addr 0xabd
+    r0 e80edac4  r1 00000189  r2 00000000  r3 e5081158
+    r4 00000000  r5 ffffffff  r6 e58c3014  r7 000000f0
+    r8 e30f3820  r9 e50829c8  sl 00000000  fp 00000000
+    ip e5081118  sp e5081108  lr e885dc15  pc e882f04c  cpsr 00070010
+    d0  000000003f800000  d1  0000000041000000
+    d2  0000000041300000  d3  0000000000000000
+    d4  00000027305cb74d  d5  00000027c012a9b9
+    d6  000000003e2aaaab  d7  0000000040400000
+    d8  0000000000000000  d9  0000000000000000
+    d10 0000000000000000  d11 0000000000000000
+    d12 0000000000000000  d13 0000000000000000
+    d14 0000000000000000  d15 0000000000000000
+    d16 0000000000000000  d17 0000000000000000
+    d18 e50826f8e80b0668  d19 0000000000000007
+    d20 0000000100000000  d21 00000000e5081e80
+    d22 3d59fef311f12b36  d23 3dbb9438ca9aadd5
+    d24 3fc8f17883abfaa2  d25 bfcf49f55ad93100
+    d26 0000248000000480  d27 0000648000004480
+    d28 050b5827202fc000  d29 054cd827202fc000
+    d30 000000000000006b  d31 000000000000006b
+    scr 20000013
+
+backtrace:
+    #00 pc 0001904c  /system/lib/libc.so (syscall+28)
+    #01 pc 00047c11  /system/lib/libc.so (__pthread_cond_timedwait(pthread_cond_internal_t*, pthread_mutex_t*, bool, timespec const*)+102)
+    #02 pc 00158417  /vendor/lib/hw/camera.qcom.so (CamX::Condition::TimedWait(pthread_mutex_t*, unsigned int)+238)
+    #03 pc 0022b291  /vendor/lib/hw/camera.qcom.so (CamX::Session::ProcessCaptureRequest(ChiPipelineRequest const*)+288)
+    #04 pc 0025393d  /vendor/lib/hw/camera.qcom.so (CamX::ChiContext::SubmitRequest(CamX::CHISession*, ChiPipelineRequest*)+108)
+    #05 pc 00249811  /vendor/lib/hw/camera.qcom.so (CamX::ChiSubmitPipelineRequest(void*, ChiPipelineRequest*)+20)
+    #06 pc 000215e5  /vendor/lib/hw/com.qti.chi.override.so (ExtensionModule::SubmitRequest(ChiPipelineRequest*)+132)
+    #07 pc 000182ed  /vendor/lib/hw/com.qti.chi.override.so (CameraUsecaseBase::ExecuteCaptureRequest(camera3_capture_request*)+1496)
+    #08 pc 0001c39d  /vendor/lib/hw/com.qti.chi.override.so (AdvancedCameraUsecase::ExecuteCaptureRequest(camera3_capture_request*)+1712)
+    #09 pc 000464c5  /vendor/lib/hw/com.qti.chi.override.so (Usecase::ProcessCaptureRequest(camera3_capture_request*)+1228)
+    #10 pc 00020e6b  /vendor/lib/hw/com.qti.chi.override.so (ExtensionModule::OverrideProcessRequest(camera3_device const*, camera3_capture_request*, void*)+526)
+    #11 pc 0001e01f  /vendor/lib/hw/com.qti.chi.override.so (chi_override_process_request(camera3_device const*, camera3_capture_request*, void*)+40)
+    #12 pc 00074449  /vendor/lib/hw/camera.qcom.so (CamX::process_capture_request(camera3_device const*, camera3_capture_request*)+984)
+    #13 pc 00018f87  /vendor/lib/camera.device@3.2-impl.so (android::hardware::camera::device::V3_2::implementation::CameraDeviceSession::processOneCaptureRequest(android::hardware::camera::device::V3_2::CaptureRequest const&)+778)
+    #14 pc 00018c39  /vendor/lib/camera.device@3.2-impl.so (android::hardware::camera::device::V3_2::implementation::CameraDeviceSession::processCaptureRequest(android::hardware::hidl_vec<android::hardware::camera::device::V3_2::CaptureRequest> const&, android::hardware::hidl_vec<android::hardware::camera::device::V3_2::BufferCache> const&, std::__1::function<void (android::hardware::camera::common::V1_0::Status, unsigned int)>)+40)
+    #15 pc 0000662b  /vendor/lib/camera.device@3.3-impl.so (android::hardware::camera::device::V3_2::implementation::CameraDeviceSession::TrampolineSessionInterface_3_2::processCaptureRequest(android::hardware::hidl_vec<android::hardware::camera::device::V3_2::CaptureRequest> const&, android::hardware::hidl_vec<android::hardware::camera::device::V3_2::BufferCache> const&, std::__1::function<void (android::hardware::camera::common::V1_0::Status, unsigned int)>)+46)
+    #16 pc 0002c095  /system/lib/android.hardware.camera.device@3.2.so (android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_processCaptureRequest(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+312)
+    #17 pc 0000f50d  /system/lib/android.hardware.camera.device@3.3.so (android::hardware::camera::device::V3_3::BnHwCameraDeviceSession::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+452)
+    #18 pc 0000df07  /system/lib/vndk-sp/libhwbinder.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+66)
+    #19 pc 000105fd  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::executeCommand(int)+620)
+    #20 pc 00010289  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::getAndExecuteCommand()+116)
+    #21 pc 0001083f  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+38)
+    #22 pc 00017629  /system/lib/vndk-sp/libhwbinder.so (android::hardware::PoolThread::threadLoop()+12)
+    #23 pc 0000d2c5  /system/lib/vndk-sp/libutils.so (android::Thread::_threadLoop(void*)+144)
+    #24 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+    #25 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+
+stack:
+         e50810c8  00000000
+         e50810cc  00000000
+         e50810d0  00000000
+         e50810d4  00000000
+         e50810d8  00000000
+         e50810dc  00000000
+         e50810e0  00000000
+         e50810e4  00000000
+         e50810e8  00000000
+         e50810ec  00000000
+         e50810f0  00000000
+         e50810f4  00000000
+         e50810f8  00000000
+         e50810fc  00000000
+         e5081100  e5081158
+         e5081104  00000000
+    #00  e5081108  e5081158
+         e508110c  00000000
+         e5081110  e80edac4  [anon:libc_malloc]
+         e5081114  00000001
+    #01  e5081118  e5081158
+         e508111c  00000000
+         e5081120  ffffffff
+         e5081124  e58c3014  [anon:libc_malloc]
+         e5081128  00000000
+         e508112c  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5081130  e80edac0  [anon:libc_malloc]
+         e5081134  00000640
+         e5081138  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e508113c  e30f3820  [anon:libc_malloc]
+         e5081140  00000064
+         e5081144  00000320
+         e5081148  e3e1c0d8  [anon:libc_malloc]
+         e508114c  e6c1341b  /vendor/lib/hw/camera.qcom.so (CamX::Condition::TimedWait(pthread_mutex_t*, unsigned int)+242)
+    #02  e5081150  e6de9a94  /vendor/lib/hw/camera.qcom.so
+         e5081154  e80e4810  [anon:libc_malloc]
+         e5081158  5c8a625a
+         e508115c  0680ae26
+         e5081160  e6d5f8b1  /vendor/lib/hw/camera.qcom.so
+         e5081164  e6c128c1  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Lock()+84)
+         e5081168  00000000
+         e508116c  00000000
+         e5081170  00000000
+         e5081174  00000000
+         e5081178  00000000
+         e508117c  00000000
+         e5081180  00000000
+         e5081184  00000000
+         e5081188  00000000
+         e508118c  00000000
+         ........  ........
+    #03  e5081380  00000000
+         e5081384  e5081420
+         e5081388  00000000
+         e508138c  00000000
+         e5081390  00000210
+         e5081394  e6d228a7  /vendor/lib/hw/camera.qcom.so (CSLHwInternalKMDStreamOn(int, int, int, unsigned int)+102)
+         e5081398  e810ff80  [anon:libc_malloc]
+         e508139c  00000000
+         e50813a0  e3e28c78  [anon:libc_malloc]
+         e50813a4  e3e1c0c4  [anon:libc_malloc]
+         e50813a8  e3e1c0dc  [anon:libc_malloc]
+         e50813ac  e3e1c0d8  [anon:libc_malloc]
+         e50813b0  e3e03160  [anon:libc_malloc]
+         e50813b4  e3e28c70  [anon:libc_malloc]
+         e50813b8  e3e28c6c  [anon:libc_malloc]
+         e50813bc  e3e03130  [anon:libc_malloc]
+         ........  ........
+    #04  e5081908  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e508190c  00000002
+         e5081910  e6d5f752  /vendor/lib/hw/camera.qcom.so
+         e5081914  e6c12ae9  /vendor/lib/hw/camera.qcom.so (CamX::Mutex::Unlock()+24)
+         e5081918  20313138
+         e508191c  4e746547
+         e5081920  43506d75
+         e5081924  65427352
+         e5081928  65726f66
+         e508192c  65727453
+         e5081930  6e4f6d61
+         e5081934  70202928
+         e5081938  4d746547
+         e508193c  44617465
+         e5081940  20617461
+         e5081944  6c696166
+         ........  ........
+    #05  e5081b38  00000000
+         e5081b3c  e5e4fcad  /vendor/lib/hw/com.qti.chi.override.so (atrace_is_tag_enabled(unsigned long long)+20)
+         e5081b40  00000000
+         e5081b44  00000c00
+         e5081b48  00000c00
+         e5081b4c  00000000
+         e5081b50  00000000
+         e5081b54  e5e4739b  /vendor/lib/hw/com.qti.chi.override.so (atrace_end(unsigned long long)+24)
+         e5081b58  00000000
+         e5081b5c  00000c00
+         e5081b60  00000c00
+         e5081b64  00000000
+         e5081b68  00000000
+         e5081b6c  e5e4829d  /vendor/lib/hw/com.qti.chi.override.so (CameraUsecaseBase::Initialize(ChiCallBacks*)+1920)
+         e5081b70  e4e7e8d4  [anon:libc_malloc]
+         e5081b74  00000001
+         ........  ........
+    #06  e5081d58  e5efde8c  /vendor/lib/hw/com.qti.chi.override.so
+         e5081d5c  00000014
+         e5081d60  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5081d64  e6d5f752  /vendor/lib/hw/camera.qcom.so
+         e5081d68  e2c49800  [anon:libc_malloc]
+         e5081d6c  e2c49800  [anon:libc_malloc]
+         e5081d70  e6d047fd  /vendor/lib/hw/camera.qcom.so (CamX::ChiSubmitPipelineRequest(void*, ChiPipelineRequest*))
+         e5081d74  00000000
+         e5081d78  00000000
+         e5081d7c  e5efde8c  /vendor/lib/hw/com.qti.chi.override.so
+         e5081d80  e5efde8c  /vendor/lib/hw/com.qti.chi.override.so
+         e5081d84  e5081e44
+         e5081d88  00000000
+         e5081d8c  e5081e44
+         e5081d90  e5efde8c  /vendor/lib/hw/com.qti.chi.override.so
+         e5081d94  00000001
+         ........  ........
+    #07  e5081da0  e5c75a14  [anon:libc_malloc]
+         e5081da4  e5c75a18  [anon:libc_malloc]
+         e5081da8  e5c75a1c  [anon:libc_malloc]
+         e5081dac  e6d5f752  /vendor/lib/hw/camera.qcom.so
+         e5081db0  e6d5f8b1  /vendor/lib/hw/camera.qcom.so
+         e5081db4  e888d92d  /system/lib/libc.so (je_tcache_alloc_small_hard+20)
+         e5081db8  00000000
+         e5081dbc  00000000
+         e5081dc0  e5de6038  [anon:libc_malloc]
+         e5081dc4  e5d0a000  [anon:libc_malloc]
+         e5081dc8  e3e03000  [anon:libc_malloc]
+         e5081dcc  e5c631ac  [anon:libc_malloc]
+         e5081dd0  0000250c
+         e5081dd4  e5efde8c  /vendor/lib/hw/com.qti.chi.override.so
+         e5081dd8  e5081e4c
+         e5081ddc  00000000
+         ........  ........
+    #08  e5081ef8  e6d5f752  /vendor/lib/hw/camera.qcom.so
+         e5081efc  e5e94841  /vendor/lib/hw/com.qti.chi.override.so (ChxUtils::SetVendorTagValue(void*, VendorTag, unsigned int, void*)+116)
+         e5081f00  5ee6e410
+         e5081f04  00000000
+         e5081f08  e4d83380  [anon:libc_malloc]
+         e5081f0c  00000000
+         e5081f10  00000000
+         e5081f14  e5081fa0
+         e5081f18  80580000
+         e5081f1c  00000000
+         e5081f20  e4d83380  [anon:libc_malloc]
+         e5081f24  e5081fa0
+         e5081f28  00000030
+         e5081f2c  00000004
+         e5081f30  e4d83380  [anon:libc_malloc]
+         e5081f34  e5081fd0
+         ........  ........
+    #09  e5081ff8  e5de5000  [anon:libc_malloc]
+         e5081ffc  e5de5008  [anon:libc_malloc]
+         e5082000  e869d58d  /system/lib/vndk-sp/libhwbinder.so (android::hardware::BpHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>))
+         e5082004  0000001a
+         e5082008  00000000
+         e508200c  e88830c5  /system/lib/libc.so (je_free+76)
+         e5082010  5ee6e410
+         e5082014  00000000
+         e5082018  e5e4dced  /vendor/lib/hw/com.qti.chi.override.so (AdvancedCameraUsecase::ExecuteCaptureRequest(camera3_capture_request*))
+         e508201c  e80ade50  [anon:libc_malloc]
+         e5082020  0000018d
+         e5082024  e7c27c8d  /vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so (_ZNKSt3__112__hash_tableINS_17__hash_value_typeIjiEENS_22__unordered_map_hasherIjS2_NS_4hashIjEELb1EEENS_21__unordered_map_equalIjS2_NS_8equal_toIjEELb1EEENS_9allocatorIS2_EEE4findIjEENS_21__hash_const_iteratorIPNS_11__hash_nodeIS2_PvEEEERKT_+38)
+         e5082028  00000000
+         e508202c  803d0000
+         e5082030  00000001
+         e5082034  e20cac00  [anon:libc_malloc]
+         ........  ........
+    #10  e50820c8  e8100238  [anon:libc_malloc]
+         e50820cc  e886d7ff  /system/lib/libc.so (je_arena_tcache_fill_small+614)
+         e50820d0  00000000
+         e50820d4  e88afa30  [anon:.bss]
+         e50820d8  e88b0350  [anon:.bss]
+         e50820dc  e88afa60  [anon:.bss]
+         e50820e0  e88afa34  [anon:.bss]
+         e50820e4  00000015
+         e50820e8  e8100100  [anon:libc_malloc]
+         e50820ec  e5de5008  [anon:libc_malloc]
+         e50820f0  00000002
+         e50820f4  e8100710  [anon:libc_malloc]
+         e50820f8  e88a8941  /system/lib/libc.so
+         e50820fc  fffffffe
+         e5082100  e8100728  [anon:libc_malloc]
+         e5082104  00000000
+         ........  ........
+    #11  e5082150  e8100100  [anon:libc_malloc]
+         e5082154  e5c1d904  [anon:libc_malloc]
+         e5082158  e50823fc
+         e508215c  00000000
+         e5082160  e5efde8c  /vendor/lib/hw/com.qti.chi.override.so
+         e5082164  00000000
+         e5082168  e50823fc
+         e508216c  e5c1d904  [anon:libc_malloc]
+         e5082170  e6de9a90  /vendor/lib/hw/camera.qcom.so
+         e5082174  e6b2f44d  /vendor/lib/hw/camera.qcom.so (CamX::process_capture_request(camera3_device const*, camera3_capture_request*)+988)
+    #12  e5082178  e6d60d49  /vendor/lib/hw/camera.qcom.so
+         e508217c  fabb0745
+         e5082180  00000007
+         e5082184  00000000
+         e5082188  00000001
+         e508218c  e5c1d900  [anon:libc_malloc]
+         e5082190  00000080
+         e5082194  e217df00  [anon:libc_malloc]
+         e5082198  00000000
+         e508219c  e6d60d53  /vendor/lib/hw/camera.qcom.so
+         e50821a0  00000007
+         e50821a4  00000000
+         e50821a8  e58f5fc0  [anon:libc_malloc]
+         e50821ac  e5082260
+         e50821b0  e50823a0
+         e50821b4  e5082308
+         ........  ........
+    #13  e50823d0  e5bb0628  [anon:libc_malloc]
+         e50823d4  e5082410
+         e50823d8  00000000
+         e50823dc  e80bd0f0  [anon:libc_malloc]
+         e50823e0  e80bd0c0  [anon:libc_malloc]
+         e50823e4  00000001
+         e50823e8  e80bd0e4  [anon:libc_malloc]
+         e50823ec  e7e7c220  /dev/hwbinder
+         e50823f0  00000001
+         e50823f4  00000000
+         e50823f8  00000007
+         e50823fc  00000007
+         e5082400  00000000
+         e5082404  00000000
+         e5082408  00000001
+         e508240c  e58f2828  [anon:libc_malloc]
+         ........  ........
+    #14  e50824a8  e50824d0
+         e50824ac  e7e7c210  /dev/hwbinder
+         e50824b0  e5082548
+         e50824b4  e80bd0c0  [anon:libc_malloc]
+         e50824b8  e7e7c358  /dev/hwbinder
+         e50824bc  e7e7c358  /dev/hwbinder
+         e50824c0  e5082518
+         e50824c4  e7cf562f  /vendor/lib/camera.device@3.3-impl.so (android::hardware::camera::device::V3_2::implementation::CameraDeviceSession::TrampolineSessionInterface_3_2::processCaptureRequest(android::hardware::hidl_vec<android::hardware::camera::device::V3_2::CaptureRequest> const&, android::hardware::hidl_vec<android::hardware::camera::device::V3_2::BufferCache> const&, std::__1::function<void (android::hardware::camera::common::V1_0::Status, unsigned int)>)+50)
+    #15  e50824c8  e50824d0
+         e50824cc  00000078
+         e50824d0  00000078
+         e50824d4  e86a30b9  /system/lib/vndk-sp/libhwbinder.so (android::hardware::Parcel::readBuffer(unsigned int, unsigned int*, unsigned int, unsigned int, unsigned int, void const**) const+56)
+         e50824d8  5ee6e410
+         e50824dc  0000001c
+         e50824e0  e5de42a0  [anon:libc_malloc]
+         e50824e4  e80b0668  [anon:libc_malloc]
+         e50824e8  e7e7c210  /dev/hwbinder
+         e50824ec  5ee6e410
+         e50824f0  e5082548
+         e50824f4  e80ed0b0  [anon:libc_malloc]
+         e50824f8  e5082560
+         e50824fc  e7e7c210  /dev/hwbinder
+         e5082500  e50826f8
+         e5082504  e8970097  /system/lib/android.hardware.camera.device@3.2.so (android::hardware::camera::device::V3_2::BnHwCameraDeviceSession::_hidl_processCaptureRequest(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+314)
+    #16  e5082508  e5082560
+         e508250c  e5082518
+         e5082510  e5082560
+         e5082514  e89941d5  /system/lib/android.hardware.camera.device@3.3.so (android::hardware::camera::device::V3_3::BnHwCameraDeviceSession::_hidl_configureStreams_3_3(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+256)
+         e5082518  00000000
+         e508251c  e850bc2d  /system/lib/vndk-sp/libhidltransport.so (android::hidl::base::V1_0::BnHwBase::_hidl_interfaceChain(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+196)
+         e5082520  e5de5000  [anon:libc_malloc]
+         e5082524  00000000
+         e5082528  00000006
+         e508252c  00000001
+         e5082530  00000000
+         e5082534  e7e7c358  /dev/hwbinder
+         e5082538  e7e7c210  /dev/hwbinder
+         e508253c  00000000
+         e5082540  000a8e90
+         e5082544  e50827b0
+         ........  ........
+    #17  e50825a0  00000000
+         e50825a4  00000001
+         e50825a8  5ee6e410
+         e50825ac  00000010
+         e50825b0  e50827f4
+         e50825b4  e80adb30  [anon:libc_malloc]
+         e50825b8  e277ba00  [anon:libc_malloc]
+         e50825bc  e50827b0
+         e50825c0  5ee6e410
+         e50825c4  00000010
+         e50825c8  e50827f4
+         e50825cc  e80adb80  [anon:libc_malloc]
+         e50825d0  e50826e0
+         e50825d4  e50827b0
+         e50825d8  00000004
+         e50825dc  e80bc99c  [anon:libc_malloc]
+         ........  ........
+    #18  e5082760  00000010
+         e5082764  e5082768
+         e5082768  e86ab164  /system/lib/vndk-sp/libhwbinder.so
+         e508276c  e5082890
+         e5082770  e50827f4
+         e5082774  e86a349f  /system/lib/vndk-sp/libhwbinder.so (android::hardware::Parcel::ipcSetDataReference(unsigned char const*, unsigned int, unsigned long long const*, unsigned int, void (*)(android::hardware::Parcel*, unsigned char const*, unsigned int, unsigned long long const*, unsigned int, void*), void*)+18)
+         e5082778  e5082768
+         e508277c  e5082928
+         e5082780  5ee6e410
+         e5082784  e80bc8e0  [anon:libc_malloc]
+         e5082788  00000000
+         e508278c  e869cec5  /system/lib/vndk-sp/libhwbinder.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>))
+         e5082790  e5082890
+         e5082794  00000000
+         e5082798  e5082838
+         e508279c  e869f5ff  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::executeCommand(int)+622)
+    #19  e50827a0  00000010
+         e50827a4  e5082890
+         e50827a8  e80bc8e0  [anon:libc_malloc]
+         e50827ac  00fff000
+         e50827b0  00000000
+         e50827b4  00000000
+         e50827b8  00000000
+         e50827bc  00000000
+         e50827c0  00000000
+         e50827c4  00000000
+         e50827c8  00000000
+         e50827cc  00000000
+         e50827d0  00000000
+         e50827d4  00000000
+         e50827d8  00000000
+         e50827dc  00000000
+         ........  ........
+    #20  e50828e0  e5082928
+         e50828e4  0000024b
+         e50828e8  e821cf01  /system/lib/vndk-sp/libutils.so (thread_data_t::trampoline(thread_data_t const*))
+         e50828ec  e80bc8e0  [anon:libc_malloc]
+         e50828f0  00000000
+         e50828f4  e80bc954  [anon:libc_malloc]
+         e50828f8  00000000
+         e50828fc  e869f843  /system/lib/vndk-sp/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+42)
+    #21  e5082900  e80a0b30  [anon:libc_malloc]
+         e5082904  00000000
+         e5082908  e80a0b30  [anon:libc_malloc]
+         e508290c  00000000
+         e5082910  e5082970
+         e5082914  e86a662d  /system/lib/vndk-sp/libhwbinder.so (android::hardware::PoolThread::threadLoop()+16)
+    #22  e5082918  e80a0b30  [anon:libc_malloc]
+         e508291c  e821d2c7  /system/lib/vndk-sp/libutils.so (android::Thread::_threadLoop(void*)+146)
+    #23  e5082920  e80a0b30  [anon:libc_malloc]
+         e5082924  e80ed0e0  [anon:libc_malloc]
+         e5082928  e80a0b30  [anon:libc_malloc]
+         e508292c  e80ed110  [anon:libc_malloc]
+         e5082930  e80a0b30  [anon:libc_malloc]
+         e5082934  5ee6e410
+         e5082938  e5082970
+         e508293c  e5082970
+         e5082940  e5082970
+         e5082944  00000078
+         e5082948  0000024b
+         e508294c  0000024b
+         e5082950  e821cf01  /system/lib/vndk-sp/libutils.so (thread_data_t::trampoline(thread_data_t const*))
+         e5082954  e885e27d  /system/lib/libc.so (__pthread_start(void*)+24)
+    #24  e5082958  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e508295c  e8831581  /system/lib/libc.so (__start_thread+34)
+    #25  e5082960  e5082978
+         e5082964  e885e265  /system/lib/libc.so (__pthread_start(void*))
+         e5082968  e5082970
+         e508296c  00000000
+         e5082970  df540970
+         e5082974  00000000
+         e5082978  00000abd
+         e508297c  0000024b
+         e5082980  00000001
+         e5082984  e4f86000  [anon:thread stack guard page]
+         e5082988  000fc970
+         e508298c  00001000
+         e5082990  00000000
+         e5082994  00000000
+         e5082998  00000003
+         e508299c  00000000
+
+open files:
+    fd 0: /dev/null
+    fd 1: /dev/null
+    fd 2: /dev/null
+    fd 3: socket:[21702]
+    fd 4: /dev/vndbinder
+    fd 5: /dev/hwbinder
+    fd 6: /sys/kernel/debug/tracing/trace_marker
+    fd 7: /dev/ion
+    fd 8: pipe:[16966]
+    fd 9: /dev/video0
+    fd 10: pipe:[16958]
+    fd 11: pipe:[16958]
+    fd 12: /dev/v4l-subdev0
+    fd 13: /dev/v4l-subdev1
+    fd 14: /dev/v4l-subdev3
+    fd 15: /dev/v4l-subdev4
+    fd 16: /dev/v4l-subdev5
+    fd 17: /dev/v4l-subdev6
+    fd 18: /dev/v4l-subdev7
+    fd 19: /dev/v4l-subdev8
+    fd 20: /dev/v4l-subdev9
+    fd 21: /dev/v4l-subdev10
+    fd 22: /dev/v4l-subdev11
+    fd 23: /dev/v4l-subdev12
+    fd 24: /dev/v4l-subdev13
+    fd 25: /dev/v4l-subdev14
+    fd 26: /dev/v4l-subdev15
+    fd 27: /dev/v4l-subdev16
+    fd 28: /dev/v4l-subdev17
+    fd 29: /dev/v4l-subdev18
+    fd 30: /dev/v4l-subdev19
+    fd 31: /dev/v4l-subdev20
+    fd 32: /dev/v4l-subdev21
+    fd 33: pipe:[16966]
+    fd 34: /dev/video1
+    fd 35: /dev/ashmem
+    fd 36: /dev/ashmem
+    fd 37: anon_inode:dmabuf
+    fd 38: anon_inode:dmabuf
+    fd 39: anon_inode:dmabuf
+    fd 40: anon_inode:dmabuf
+    fd 41: anon_inode:dmabuf
+    fd 42: anon_inode:dmabuf
+    fd 43: anon_inode:dmabuf
+    fd 44: anon_inode:dmabuf
+    fd 45: anon_inode:dmabuf
+    fd 46: anon_inode:dmabuf
+    fd 47: anon_inode:dmabuf
+    fd 48: anon_inode:dmabuf
+    fd 49: anon_inode:dmabuf
+    fd 50: anon_inode:dmabuf
+    fd 51: anon_inode:dmabuf
+    fd 52: anon_inode:dmabuf
+    fd 53: anon_inode:dmabuf
+    fd 54: anon_inode:dmabuf
+    fd 55: anon_inode:dmabuf
+    fd 56: anon_inode:dmabuf
+    fd 57: anon_inode:dmabuf
+    fd 58: anon_inode:dmabuf
+    fd 59: anon_inode:dmabuf
+    fd 60: anon_inode:dmabuf
+    fd 61: anon_inode:dmabuf
+    fd 62: anon_inode:dmabuf
+    fd 63: anon_inode:dmabuf
+    fd 64: anon_inode:dmabuf
+    fd 65: anon_inode:dmabuf
+    fd 66: anon_inode:dmabuf
+    fd 67: anon_inode:dmabuf
+    fd 68: anon_inode:dmabuf
+    fd 69: anon_inode:dmabuf
+    fd 70: anon_inode:dmabuf
+    fd 71: anon_inode:dmabuf
+    fd 72: anon_inode:dmabuf
+    fd 73: anon_inode:dmabuf
+    fd 74: anon_inode:dmabuf
+    fd 75: anon_inode:dmabuf
+    fd 76: anon_inode:dmabuf
+    fd 77: anon_inode:dmabuf
+    fd 78: anon_inode:dmabuf
+    fd 79: anon_inode:dmabuf
+    fd 80: anon_inode:dmabuf
+    fd 81: anon_inode:dmabuf
+    fd 82: anon_inode:dmabuf
+    fd 83: anon_inode:dmabuf
+    fd 84: anon_inode:dmabuf
+    fd 85: anon_inode:dmabuf
+    fd 86: anon_inode:dmabuf
+    fd 87: anon_inode:dmabuf
+    fd 88: anon_inode:dmabuf
+    fd 89: anon_inode:dmabuf
+    fd 90: anon_inode:dmabuf
+    fd 91: anon_inode:dmabuf
+    fd 92: anon_inode:dmabuf
+    fd 93: anon_inode:dmabuf
+    fd 94: anon_inode:dmabuf
+    fd 95: anon_inode:dmabuf
+    fd 96: anon_inode:dmabuf
+    fd 97: anon_inode:dmabuf
+    fd 98: anon_inode:dmabuf
+    fd 99: anon_inode:dmabuf
+    fd 100: anon_inode:dmabuf
+    fd 101: anon_inode:dmabuf
+    fd 102: anon_inode:dmabuf
+    fd 103: anon_inode:dmabuf
+    fd 104: anon_inode:dmabuf
+    fd 105: anon_inode:dmabuf
+    fd 106: anon_inode:dmabuf
+    fd 107: anon_inode:dmabuf
+    fd 108: anon_inode:dmabuf
+    fd 109: anon_inode:dmabuf
+    fd 110: anon_inode:dmabuf
+    fd 111: anon_inode:dmabuf
+    fd 112: anon_inode:dmabuf
+    fd 113: anon_inode:dmabuf
+    fd 114: anon_inode:dmabuf
+    fd 115: anon_inode:dmabuf
+    fd 116: anon_inode:dmabuf
+    fd 117: anon_inode:dmabuf
+    fd 118: anon_inode:dmabuf
+    fd 119: anon_inode:dmabuf
+    fd 120: anon_inode:dmabuf
+    fd 121: anon_inode:dmabuf
+    fd 122: anon_inode:dmabuf
+    fd 123: anon_inode:dmabuf
+    fd 124: anon_inode:dmabuf
+    fd 125: anon_inode:dmabuf
+    fd 126: anon_inode:dmabuf
+    fd 127: anon_inode:dmabuf
+    fd 128: anon_inode:dmabuf
+    fd 129: anon_inode:dmabuf
+    fd 130: anon_inode:dmabuf
+    fd 131: anon_inode:dmabuf
+    fd 132: anon_inode:dmabuf
+    fd 133: anon_inode:dmabuf
+    fd 134: anon_inode:dmabuf
+    fd 135: anon_inode:dmabuf
+    fd 136: anon_inode:dmabuf
+    fd 137: anon_inode:dmabuf
+    fd 138: anon_inode:dmabuf
+    fd 139: anon_inode:dmabuf
+    fd 140: anon_inode:dmabuf
+    fd 141: anon_inode:dmabuf
+    fd 142: anon_inode:dmabuf
+    fd 143: anon_inode:dmabuf
+    fd 144: anon_inode:dmabuf
+    fd 145: anon_inode:dmabuf
+    fd 146: anon_inode:dmabuf
+    fd 147: anon_inode:dmabuf
+    fd 148: anon_inode:dmabuf
+    fd 149: anon_inode:dmabuf
+    fd 150: anon_inode:dmabuf
+    fd 151: anon_inode:dmabuf
+    fd 152: anon_inode:dmabuf
+    fd 153: anon_inode:dmabuf
+    fd 154: anon_inode:dmabuf
+    fd 155: anon_inode:dmabuf
+    fd 156: anon_inode:dmabuf
+    fd 157: anon_inode:dmabuf
+    fd 158: anon_inode:dmabuf
+    fd 159: anon_inode:dmabuf
+    fd 160: anon_inode:dmabuf
+    fd 161: anon_inode:dmabuf
+    fd 162: anon_inode:dmabuf
+    fd 163: anon_inode:dmabuf
+    fd 164: anon_inode:dmabuf
+    fd 165: anon_inode:dmabuf
+    fd 166: anon_inode:dmabuf
+    fd 167: anon_inode:dmabuf
+    fd 168: anon_inode:dmabuf
+    fd 169: anon_inode:dmabuf
+    fd 170: anon_inode:dmabuf
+    fd 171: anon_inode:dmabuf
+    fd 172: anon_inode:dmabuf
+    fd 173: anon_inode:dmabuf
+    fd 174: anon_inode:dmabuf
+    fd 175: anon_inode:dmabuf
+    fd 176: anon_inode:dmabuf
+    fd 177: anon_inode:dmabuf
+    fd 178: /dev/ion
+    fd 179: anon_inode:dmabuf
+    fd 180: anon_inode:dmabuf
+    fd 181: anon_inode:dmabuf
+    fd 182: anon_inode:dmabuf
+    fd 183: anon_inode:dmabuf
+    fd 184: anon_inode:dmabuf
+    fd 185: anon_inode:dmabuf
+    fd 186: anon_inode:dmabuf
+    fd 187: anon_inode:dmabuf
+    fd 188: anon_inode:dmabuf
+    fd 189: anon_inode:dmabuf
+    fd 190: anon_inode:dmabuf
+    fd 191: anon_inode:dmabuf
+    fd 192: anon_inode:dmabuf
+    fd 193: anon_inode:dmabuf
+    fd 194: anon_inode:dmabuf
+    fd 195: anon_inode:dmabuf
+    fd 196: anon_inode:dmabuf
+    fd 197: anon_inode:dmabuf
+    fd 198: anon_inode:dmabuf
+    fd 199: anon_inode:dmabuf
+    fd 200: anon_inode:dmabuf
+    fd 201: anon_inode:dmabuf
+    fd 202: anon_inode:dmabuf
+    fd 203: anon_inode:dmabuf
+    fd 204: anon_inode:dmabuf
+    fd 205: anon_inode:dmabuf
+    fd 206: anon_inode:dmabuf
+    fd 207: anon_inode:dmabuf
+    fd 208: anon_inode:dmabuf
+--------- log main
+03-14 14:16:55.918   587  2749 E CamX    : [ERROR][PPROC  ] camxipenode.cpp:3476 GetEISMargin() No margin for stabilization type 8
+03-14 14:16:55.919   587  2749 E CHIUSECASE: chxadvancedcamerausecase.cpp:2213 PipelineCreated() MULTIFRAME AdvancedCameraUsecase pipelineId: 0
+03-14 14:16:55.921   587  2749 E CamX    : [ERROR][PPROC  ] camxipenode.cpp:3476 GetEISMargin() No margin for stabilization type 8
+03-14 14:16:55.929   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1522 SetMetadataByTag() Invalid slot; cannot set metadata tag 800b0004
+03-14 14:16:55.929   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1677 PublishMetadataList() Invalid slot, cannot publish metadata list
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][STATS_AF] camxcaecstatsprocessor.cpp:3119 ReadTuningModeParameter() PropertyIDUsecaseChiTuningModeParameter is not published!
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][STATS_AEC] caeccoredatamanager.cpp:1518: getFrameHistory No start configuration is recorded in the history! 
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1522 SetMetadataByTag() Invalid slot; cannot set metadata tag 800d0005
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1677 PublishMetadataList() Invalid slot, cannot publish metadata list
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.936   587  2749 D CamX    : [DEBUG][STATS_AWB] camxcawbstatsprocessor.cpp:708 SetOperationModetoAlgo() Mode set to Algo: 1
+03-14 14:16:55.936   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.939   587  2749 E CamX    : [ERROR][HAL    ] camxsession.cpp:3329 GetIntraRealtimePipelineId() Less than two realtime pipelines, no intra result
+03-14 14:16:55.939   587  2749 E CamX    : [ERROR][STATS_AF] camxcafioutil.cpp:326 ReadTuningModeParameter() PropertyIDUsecaseChiTuningModeParameter is not published!
+03-14 14:16:55.940   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.942   587  2749 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:55.946   587  2749 I chatty  : uid=1047(cameraserver) HwBinder:587_3 identical 1 line
+03-14 14:16:55.946   587  2749 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:55.946   587  2749 E CamX    : [ERROR][ISP    ] camxiferoundclamp11.cpp:448 RunCalculation() Bad bitWidth 0, defaulting to 8 bits
+03-14 14:16:55.946   587  2749 E CamX    : [ERROR][ISP    ] camxiferoundclamp11.cpp:448 RunCalculation() Bad bitWidth 0, defaulting to 8 bits
+03-14 14:16:56.456   587  1114 E CamX    : [ERROR][SENSOR ] camxirled.cpp:264 Initialize() IRLED CSLAquire failed 4
+03-14 14:16:56.456   587  1114 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:3002 CreateIRLEDResources() IRLED resources initialization failed
+03-14 14:16:56.456   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:56.456   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:56.465   587  2749 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:56.465   587  2749 E CHIUSECASE: chxextensionmodule.cpp:1811 GetNumPCRsBeforeStreamOn() pGetMetaData failed result 1
+03-14 14:16:56.481   587  1112 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :1 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.483   587  1115 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.483   587  1112 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+03-14 14:16:56.484   587  1115 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.484   587  1115 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.485   587  1112 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :2 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.489   587  1112 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.490   587  1113 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+03-14 14:16:56.491   587  1113 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :3 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.510   587  1114 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+03-14 14:16:56.510   587  1114 E CamX    : [ERROR][STATS_AEC] caeccoredatamanager.cpp:1518: getFrameHistory No start configuration is recorded in the history! 
+03-14 14:16:56.510   587  1114 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :4 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.512   587  1114 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data

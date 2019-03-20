@@ -1,0 +1,16 @@
+<36>[   39.050565] type=1400 audit(1552572848.979:116): avc: denied { create } for pid=2680 comm="main" name="cgroup.procs" scontext=u:r:zygote:s0 tcontext=u:object_r:cgroup:s0 tclass=file permissive=0
+<36>[   39.050608] type=1400 audit(1552572849.229:117): avc: denied { getattr } for pid=2698 comm="df" path="/persist" dev="mmcblk0p50" ino=2 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=0
+<36>[   39.052295] type=1400 audit(1552572849.229:117): avc: denied { getattr } for pid=2698 comm="df" path="/persist" dev="mmcblk0p50" ino=2 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=0
+<36>[   39.052324] type=1400 audit(1552572849.229:118): avc: denied { getattr } for pid=2698 comm="df" path="/dev/block" dev="tmpfs" ino=6062 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:block_device:s0 tclass=dir permissive=0
+<36>[   39.079596] type=1400 audit(1552572849.249:121): avc: denied { read } for pid=631 comm="vendor.qti.hard" name="enable" dev="sysfs" ino=50055 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+<36>[   39.079612] type=1400 audit(1552572849.249:122): avc: denied { read } for pid=631 comm="vendor.qti.hard" name="force_rail_on" dev="sysfs" ino=43852 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+<4>[   39.320210] irq_migrate_all_off_this_cpu: 649 callbacks suppressed
+<4>[   39.320212] IRQ6 no longer affine to CPU3
+<4>[   40.481073] IRQ8 no longer affine to CPU1
+<4>[   40.481091] IRQ9 no longer affine to CPU1
+<4>[   40.481104] IRQ10 no longer affine to CPU1
+<4>[   40.481118] IRQ11 no longer affine to CPU1
+<4>[   40.481131] IRQ12 no longer affine to CPU1
+<4>[   40.481144] IRQ13 no longer affine to CPU1
+<4>[   40.481160] IRQ14 no longer affine to CPU1
+<4>[   40.481174] IRQ15 no longer affine to CPU1

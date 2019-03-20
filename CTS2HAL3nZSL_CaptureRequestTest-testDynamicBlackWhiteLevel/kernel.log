@@ -1,0 +1,13 @@
+<36>[  151.240879] type=1400 audit(1552572961.639:389): avc: denied { create } for pid=3322 comm="main" name="cgroup.procs" scontext=u:r:zygote:s0 tcontext=u:object_r:cgroup:s0 tclass=file permissive=0
+<36>[  151.407152] type=1400 audit(1552572961.639:389): avc: denied { create } for pid=3322 comm="main" name="cgroup.procs" scontext=u:r:zygote:s0 tcontext=u:object_r:cgroup:s0 tclass=file permissive=0
+<36>[  151.407184] type=1400 audit(1552572961.799:390): avc: denied { getattr } for pid=3340 comm="df" path="/persist" dev="mmcblk0p50" ino=2 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=0
+<36>[  151.425120] type=1400 audit(1552572961.799:392): avc: denied { getattr } for pid=3340 comm="df" path="/dev/block" dev="tmpfs" ino=17289 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:block_device:s0 tclass=dir permissive=0
+<36>[  151.425148] type=1400 audit(1552572961.819:393): avc: denied { read } for pid=627 comm="vendor.qti.hard" name="enable" dev="sysfs" ino=50053 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+<6>[  151.763425] binder: 893:3279 transaction failed 29189/-22, size 100-0 line 3017
+<4>[  156.366623] irq_migrate_all_off_this_cpu: 654 callbacks suppressed
+<4>[  156.366629] IRQ6 no longer affine to CPU0
+<4>[  156.366707] IRQ8 no longer affine to CPU0
+<4>[  156.366729] IRQ9 no longer affine to CPU0
+<4>[  156.366767] IRQ11 no longer affine to CPU0
+<4>[  156.366798] IRQ13 no longer affine to CPU0
+<4>[  156.366835] IRQ15 no longer affine to CPU0

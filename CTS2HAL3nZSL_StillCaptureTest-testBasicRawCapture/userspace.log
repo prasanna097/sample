@@ -1,0 +1,294 @@
+--------- beginning of main
+03-14 14:14:55.305  3103  3103 E propClient: PropClient failed to load
+03-14 14:14:55.468  3107  3107 E propClient: PropClient failed to load
+03-14 14:14:55.468  3105  3105 E propClient: PropClient failed to load
+03-14 14:14:55.484  3105  3105 E propClient: PropClient failed to load
+03-14 14:14:55.485  3107  3107 E propClient: PropClient failed to load
+--------- beginning of system
+03-14 14:14:56.160  1091  1254 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+03-14 14:14:57.465  3110  3110 E propClient: PropClient failed to load
+03-14 14:14:57.480  3112  3112 E propClient: PropClient failed to load
+03-14 14:14:57.646  3112  3112 E propClient: PropClient failed to load
+03-14 14:14:57.659  3112  3112 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+03-14 14:14:57.725  3112  3112 I app_process: The ClassLoaderContext is a special shared library.
+03-14 14:14:57.752  3112  3112 E System  : Unable to open boot classpath entry: /system/framework/ims-common.jar
+03-14 14:14:57.752  3112  3112 E System  : java.io.FileNotFoundException: File doesn't exist: /system/framework/ims-common.jar
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.zip.ZipFile.<init>(ZipFile.java:212)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.zip.ZipFile.<init>(ZipFile.java:149)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.jar.JarFile.<init>(JarFile.java:160)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.jar.JarFile.<init>(JarFile.java:97)
+03-14 14:14:57.752  3112  3112 E System  : 	at libcore.io.ClassPathURLStreamHandler.<init>(ClassPathURLStreamHandler.java:47)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.lang.VMClassLoader.createBootClassPathUrlHandlers(VMClassLoader.java:49)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.lang.VMClassLoader.<clinit>(VMClassLoader.java:32)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.lang.BootClassLoader.findResource(ClassLoader.java:1360)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.lang.BootClassLoader.getResource(ClassLoader.java:1406)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.lang.ClassLoader.getResourceAsStream(ClassLoader.java:987)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.lang.Class.getResourceAsStream(Class.java:2211)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager.readConfiguration(LogManager.java:1297)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager$3.run(LogManager.java:390)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager$3.run(LogManager.java:388)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.security.AccessController.doPrivileged(AccessController.java:69)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager.readPrimordialConfiguration(LogManager.java:387)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager.-wrap5(Unknown Source:0)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager$2.run(LogManager.java:336)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.security.AccessController.doPrivileged(AccessController.java:43)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager.ensureLogManagerInitialized(LogManager.java:329)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.LogManager.getLogManager(LogManager.java:369)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.Logger.demandLogger(Logger.java:449)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.logging.Logger.getLogger(Logger.java:505)
+03-14 14:14:57.752  3112  3112 E System  : 	at android.icu.util.TimeZone.<clinit>(TimeZone.java:95)
+03-14 14:14:57.752  3112  3112 E System  : 	at java.util.TimeZone.setDefault(TimeZone.java:746)
+03-14 14:14:57.752  3112  3112 E System  : 	at com.android.internal.os.RuntimeInit.commonInit(RuntimeInit.java:155)
+03-14 14:14:57.752  3112  3112 E System  : 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:279)
+03-14 14:14:57.755  3112  3112 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+03-14 14:14:57.761  1091  1111 I ActivityManager: Force stopping android.camera.cts appid=10084 user=0: start instr
+03-14 14:14:57.799  3121  3121 W main    : type=1400 audit(0.0:287): avc: denied { create } for name="cgroup.procs" scontext=u:r:zygote:s0 tcontext=u:object_r:cgroup:s0 tclass=file permissive=0
+03-14 14:14:57.803  1091  1111 I ActivityManager: Start proc 3121:android.camera.cts/u0a84 for added application android.camera.cts
+03-14 14:14:57.822  1091  1111 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:14:57.823  1091  1111 D CompatibilityInfo: applicationDensity - 560
+03-14 14:14:57.823  1091  1111 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:14:57.844  3121  3121 I zygote64: The ClassLoaderContext is a special shared library.
+03-14 14:14:57.846  3121  3121 I zygote64: The ClassLoaderContext is a special shared library.
+03-14 14:14:57.867  3121  3121 I MonitoringInstr: Instrumentation started on process android.camera.cts
+03-14 14:14:57.867  3121  3121 I MonitoringInstr: Setting context classloader to 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]', Original: 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]'
+03-14 14:14:57.870  3121  3121 I MonitoringInstr: No JSBridge.
+03-14 14:14:57.873  3121  3137 I MonitoringInstr: Setting context classloader to 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]', Original: 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]'
+03-14 14:14:57.885  3121  3137 D InfraTrack: Tracking disabled due to lack of internet permissions
+03-14 14:14:57.885  3121  3137 I UsageTrackerFacilitator: Usage tracking disabled
+03-14 14:14:57.915  3121  3137 D TestExecutor: Adding listener android.support.test.internal.runner.listener.LogRunListener
+03-14 14:14:57.915  3121  3137 D TestExecutor: Adding listener android.support.test.internal.runner.listener.InstrumentationResultPrinter
+03-14 14:14:57.915  3121  3137 D TestExecutor: Adding listener android.support.test.internal.runner.listener.ActivityFinisherRunListener
+03-14 14:14:57.915  3121  3137 D TestExecutor: Adding listener com.android.cts.runner.CtsTestRunListener
+03-14 14:14:57.921  3121  3137 I TestRunner: run started: 1 tests
+03-14 14:14:57.924  3121  3137 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 14:14:57.925  3121  3137 I CtsTestRunListener: Disabling keyguard
+03-14 14:14:57.926  3121  3137 I TestRunner: started: testBasicRawCapture(android.hardware.camera2.cts.StillCaptureTest)
+03-14 14:14:57.927  1288  1314 D KeyguardViewMediator: setKeyguardEnabled(false)
+03-14 14:14:57.928  3121  3121 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 0
+03-14 14:14:57.928  3121  3137 D CtsTestRunListener: Total memory  : 2486808
+03-14 14:14:57.928  3121  3137 D CtsTestRunListener: Used memory   : 1916216
+03-14 14:14:57.928  3121  3137 D CtsTestRunListener: Free memory   : 570592
+03-14 14:14:57.928  3121  3137 D CtsTestRunListener: java.io.tmpdir is:/data/user/0/android.camera.cts/cache
+03-14 14:14:57.928  3121  3137 D CtsTestRunListener: About to .exec df
+03-14 14:14:57.931  3121  3137 D CtsTestRunListener: .exec returned
+03-14 14:14:57.931  3121  3137 D CtsTestRunListener: Stream reader created
+03-14 14:14:57.959  3139  3139 E propClient: PropClient failed to load
+03-14 14:14:57.959  3139  3139 W df      : type=1400 audit(0.0:288): avc: denied { getattr } for path="/persist" dev="mmcblk0p50" ino=2 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=0
+03-14 14:14:57.966  3121  3137 D CtsTestRunListener: In finally
+03-14 14:14:57.966  3121  3137 D CtsTestRunListener: Now executing : android.hardware.camera2.cts.StillCaptureTest
+03-14 14:14:57.973  3121  3142 D MonitoringInstr: execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle
+03-14 14:14:57.975  1091  1111 I ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x14000000 cmp=android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity} from uid 10084
+03-14 14:14:57.979   634   634 W vendor.qti.hard: type=1400 audit(0.0:291): avc: denied { read } for name="enable" dev="sysfs" ino=50011 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:14:57.985   634   682 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
+03-14 14:14:57.985   634   682 E ANDR-PERF-UTIL: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+03-14 14:14:57.985   634   682 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+03-14 14:14:57.985   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [11, 4]
+03-14 14:14:57.979   634   634 W vendor.qti.hard: type=1400 audit(0.0:292): avc: denied { read } for name="force_rail_on" dev="sysfs" ino=43852 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:14:57.979   634   634 W vendor.qti.hard: type=1400 audit(0.0:293): avc: denied { read } for name="force_clk_on" dev="sysfs" ino=43850 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:14:57.986   634   682 E ANDR-PERF-OPTSHANDLER: Perflock resource /sys/class/devfreq/soc:qcom,llccbw/min_freq not supported
+03-14 14:14:57.986   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [12, 0]
+03-14 14:14:57.986   511   511 W /system/bin/hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+03-14 14:14:57.987  1091  1111 E ANDR-PERF-JNI: Iop tryGetService failed
+03-14 14:14:57.979   634   634 W vendor.qti.hard: type=1400 audit(0.0:300): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:14:57.987   634   682 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/force_rail_on
+03-14 14:14:57.987   634   682 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/force_clk_on
+03-14 14:14:57.987   634   682 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/idle_timer
+03-14 14:14:57.987   634   682 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/force_no_nap
+03-14 14:14:57.987   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [10, 7]
+03-14 14:14:57.987   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:57.987   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:57.988   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:57.979   634   634 W vendor.qti.hard: type=1400 audit(0.0:301): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:14:57.988   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:57.988   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:57.988   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:57.988   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:57.988   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:57.979   634   634 W vendor.qti.hard: type=1400 audit(0.0:302): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:14:57.991  1091  1111 D ActivityTrigger: activityStartTrigger: Activity is Triggerred in full screen ApplicationInfo{f1e5e61 android.camera.cts}
+03-14 14:14:57.991  1091  1111 E ActivityTrigger: activityStartTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:14:57.992  1091  1111 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:14:57.992  1091  1111 D CompatibilityInfo: applicationDensity - 560
+03-14 14:14:57.992  1091  1111 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:14:57.992  1091  1111 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{f1e5e61 android.camera.cts} is now in focus and seems to be in full-screen mode
+03-14 14:14:57.992  1091  1111 E ActivityTrigger: activityResumeTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:14:57.992  1091  1111 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 14:14:57.996  1091  2739 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{f1e5e61 android.camera.cts} is now in focus and seems to be in full-screen mode
+03-14 14:14:57.996  1091  2739 E ActivityTrigger: activityResumeTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:14:57.997   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:57.997   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:57.997   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:57.997   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:57.989   634   634 W vendor.qti.hard: type=1400 audit(0.0:304): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:14:58.031  1091  2739 I ActivityManager: Config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 560dpi nrml hdr land finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 2392, 1440) s.16}
+03-14 14:14:58.057  1091  2739 I ActivityManager: Override config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 560dpi nrml hdr land finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 2392, 1440) s.16} for displayId=0
+03-14 14:14:58.067  1091  2739 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:14:58.067  1091  2739 D CompatibilityInfo: applicationDensity - 560
+03-14 14:14:58.067  1091  2739 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:14:58.088  1091  1216 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:14:58.088  1091  1216 I InputReader: Device reconfigured: id=4, name='qbt1000_key_input', size 1440x2560, orientation 0, mode 4, display id 0
+03-14 14:14:58.088  1091  1216 I InputReader: Device reconfigured: id=6, name='hbtp_input', size 1440x2560, orientation 1, mode 1, display id 0
+03-14 14:14:58.092  3121  3121 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@88d47a9 in: PRE_ON_CREATE
+03-14 14:14:58.150  3121  3121 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@88d47a9 in: CREATED
+03-14 14:14:58.150  3121  3121 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@88d47a9 in: STARTED
+03-14 14:14:58.153  3121  3121 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@88d47a9 in: RESUMED
+03-14 14:14:58.161  3121  3148 D OpenGLRenderer: HWUI GL Pipeline
+03-14 14:14:58.206  1288  1288 D StatusBar: disable<e i a s b h r c s q >
+03-14 14:14:58.218  3121  3148 I Adreno  : QUALCOMM build                   : 6c319c5, I3912dda768
+03-14 14:14:58.218  3121  3148 I Adreno  : Build Date                       : 03/14/19
+03-14 14:14:58.218  3121  3148 I Adreno  : OpenGL ES Shader Compiler Version: EV031.26.02.00
+03-14 14:14:58.218  3121  3148 I Adreno  : Local Branch                     : 
+03-14 14:14:58.218  3121  3148 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.6.8.1.R2.08.01.00.513.017
+03-14 14:14:58.218  3121  3148 I Adreno  : Remote Branch                    : NONE
+03-14 14:14:58.218  3121  3148 I Adreno  : Reconstruct Branch               : NOTHING
+03-14 14:14:58.219  3121  3148 I Adreno  : Build Config                     : S L 3.9.10 AArch64
+03-14 14:14:58.224  3121  3148 I Adreno  : PFP: 0x016ee181, ME: 0x00000000
+03-14 14:14:58.230  3121  3148 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+03-14 14:14:58.231  3121  3148 I OpenGLRenderer: Initialized EGL, version 1.4
+03-14 14:14:58.231  3121  3148 D OpenGLRenderer: Swap behavior 2
+03-14 14:14:58.231  3121  3121 I Camera2SurfaceViewCtsActivity: Surface created
+03-14 14:14:58.231  3121  3121 I Camera2SurfaceViewCtsActivity: Surface Changed to: 1120x840
+03-14 14:14:58.245  1288  1288 W StatusBar/NavBarView: *** Invalid layout in navigation bar (sizeChanged this=168x1440 cur=168x1384)
+03-14 14:14:58.273  1091  1132 I ActivityManager: Displayed android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity: +270ms
+03-14 14:14:58.274   511   511 W /system/bin/hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+03-14 14:14:58.274  1091  1132 E ANDR-PERF-JNI: Iop tryGetService failed
+03-14 14:14:58.281  1091  1194 I WindowManager: Screen frozen for +283ms due to Window{dcb9c40 u0 android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity}
+03-14 14:14:58.293  3121  3137 I CameraManagerGlobal: Connecting to camera service
+03-14 14:14:58.294  1091  1111 D ActivityTrigger: ActivityTrigger activityStopTrigger 
+03-14 14:14:58.299  3121  3137 I StillCaptureTest: Testing raw capture for Camera 0
+03-14 14:14:58.305  3121  3137 E libc    : Access denied finding property "persist.camera.privapp.list"
+03-14 14:14:58.306   888  2744 I CameraService: CameraService::connect call (PID -1 "android.camera.cts", camera ID 0) for HAL version default and Camera API version 2
+03-14 14:14:58.307   888  2744 I Camera2ClientBase: Camera 0: Opened. Client: android.camera.cts (PID 3121, UID 10084)
+03-14 14:14:58.307   888  2744 I CameraDeviceClient: CameraDeviceClient 0: Opened
+03-14 14:14:58.309   888  2744 I CameraProviderManager: Camera device device@3.3/legacy/0 torch status is now NOT_AVAILABLE
+03-14 14:14:58.310   888  2744 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=0
+03-14 14:14:58.310   888  2744 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 0: No such file or directory (-2)
+03-14 14:14:58.310   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:58.311   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:58.311   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:58.311   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:58.343   888  2744 I Camera3-Device: disconnect: E
+03-14 14:14:58.344   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:58.344   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:58.344   888  2744 I CameraProviderManager: Camera device device@3.3/legacy/0 torch status is now AVAILABLE_OFF
+03-14 14:14:58.344   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:58.344   888  2744 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=1
+03-14 14:14:58.344   888  2744 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 0: No such file or directory (-2)
+03-14 14:14:58.344   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:58.345   888  2744 I Camera3-Device: disconnect: X
+03-14 14:14:58.345   888  1107 I Camera3-Device: disconnect: E
+03-14 14:14:58.347   888  2744 I CameraService: disconnect: Disconnected client for camera 0 for PID 3121
+03-14 14:14:58.350  1091  1111 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 14:14:58.351  3121  3121 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@88d47a9 in: PAUSED
+03-14 14:14:58.354  1091  2739 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{4a4b06c com.android.launcher3} is now in focus and seems to be in full-screen mode
+03-14 14:14:58.354  1091  2739 E ActivityTrigger: activityResumeTrigger: not whiteListedcom.android.launcher3/com.android.launcher3.Launcher/27
+03-14 14:14:58.355   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:58.355   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:14:58.355   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:58.355   634   682 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:14:58.366  3121  3137 I zygote64: Explicit concurrent copying GC freed 16659(446KB) AllocSpace objects, 0(0B) LOS objects, 57% free, 1124KB/2MB, paused 63us total 12.249ms
+03-14 14:14:58.367   888  2744 I Camera2ClientBase: Closed Camera 0. Client was: android.camera.cts (PID 3121, UID 10084)
+03-14 14:14:58.377  3121  3137 I zygote64: Explicit concurrent copying GC freed 22(32KB) AllocSpace objects, 0(0B) LOS objects, 57% free, 1124KB/2MB, paused 89us total 9.451ms
+03-14 14:14:58.377  3121  3137 I TestRunner: failed: testBasicRawCapture(android.hardware.camera2.cts.StillCaptureTest)
+03-14 14:14:58.377  3121  3137 I TestRunner: ----- begin exception -----
+03-14 14:14:58.378  3121  3137 I TestRunner: junit.framework.AssertionFailedError: Available sizes for RAW format must include either the pre-corrected active array size, or the full pixel array size : No elements from [3864x2180] in [3840x2160, 3840x2160]
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at junit.framework.Assert.fail(Assert.java:50)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.hardware.camera2.cts.helpers.AssertHelpers.assertCollectionContainsAnyOf(AssertHelpers.java:192)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.hardware.camera2.cts.helpers.AssertHelpers.assertArrayContainsAnyOf(AssertHelpers.java:156)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.hardware.camera2.cts.helpers.StaticMetadata.getRawDimensChecked(StaticMetadata.java:858)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.hardware.camera2.cts.StillCaptureTest.rawCaptureTestByCamera(StillCaptureTest.java:836)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.hardware.camera2.cts.StillCaptureTest.testBasicRawCapture(StillCaptureTest.java:178)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:220)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:205)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at junit.framework.TestCase.runBare(TestCase.java:134)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at junit.framework.TestResult$1.protect(TestResult.java:115)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.internal.runner.junit3.AndroidTestResult.runProtected(AndroidTestResult.java:77)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at junit.framework.TestResult.run(TestResult.java:118)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.internal.runner.junit3.AndroidTestResult.run(AndroidTestResult.java:55)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at junit.framework.TestCase.run(TestCase.java:124)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.internal.runner.junit3.NonLeakyTestSuite$NonLeakyTest.run(NonLeakyTestSuite.java:63)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at junit.framework.TestSuite.run(TestSuite.java:238)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.internal.runner.junit3.DelegatingTestSuite.run(DelegatingTestSuite.java:103)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.internal.runner.junit3.AndroidTestSuite.run(AndroidTestSuite.java:73)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.internal.runner.junit3.JUnit38ClassRunner.run(JUnit38ClassRunner.java:119)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:126)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.ParentRunner.-wrap0(Unknown Source:0)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:369)
+03-14 14:14:58.378  3121  3137 I TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2082)
+03-14 14:14:58.378  3121  3137 I TestRunner: ----- end exception -----
+03-14 14:14:58.378  3121  3137 I TestRunner: finished: testBasicRawCapture(android.hardware.camera2.cts.StillCaptureTest)
+03-14 14:14:58.384  3121  3121 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+03-14 14:14:58.384  3121  3137 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:14:58.427  1732  1732 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+03-14 14:14:58.435  3121  3137 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:14:58.461  1732  1732 W View    : requestLayout() improperly called by com.android.launcher3.graphics.GradientView{6ed5b7f V.ED..... ......I. 0,0-0,0 #7f0b0033 app:id/gradient_bg} during layout: running second layout pass
+03-14 14:14:58.485  3121  3137 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:14:58.497  1732  1741 I zygote64: Do partial code cache collection, code=123KB, data=77KB
+03-14 14:14:58.498  1732  1741 I zygote64: After code cache collection, code=123KB, data=77KB
+03-14 14:14:58.498  1732  1741 I zygote64: Increasing code cache capacity to 512KB
+03-14 14:14:58.535  3121  3137 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:14:58.686  3121  3137 I chatty  : uid=10084(android.camera.cts) roidJUnitRunner identical 3 lines
+03-14 14:14:58.737  3121  3137 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:14:58.750  3121  3121 I Camera2SurfaceViewCtsActivity: Surface destroyed
+03-14 14:14:58.787  3121  3137 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:14:58.427  1732  1732 I chatty  : uid=10013(com.android.launcher3) identical 2 lines
+03-14 14:14:58.477  1732  1732 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+03-14 14:14:58.804  1091  1132 I ActivityManager: Config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 560dpi nrml hdr port finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 1440, 2392) s.17}
+03-14 14:14:58.804  1091  1216 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:14:58.804  1091  1216 I InputReader: Device reconfigured: id=4, name='qbt1000_key_input', size 1440x2560, orientation 0, mode 4, display id 0
+03-14 14:14:58.804  1091  1216 I InputReader: Device reconfigured: id=6, name='hbtp_input', size 1440x2560, orientation 0, mode 1, display id 0
+03-14 14:14:58.824  1091  2643 I Adreno  : QUALCOMM build                   : 6c319c5, I3912dda768
+03-14 14:14:58.824  1091  2643 I Adreno  : Build Date                       : 03/14/19
+03-14 14:14:58.824  1091  2643 I Adreno  : OpenGL ES Shader Compiler Version: EV031.26.02.00
+03-14 14:14:58.824  1091  2643 I Adreno  : Local Branch                     : 
+03-14 14:14:58.824  1091  2643 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.6.8.1.R2.08.01.00.513.017
+03-14 14:14:58.824  1091  2643 I Adreno  : Remote Branch                    : NONE
+03-14 14:14:58.824  1091  2643 I Adreno  : Reconstruct Branch               : NOTHING
+03-14 14:14:58.824  1091  2643 I Adreno  : Build Config                     : S L 3.9.10 AArch64
+03-14 14:14:58.829  1091  2643 I Adreno  : PFP: 0x016ee181, ME: 0x00000000
+03-14 14:14:58.832  1091  1132 I ActivityManager: Override config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 560dpi nrml hdr port finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 1440, 2392) s.17} for displayId=0
+03-14 14:14:58.837  3121  3137 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:14:58.840  1091  2643 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+03-14 14:14:58.841  1091  2643 I OpenGLRenderer: Initialized EGL, version 1.4
+03-14 14:14:58.841  1091  2643 D OpenGLRenderer: Swap behavior 2
+03-14 14:14:58.851  1091  1216 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:14:58.856  3121  3121 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@88d47a9 in: STOPPED
+03-14 14:14:58.856  3121  3121 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@88d47a9 in: DESTROYED
+03-14 14:14:58.888  3121  3137 I TestRunner: run finished: 1 tests, 1 failed, 0 ignored
+03-14 14:14:58.891  3121  3137 I MonitoringInstr: waitForActivitiesToComplete() took: 0ms
+03-14 14:14:58.891  1091  1111 I ActivityManager: Force stopping android.camera.cts appid=10084 user=0: finished inst
+03-14 14:14:58.891  1091  1111 I ActivityManager: Killing 3121:android.camera.cts/u0a84 (adj 0): stop android.camera.cts
+03-14 14:14:58.892  1091  1124 W zygote64: kill(-3121, 9) failed: No such process
+03-14 14:14:58.893  1091  2850 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+03-14 14:14:58.893  1091  2850 W Binder  : java.lang.Throwable
+03-14 14:14:58.893  1091  2850 W Binder  : 	at android.os.BinderProxy.transact(Binder.java:752)
+03-14 14:14:58.893  1091  2850 W Binder  : 	at android.app.IInstrumentationWatcher$Stub$Proxy.instrumentationFinished(IInstrumentationWatcher.java:160)
+03-14 14:14:58.893  1091  2850 W Binder  : 	at com.android.server.am.InstrumentationReporter$MyThread.run(InstrumentationReporter.java:86)
+03-14 14:14:58.894  3112  3112 D AndroidRuntime: Shutting down VM
+03-14 14:14:58.914  1288  1314 D KeyguardViewMediator: setKeyguardEnabled(true)
+03-14 14:14:58.916  1091  1132 W ActivityManager: setHasOverlayUi called on unknown pid: 3121
+03-14 14:14:58.932  1091  1124 W zygote64: kill(-3121, 9) failed: No such process
+03-14 14:14:58.932  1091  1124 I zygote64: Successfully killed process cgroup uid 10084 pid 3121 in 40ms
+03-14 14:14:58.940  1732  1732 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+03-14 14:14:58.945  1091  1216 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:14:58.952  1288  1288 D StatusBar: disable<e i a s b h r c s q >
+03-14 14:14:58.980  1091  1099 W WindowManager: cleaning up leaked reference: cts
+03-14 14:14:58.984  1732  1732 W View    : requestLayout() improperly called by com.android.launcher3.graphics.GradientView{6cfbeee V.ED..... ......I. 0,0-0,0 #7f0b0033 app:id/gradient_bg} during layout: running second layout pass
+03-14 14:14:58.941  1732  1732 I chatty  : uid=10013(com.android.launcher3) identical 2 lines
+03-14 14:14:59.005  1732  1732 E SchedPolicy: set_timerslack_ns write failed: Operation not permitted
+03-14 14:14:59.012  1091  1194 I WindowManager: Screen frozen for +248ms due to Window{2fde34b u0 NavigationBar}
+03-14 14:14:59.054  1288  1288 W StatusBar/NavBarView: *** Invalid layout in navigation bar (sizeChanged this=1440x168 cur=1384x168)
+03-14 14:15:00.009  1288  1288 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 14:15:00.010  1288  1288 D KeyguardUpdateMonitor: handleTimeUpdate

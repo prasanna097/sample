@@ -1,0 +1,7 @@
+<36>[  591.784169] type=1400 audit(1552573401.729:566): avc: denied { write } for pid=635 comm="vendor.qti.hard" name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+<6>[  591.788257] binder: 889:4186 transaction failed 29189/-22, size 100-0 line 3017
+<36>[  591.791069] type=1400 audit(1552573401.999:567): avc: denied { read } for pid=4345 comm="roidJUnitRunner" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=13496 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+<36>[  591.791091] type=1400 audit(1552573402.009:568): avc: denied { write } for pid=635 comm="vendor.qti.hard" name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+<36>[  591.791419] type=1400 audit(1552573402.009:568): avc: denied { write } for pid=635 comm="vendor.qti.hard" name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+<36>[  591.791433] type=1400 audit(1552573402.009:569): avc: denied { write } for pid=635 comm="vendor.qti.hard" name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+<6>[  591.946280] aac_in_open:session id 1: success

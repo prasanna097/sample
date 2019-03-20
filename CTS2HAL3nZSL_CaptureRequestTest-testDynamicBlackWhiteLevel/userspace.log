@@ -1,0 +1,445 @@
+--------- beginning of main
+03-14 14:15:59.141  3304  3304 E propClient: PropClient failed to load
+03-14 14:15:59.289  3308  3308 E propClient: PropClient failed to load
+03-14 14:15:59.289  3306  3306 E propClient: PropClient failed to load
+03-14 14:15:59.309  3306  3306 E propClient: PropClient failed to load
+03-14 14:15:59.311  3308  3308 E propClient: PropClient failed to load
+--------- beginning of system
+03-14 14:15:59.937  1113  1259 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+03-14 14:16:00.015  1292  1292 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 14:16:00.016  1292  1292 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 14:16:01.287  3311  3311 E propClient: PropClient failed to load
+03-14 14:16:01.303  3313  3313 E propClient: PropClient failed to load
+03-14 14:16:01.482  3313  3313 E propClient: PropClient failed to load
+03-14 14:16:01.496  3313  3313 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+03-14 14:16:01.563  3313  3313 I app_process: The ClassLoaderContext is a special shared library.
+03-14 14:16:01.587  3313  3313 E System  : Unable to open boot classpath entry: /system/framework/ims-common.jar
+03-14 14:16:01.588  3313  3313 E System  : java.io.FileNotFoundException: File doesn't exist: /system/framework/ims-common.jar
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.zip.ZipFile.<init>(ZipFile.java:212)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.zip.ZipFile.<init>(ZipFile.java:149)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.jar.JarFile.<init>(JarFile.java:160)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.jar.JarFile.<init>(JarFile.java:97)
+03-14 14:16:01.588  3313  3313 E System  : 	at libcore.io.ClassPathURLStreamHandler.<init>(ClassPathURLStreamHandler.java:47)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.lang.VMClassLoader.createBootClassPathUrlHandlers(VMClassLoader.java:49)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.lang.VMClassLoader.<clinit>(VMClassLoader.java:32)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.lang.BootClassLoader.findResource(ClassLoader.java:1360)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.lang.BootClassLoader.getResource(ClassLoader.java:1406)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.lang.ClassLoader.getResourceAsStream(ClassLoader.java:987)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.lang.Class.getResourceAsStream(Class.java:2211)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager.readConfiguration(LogManager.java:1297)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager$3.run(LogManager.java:390)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager$3.run(LogManager.java:388)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.security.AccessController.doPrivileged(AccessController.java:69)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager.readPrimordialConfiguration(LogManager.java:387)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager.-wrap5(Unknown Source:0)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager$2.run(LogManager.java:336)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.security.AccessController.doPrivileged(AccessController.java:43)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager.ensureLogManagerInitialized(LogManager.java:329)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.LogManager.getLogManager(LogManager.java:369)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.Logger.demandLogger(Logger.java:449)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.logging.Logger.getLogger(Logger.java:505)
+03-14 14:16:01.588  3313  3313 E System  : 	at android.icu.util.TimeZone.<clinit>(TimeZone.java:95)
+03-14 14:16:01.588  3313  3313 E System  : 	at java.util.TimeZone.setDefault(TimeZone.java:746)
+03-14 14:16:01.588  3313  3313 E System  : 	at com.android.internal.os.RuntimeInit.commonInit(RuntimeInit.java:155)
+03-14 14:16:01.588  3313  3313 E System  : 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:279)
+03-14 14:16:01.591  3313  3313 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+03-14 14:16:01.597  1113  1124 I ActivityManager: Force stopping android.camera.cts appid=10084 user=0: start instr
+03-14 14:16:01.638  1113  1124 I ActivityManager: Start proc 3322:android.camera.cts/u0a84 for added application android.camera.cts
+03-14 14:16:01.639  3322  3322 W main    : type=1400 audit(0.0:389): avc: denied { create } for name="cgroup.procs" scontext=u:r:zygote:s0 tcontext=u:object_r:cgroup:s0 tclass=file permissive=0
+03-14 14:16:01.661  1113  1124 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:16:01.661  1113  1124 D CompatibilityInfo: applicationDensity - 560
+03-14 14:16:01.661  1113  1124 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:16:01.680  3322  3322 I zygote64: The ClassLoaderContext is a special shared library.
+03-14 14:16:01.683  3322  3322 I zygote64: The ClassLoaderContext is a special shared library.
+03-14 14:16:01.706  3322  3322 I MonitoringInstr: Instrumentation started on process android.camera.cts
+03-14 14:16:01.706  3322  3322 I MonitoringInstr: Setting context classloader to 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]', Original: 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]'
+03-14 14:16:01.708  3322  3322 I MonitoringInstr: No JSBridge.
+03-14 14:16:01.711  3322  3338 I MonitoringInstr: Setting context classloader to 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]', Original: 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]'
+03-14 14:16:01.723  3322  3338 D InfraTrack: Tracking disabled due to lack of internet permissions
+03-14 14:16:01.723  3322  3338 I UsageTrackerFacilitator: Usage tracking disabled
+03-14 14:16:01.747  3322  3338 D TestExecutor: Adding listener android.support.test.internal.runner.listener.LogRunListener
+03-14 14:16:01.748  3322  3338 D TestExecutor: Adding listener android.support.test.internal.runner.listener.InstrumentationResultPrinter
+03-14 14:16:01.748  3322  3338 D TestExecutor: Adding listener android.support.test.internal.runner.listener.ActivityFinisherRunListener
+03-14 14:16:01.748  3322  3338 D TestExecutor: Adding listener com.android.cts.runner.CtsTestRunListener
+03-14 14:16:01.755  3322  3338 I TestRunner: run started: 1 tests
+03-14 14:16:01.758  3322  3338 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 14:16:01.760  3322  3338 I CtsTestRunListener: Disabling keyguard
+03-14 14:16:01.763  1292  1316 D KeyguardViewMediator: setKeyguardEnabled(false)
+03-14 14:16:01.764  3322  3338 I TestRunner: started: testDynamicBlackWhiteLevel(android.hardware.camera2.cts.CaptureRequestTest)
+03-14 14:16:01.765  3322  3322 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 0
+03-14 14:16:01.765  3322  3338 D CtsTestRunListener: Total memory  : 2486832
+03-14 14:16:01.765  3322  3338 D CtsTestRunListener: Used memory   : 2162000
+03-14 14:16:01.765  3322  3338 D CtsTestRunListener: Free memory   : 324832
+03-14 14:16:01.765  3322  3338 D CtsTestRunListener: java.io.tmpdir is:/data/user/0/android.camera.cts/cache
+03-14 14:16:01.765  3322  3338 D CtsTestRunListener: About to .exec df
+03-14 14:16:01.768  3322  3338 D CtsTestRunListener: .exec returned
+03-14 14:16:01.768  3322  3338 D CtsTestRunListener: Stream reader created
+03-14 14:16:01.799  3340  3340 W df      : type=1400 audit(0.0:390): avc: denied { getattr } for path="/persist" dev="mmcblk0p50" ino=2 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=0
+03-14 14:16:01.804  3340  3340 E propClient: PropClient failed to load
+03-14 14:16:01.799  3340  3340 W df      : type=1400 audit(0.0:391): avc: denied { getattr } for path="/dev/block" dev="tmpfs" ino=17289 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:block_device:s0 tclass=dir permissive=0
+03-14 14:16:01.810  3322  3338 D CtsTestRunListener: Filesystem                             1K-blocks   Used Available Use% Mounted on
+03-14 14:16:01.810  3322  3338 D CtsTestRunListener: /dev/block/bootdevice/by-name/userdata   5078656 872080   4190192  18% /data
+03-14 14:16:01.811  3322  3338 D CtsTestRunListener: In finally
+03-14 14:16:01.811  3322  3338 D CtsTestRunListener: Now executing : android.hardware.camera2.cts.CaptureRequestTest
+03-14 14:16:01.816  3322  3342 D MonitoringInstr: execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle
+03-14 14:16:01.818  1113  1124 I ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x14000000 cmp=android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity} from uid 10084
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:393): avc: denied { read } for name="enable" dev="sysfs" ino=50053 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.825   627   672 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
+03-14 14:16:01.825   627   672 E ANDR-PERF-UTIL: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+03-14 14:16:01.825   627   672 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+03-14 14:16:01.825   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [11, 4]
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:394): avc: denied { read } for name="force_rail_on" dev="sysfs" ino=43852 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.826   627   672 E ANDR-PERF-OPTSHANDLER: Perflock resource /sys/class/devfreq/soc:qcom,llccbw/min_freq not supported
+03-14 14:16:01.826   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [12, 0]
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:397): avc: denied { read } for name="force_no_nap" dev="sysfs" ino=43853 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:398): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:399): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:400): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:401): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:402): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:403): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:404): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.819   627   627 W vendor.qti.hard: type=1400 audit(0.0:405): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.827   510   510 W /system/bin/hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+03-14 14:16:01.827  1113  1124 E ANDR-PERF-JNI: Iop tryGetService failed
+03-14 14:16:01.827   627   672 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/force_rail_on
+03-14 14:16:01.827   627   672 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/force_clk_on
+03-14 14:16:01.827   627   672 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/idle_timer
+03-14 14:16:01.827   627   672 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/kgsl/kgsl-3d0/force_no_nap
+03-14 14:16:01.827   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [10, 7]
+03-14 14:16:01.827   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:01.828   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:01.828   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:01.828   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:01.828   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:01.828   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:01.828   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:01.828   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:01.832  1113  1124 D ActivityTrigger: activityStartTrigger: Activity is Triggerred in full screen ApplicationInfo{36821e2 android.camera.cts}
+03-14 14:16:01.832  1113  1124 E ActivityTrigger: activityStartTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:16:01.833  1113  1124 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:16:01.833  1113  1124 D CompatibilityInfo: applicationDensity - 560
+03-14 14:16:01.833  1113  1124 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:16:01.833  1113  1124 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{36821e2 android.camera.cts} is now in focus and seems to be in full-screen mode
+03-14 14:16:01.833  1113  1124 E ActivityTrigger: activityResumeTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:16:01.833  1113  1124 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 14:16:01.838  1113  1124 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{36821e2 android.camera.cts} is now in focus and seems to be in full-screen mode
+03-14 14:16:01.838  1113  1124 E ActivityTrigger: activityResumeTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:16:01.829   627   627 W vendor.qti.hard: type=1400 audit(0.0:406): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.839   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:01.839   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:01.839   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:01.829   627   627 W vendor.qti.hard: type=1400 audit(0.0:407): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.839   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:01.829   627   627 W vendor.qti.hard: type=1400 audit(0.0:408): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.870  1113  1124 I ActivityManager: Config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 560dpi nrml hdr land finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 2392, 1440) s.22}
+03-14 14:16:01.907  1113  1124 I ActivityManager: Override config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 560dpi nrml hdr land finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 2392, 1440) s.22} for displayId=0
+03-14 14:16:01.829   627   627 W vendor.qti.hard: type=1400 audit(0.0:409): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:01.920  1113  1124 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:16:01.920  1113  1124 D CompatibilityInfo: applicationDensity - 560
+03-14 14:16:01.920  1113  1124 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:16:01.931  1113  1220 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:16:01.931  1113  1220 I InputReader: Device reconfigured: id=5, name='qbt1000_key_input', size 1440x2560, orientation 0, mode 4, display id 0
+03-14 14:16:01.931  1113  1220 I InputReader: Device reconfigured: id=6, name='hbtp_input', size 1440x2560, orientation 1, mode 1, display id 0
+03-14 14:16:01.939  3322  3322 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@c3391a6 in: PRE_ON_CREATE
+03-14 14:16:02.009  3322  3322 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@c3391a6 in: CREATED
+03-14 14:16:02.009  3322  3322 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@c3391a6 in: STARTED
+03-14 14:16:02.010  3322  3322 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@c3391a6 in: RESUMED
+03-14 14:16:02.018  3322  3348 D OpenGLRenderer: HWUI GL Pipeline
+03-14 14:16:02.065  1292  1292 D StatusBar: disable<e i a s b h r c s q >
+03-14 14:16:02.073  3322  3348 I Adreno  : QUALCOMM build                   : 6c319c5, I3912dda768
+03-14 14:16:02.073  3322  3348 I Adreno  : Build Date                       : 03/14/19
+03-14 14:16:02.073  3322  3348 I Adreno  : OpenGL ES Shader Compiler Version: EV031.26.02.00
+03-14 14:16:02.073  3322  3348 I Adreno  : Local Branch                     : 
+03-14 14:16:02.073  3322  3348 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.6.8.1.R2.08.01.00.513.017
+03-14 14:16:02.073  3322  3348 I Adreno  : Remote Branch                    : NONE
+03-14 14:16:02.073  3322  3348 I Adreno  : Reconstruct Branch               : NOTHING
+03-14 14:16:02.073  3322  3348 I Adreno  : Build Config                     : S L 3.9.10 AArch64
+03-14 14:16:02.079  3322  3348 I Adreno  : PFP: 0x016ee181, ME: 0x00000000
+03-14 14:16:02.085  3322  3348 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+03-14 14:16:02.086  3322  3322 I Camera2SurfaceViewCtsActivity: Surface created
+03-14 14:16:02.086  3322  3322 I Camera2SurfaceViewCtsActivity: Surface Changed to: 1120x840
+03-14 14:16:02.087  3322  3348 I OpenGLRenderer: Initialized EGL, version 1.4
+03-14 14:16:02.087  3322  3348 D OpenGLRenderer: Swap behavior 2
+03-14 14:16:02.095  1292  1292 W StatusBar/NavBarView: *** Invalid layout in navigation bar (sizeChanged this=168x1440 cur=168x1384)
+03-14 14:16:02.128  1113  1148 I ActivityManager: Displayed android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity: +283ms
+03-14 14:16:02.129   510   510 W /system/bin/hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+03-14 14:16:02.129  1113  1148 E ANDR-PERF-JNI: Iop tryGetService failed
+03-14 14:16:02.137  1113  1198 I WindowManager: Screen frozen for +297ms due to Window{a66e745 u0 android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity}
+03-14 14:16:02.147  3322  3338 I CameraManagerGlobal: Connecting to camera service
+03-14 14:16:02.147  1113  1124 D ActivityTrigger: ActivityTrigger activityStopTrigger 
+03-14 14:16:02.149  3322  3322 W roidJUnitRunner: type=1400 audit(0.0:410): avc: denied { read } for name="u:object_r:camera_prop:s0" dev="tmpfs" ino=13496 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+03-14 14:16:02.160  3322  3338 E libc    : Access denied finding property "persist.camera.privapp.list"
+03-14 14:16:02.160   893  3279 I CameraService: CameraService::connect call (PID -1 "android.camera.cts", camera ID 0) for HAL version default and Camera API version 2
+03-14 14:16:02.162   893  3279 I Camera2ClientBase: Camera 0: Opened. Client: android.camera.cts (PID 3322, UID 10084)
+03-14 14:16:02.162   893  3279 I CameraDeviceClient: CameraDeviceClient 0: Opened
+03-14 14:16:02.165   893  3279 I CameraProviderManager: Camera device device@3.3/legacy/0 torch status is now NOT_AVAILABLE
+03-14 14:16:02.159   627   627 W vendor.qti.hard: type=1400 audit(0.0:411): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:02.165   893  3279 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=0
+03-14 14:16:02.165   893  3279 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 0: No such file or directory (-2)
+03-14 14:16:02.166   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:02.167   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:02.167   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:02.167   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:02.159   627   627 W vendor.qti.hard: type=1400 audit(0.0:412): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:02.233  3322  3322 I Camera2SurfaceViewCtsActivity: Surface Changed to: 1920x1080
+03-14 14:16:02.240   893  3279 W CameraDeviceClient: createSurfaceFromGbp: Camera 0 with consumer usage flag: 2304: Forcing asynchronous mode for stream
+03-14 14:16:02.241   893  3279 W CameraDeviceClient: createSurfaceFromGbp: Camera 0: Overriding format 0x4 to IMPLEMENTATION_DEFINED
+03-14 14:16:02.246   601  1109 E CamX    : [ERROR][PPROC  ] camxipenode.cpp:3476 GetEISMargin() No margin for stabilization type 8
+03-14 14:16:02.247   601  1109 E CHIUSECASE: chxadvancedcamerausecase.cpp:2213 PipelineCreated() MULTIFRAME AdvancedCameraUsecase pipelineId: 0
+03-14 14:16:02.250   601  1109 E CamX    : [ERROR][PPROC  ] camxipenode.cpp:3476 GetEISMargin() No margin for stabilization type 8
+03-14 14:16:02.266   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1522 SetMetadataByTag() Invalid slot; cannot set metadata tag 800b0004
+03-14 14:16:02.266   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1677 PublishMetadataList() Invalid slot, cannot publish metadata list
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][STATS_AF] camxcaecstatsprocessor.cpp:3119 ReadTuningModeParameter() PropertyIDUsecaseChiTuningModeParameter is not published!
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][STATS_AEC] caeccoredatamanager.cpp:1518: getFrameHistory No start configuration is recorded in the history! 
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1522 SetMetadataByTag() Invalid slot; cannot set metadata tag 800d0005
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1677 PublishMetadataList() Invalid slot, cannot publish metadata list
+03-14 14:16:02.276   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.278   601  1109 D CamX    : [DEBUG][STATS_AWB] camxcawbstatsprocessor.cpp:708 SetOperationModetoAlgo() Mode set to Algo: 1
+03-14 14:16:02.278   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.282   601  1109 E CamX    : [ERROR][HAL    ] camxsession.cpp:3329 GetIntraRealtimePipelineId() Less than two realtime pipelines, no intra result
+03-14 14:16:02.282   601  1109 E CamX    : [ERROR][STATS_AF] camxcafioutil.cpp:326 ReadTuningModeParameter() PropertyIDUsecaseChiTuningModeParameter is not published!
+03-14 14:16:02.282   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.283   601  1109 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.285   601  1109 I chatty  : uid=1047(cameraserver) HwBinder:601_2 identical 1 line
+03-14 14:16:02.285   601  1109 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.285   601  1109 E CamX    : [ERROR][ISP    ] camxiferoundclamp11.cpp:448 RunCalculation() Bad bitWidth 0, defaulting to 8 bits
+03-14 14:16:02.285   601  1109 E CamX    : [ERROR][ISP    ] camxiferoundclamp11.cpp:448 RunCalculation() Bad bitWidth 0, defaulting to 8 bits
+03-14 14:16:02.794   601  1103 E CamX    : [ERROR][SENSOR ] camxirled.cpp:264 Initialize() IRLED CSLAquire failed 4
+03-14 14:16:02.794   601  1103 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:3002 CreateIRLEDResources() IRLED resources initialization failed
+03-14 14:16:02.794   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.794   601  1109 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:02.797   893  3279 D Camera3-Device: Set real time priority for request queue thread (tid 3354)
+03-14 14:16:02.800  3322  3351 W zygote64: Long monitor contention with owner Instr: android.support.test.runner.AndroidJUnitRunner (3338) at boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int)(Binder.java:-2) waiters=0 in void android.hardware.camera2.impl.CameraDeviceImpl$4.run() for 562ms
+03-14 14:16:02.805   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:02.805   601  1109 E CHIUSECASE: chxextensionmodule.cpp:1811 GetNumPCRsBeforeStreamOn() pGetMetaData failed result 1
+03-14 14:16:02.823   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:02.825   601  1105 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :1 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:02.827   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.827   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:02.827   601  1104 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+03-14 14:16:02.828   601  1104 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :2 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:02.828   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.828   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.831   601  1106 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :3 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:02.833   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.833   601  1103 E CamX    : [ERROR][STATS_AEC] caeccoredatamanager.cpp:1518: getFrameHistory No start configuration is recorded in the history! 
+03-14 14:16:02.833   601  1103 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :4 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:02.838   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.984   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:02.996   601  1105 E CHIDEFOG: SetDeFogConfigParams():1039 Algo App enable = 1 and 0
+03-14 14:16:02.997   601  1105 E CamX    : [ERROR][HAL    ] camxhal3metadatautil.cpp:669 UpdateMetadata() Cannot set Metadata for Tag: 0xb75 
+03-14 14:16:02.997   601  1105 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1613 PublishMetadataTag() Invalid tag 2933 to publish
+03-14 14:16:02.997   601  1105 E CamX    : [ERROR][HAL    ] camxhal3metadatautil.cpp:669 UpdateMetadata() Cannot set Metadata for Tag: 0xc59 
+03-14 14:16:02.997   601  1105 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1613 PublishMetadataTag() Invalid tag 3161 to publish
+03-14 14:16:02.999   627   672 E ANDR-PERF-REQUEST: Failed to set timer
+03-14 14:16:03.005   601  1103 E CamX    : [ERROR][STATS_AFD] afd_process.cpp:1533: afd_process_algo_run stats=0xe7f6af18, bg_stats=0xe7f6b170, rowSumTime=0.000000
+03-14 14:16:03.017   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.050   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.064   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:03.084   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.097   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:03.117   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.151   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.185   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.219   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.253   601  1106 I chatty  : uid=1047(cameraserver) android.hardwar identical 1 line
+03-14 14:16:03.287   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.322   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.354   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.364   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:03.387   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.396   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:03.421   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.453   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.487   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.522   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.553   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.586   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.624   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.656   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.678   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:03.688   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.695   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:03.722   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.754   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.789   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.823   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.855   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.889   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.923   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.959   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.976   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:03.991   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:03.992   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:04.024   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.056   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.090   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.124   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.156   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.189   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.223   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.239   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:04.254  1113  1148 I zygote64: Explicit concurrent copying GC freed 6165(604KB) AllocSpace objects, 3(124KB) LOS objects, 42% free, 7MB/12MB, paused 290us total 105.706ms
+03-14 14:16:04.256   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.273   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:04.290   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.325   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.359   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.393   601  1102 I chatty  : uid=1047(cameraserver) android.hardwar identical 1 line
+03-14 14:16:04.424   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.457   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.495   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.524   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.536   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:04.558   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.572   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:04.592   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.626   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.725   601  1105 I chatty  : uid=1047(cameraserver) android.hardwar identical 3 lines
+03-14 14:16:04.760   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.792   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.801   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:04.824   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.834   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:04.859   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.892   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.925   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.959   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:04.994   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.028   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.063   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.093   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.099   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:05.127   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.132   601  1109 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:05.162   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.193   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.227   601  1105 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.261   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.294   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.327   601  1103 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.360  3322  3338 E CameraErrorCollector: Test failed for camera 0: Max deviation of the dynamic black level vs fixed black level exceed threshold. Dynamic black level results: [[49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 48.0, 48.0, 49.0], [49.0, 48.0, 48.0, 49.0], [48.0, 49.0, 49.0, 48.0], [49.0, 49.0, 49.0, 49.0]]: (expected = 16.0 was not greater than actual = 17.0) 
+03-14 14:16:05.364   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.394   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.427   601  1102 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.460   601  1106 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.496   601  1104 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:05.626   893  3279 I Camera3-Device: disconnect: E
+03-14 14:16:05.626   893  3279 I CameraLatencyHistogram: ProcessCaptureRequest latency histogram (79) samples:
+03-14 14:16:05.626   893  3279 I CameraLatencyHistogram:        40     80    120    160    200    240    280    320    360    inf (max ms)
+03-14 14:16:05.626   893  3279 I CameraLatencyHistogram:      98.73   0.00   0.00   0.00   1.27   0.00   0.00   0.00   0.00   0.00 (%)
+03-14 14:16:05.630   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:05.630   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:05.630   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:05.619   627   627 W vendor.qti.hard: type=1400 audit(0.0:415): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:05.631   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:05.619   627   627 W vendor.qti.hard: type=1400 audit(0.0:417): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:05.629   627   627 W vendor.qti.hard: type=1400 audit(0.0:418): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:05.732   893  3279 I CameraProviderManager: Camera device device@3.3/legacy/0 torch status is now AVAILABLE_OFF
+03-14 14:16:05.732   893  3279 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=1
+03-14 14:16:05.732   893  3279 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 0: No such file or directory (-2)
+03-14 14:16:05.734   893  3279 I CameraLatencyHistogram: Stream 0 dequeueBuffer latency histogram (79) samples:
+03-14 14:16:05.734   893  3279 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+03-14 14:16:05.734   893  3279 I CameraLatencyHistogram:      17.72   21.52   29.11   20.25   11.39   0.00   0.00   0.00   0.00   0.00 (%)
+03-14 14:16:05.735   893  3279 I Camera3-Device: disconnect: X
+03-14 14:16:05.735   893  3279 I Camera3-Device: disconnect: E
+03-14 14:16:05.741   893  3279 I CameraService: disconnect: Disconnected client for camera 0 for PID 3322
+03-14 14:16:05.742  3322  3336 W zygote64: Long monitor contention with owner Instr: android.support.test.runner.AndroidJUnitRunner (3338) at void android.hardware.camera2.impl.CameraDeviceImpl.close()(CameraDeviceImpl.java:1055) waiters=0 in void android.hardware.camera2.impl.CameraDeviceImpl$CameraDeviceCallbacks.onCaptureStarted(android.hardware.camera2.impl.CaptureResultExtras, long) for 369ms
+03-14 14:16:05.744  1113  3289 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 14:16:05.746  3322  3322 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@c3391a6 in: PAUSED
+03-14 14:16:05.750  1113  1124 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{d56bb3c com.android.launcher3} is now in focus and seems to be in full-screen mode
+03-14 14:16:05.750  1113  1124 E ActivityTrigger: activityResumeTrigger: not whiteListedcom.android.launcher3/com.android.launcher3.Launcher/27
+03-14 14:16:05.752   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:05.752   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:05.752   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:05.752   627   672 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:05.749   627   627 W vendor.qti.hard: type=1400 audit(0.0:419): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:05.764  3322  3338 I zygote64: Explicit concurrent copying GC freed 33394(1056KB) AllocSpace objects, 0(0B) LOS objects, 56% free, 1170KB/2MB, paused 80us total 14.968ms
+03-14 14:16:05.765   893  3279 I Camera2ClientBase: Closed Camera 0. Client was: android.camera.cts (PID 3322, UID 10084)
+03-14 14:16:05.774  3322  3338 I zygote64: Explicit concurrent copying GC freed 412(43KB) AllocSpace objects, 0(0B) LOS objects, 56% free, 1159KB/2MB, paused 50us total 8.254ms
+03-14 14:16:05.774  3322  3331 W MessageQueue: Handler (android.os.Handler) {5b5d0ea} sending message to a Handler on a dead thread
+03-14 14:16:05.774  3322  3331 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {5b5d0ea} sending message to a Handler on a dead thread
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:545)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:662)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:631)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:601)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.os.Handler.post(Handler.java:357)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.hardware.camera2.dispatch.HandlerDispatcher.dispatch(HandlerDispatcher.java:61)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.hardware.camera2.dispatch.MethodNameInvoker.invoke(MethodNameInvoker.java:90)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.hardware.camera2.impl.CallbackProxies$SessionStateCallbackProxy.onClosed(CallbackProxies.java:189)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.hardware.camera2.impl.CameraCaptureSessionImpl.close(CameraCaptureSessionImpl.java:404)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at android.hardware.camera2.impl.CameraCaptureSessionImpl.finalize(CameraCaptureSessionImpl.java:664)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+03-14 14:16:05.774  3322  3331 W MessageQueue: 	at java.lang.Thread.run(Thread.java:764)
+03-14 14:16:05.775  3322  3338 I TestRunner: failed: testDynamicBlackWhiteLevel(android.hardware.camera2.cts.CaptureRequestTest)
+03-14 14:16:05.775  3322  3338 I TestRunner: ----- begin exception -----
+03-14 14:16:05.776  3322  3338 I TestRunner: java.lang.Exception: Test failed for camera 0: Max deviation of the dynamic black level vs fixed black level exceed threshold. Dynamic black level results: [[49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 47.0, 48.0, 49.0], [49.0, 48.0, 48.0, 49.0], [49.0, 48.0, 48.0, 49.0], [48.0, 49.0, 49.0, 48.0], [49.0, 49.0, 49.0, 49.0]]: (expected = 16.0 was not greater than actual = 17.0) 
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.hardware.camera2.cts.testcases.Camera2SurfaceViewTestCase.tearDown(Camera2SurfaceViewTestCase.java:156)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.hardware.camera2.cts.CaptureRequestTest.tearDown(CaptureRequestTest.java:128)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at junit.framework.TestCase.runBare(TestCase.java:140)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at junit.framework.TestResult$1.protect(TestResult.java:115)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.internal.runner.junit3.AndroidTestResult.runProtected(AndroidTestResult.java:77)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at junit.framework.TestResult.run(TestResult.java:118)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.internal.runner.junit3.AndroidTestResult.run(AndroidTestResult.java:55)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at junit.framework.TestCase.run(TestCase.java:124)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.internal.runner.junit3.NonLeakyTestSuite$NonLeakyTest.run(NonLeakyTestSuite.java:63)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at junit.framework.TestSuite.run(TestSuite.java:238)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.internal.runner.junit3.DelegatingTestSuite.run(DelegatingTestSuite.java:103)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.internal.runner.junit3.AndroidTestSuite.run(AndroidTestSuite.java:73)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.internal.runner.junit3.JUnit38ClassRunner.run(JUnit38ClassRunner.java:119)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:126)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.ParentRunner.-wrap0(Unknown Source:0)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:369)
+03-14 14:16:05.776  3322  3338 I TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2082)
+03-14 14:16:05.776  3322  3338 I TestRunner: ----- end exception -----
+03-14 14:16:05.777  3322  3338 I TestRunner: finished: testDynamicBlackWhiteLevel(android.hardware.camera2.cts.CaptureRequestTest)
+03-14 14:16:05.805  1113  1124 I ActivityManager: Config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 560dpi nrml hdr port finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 1440, 2392) s.23}
+03-14 14:16:05.826  1113  1124 I ActivityManager: Override config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 560dpi nrml hdr port finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 1440, 2392) s.23} for displayId=0
+03-14 14:16:05.842  1113  1220 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:16:05.842  1113  1220 I InputReader: Device reconfigured: id=5, name='qbt1000_key_input', size 1440x2560, orientation 0, mode 4, display id 0
+03-14 14:16:05.842  1113  1220 I InputReader: Device reconfigured: id=6, name='hbtp_input', size 1440x2560, orientation 0, mode 1, display id 0
+03-14 14:16:05.850  3322  3322 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+03-14 14:16:05.852  3322  3338 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:16:05.902  3322  3338 I MonitoringInstr: Unstopped activity count: 1
+03-14 14:16:05.903  3322  3322 I Camera2SurfaceViewCtsActivity: Surface destroyed
+03-14 14:16:05.903  3322  3322 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@c3391a6 in: STOPPED
+03-14 14:16:05.903  3322  3322 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@c3391a6 in: DESTROYED
+03-14 14:16:05.904   644   700 E SurfaceFlinger: Failed to find layer (SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0) in layer parent (no-parent).
+03-14 14:16:05.905   644   857 E SurfaceFlinger: Failed to find layer (Background for - SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0) in layer parent (no-parent).
+03-14 14:16:05.953  3322  3338 I TestRunner: run finished: 1 tests, 1 failed, 0 ignored
+03-14 14:16:05.953  1292  1292 D StatusBar: disable<e i a s b h r c s q >
+03-14 14:16:05.954  3322  3338 I MonitoringInstr: waitForActivitiesToComplete() took: 0ms
+03-14 14:16:05.955  3322  3322 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 0
+03-14 14:16:05.955  1113  2395 I ActivityManager: Force stopping android.camera.cts appid=10084 user=0: finished inst
+03-14 14:16:05.955  1113  3291 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+03-14 14:16:05.955  1113  3291 W Binder  : java.lang.Throwable
+03-14 14:16:05.955  1113  3291 W Binder  : 	at android.os.BinderProxy.transact(Binder.java:752)
+03-14 14:16:05.955  1113  3291 W Binder  : 	at android.app.IInstrumentationWatcher$Stub$Proxy.instrumentationFinished(IInstrumentationWatcher.java:160)
+03-14 14:16:05.955  1113  3291 W Binder  : 	at com.android.server.am.InstrumentationReporter$MyThread.run(InstrumentationReporter.java:86)
+03-14 14:16:05.955  1113  2395 I ActivityManager: Killing 3322:android.camera.cts/u0a84 (adj 0): stop android.camera.cts
+03-14 14:16:05.957  3313  3313 D AndroidRuntime: Shutting down VM
+03-14 14:16:05.957  1113  1141 W zygote64: kill(-3322, 9) failed: No such process
+03-14 14:16:05.969  1292  1292 W StatusBar/NavBarView: *** Invalid layout in navigation bar (sizeChanged this=1440x168 cur=1384x168)
+03-14 14:16:05.979  1113  1198 I WindowManager: Screen frozen for +220ms due to Window{7bf4e1e u0 StatusBar}
+03-14 14:16:05.983  1292  1317 D KeyguardViewMediator: setKeyguardEnabled(true)
+03-14 14:16:05.988  1113  1148 W ActivityManager: setHasOverlayUi called on unknown pid: 3322
+03-14 14:16:06.001  1113  1141 W zygote64: kill(-3322, 9) failed: No such process
+03-14 14:16:06.001  1113  1141 I zygote64: Successfully killed process cgroup uid 10084 pid 3322 in 43ms
+03-14 14:16:06.390  1741  1847 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+03-14 14:16:06.479  1113  1259 E TaskPersister: File error accessing recents directory (directory doesn't exist?).

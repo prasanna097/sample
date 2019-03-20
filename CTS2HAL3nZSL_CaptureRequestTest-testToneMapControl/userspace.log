@@ -1,0 +1,361 @@
+--------- beginning of main
+03-14 14:16:53.055  3420  3420 E propClient: PropClient failed to load
+03-14 14:16:53.111  1099  1130 I zygote64: Explicit concurrent copying GC freed 6057(715KB) AllocSpace objects, 5(228KB) LOS objects, 42% free, 6MB/12MB, paused 231us total 100.129ms
+03-14 14:16:53.113  1099  1107 W WindowManager: cleaning up leaked reference: cts
+03-14 14:16:53.210  3422  3422 E propClient: PropClient failed to load
+03-14 14:16:53.212  3424  3424 E propClient: PropClient failed to load
+03-14 14:16:53.224  3422  3422 E propClient: PropClient failed to load
+03-14 14:16:53.226  3424  3424 E propClient: PropClient failed to load
+--------- beginning of system
+03-14 14:16:53.955  1099  1251 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+03-14 14:16:55.213  3427  3427 E propClient: PropClient failed to load
+03-14 14:16:55.226  3429  3429 E propClient: PropClient failed to load
+03-14 14:16:55.378  3429  3429 E propClient: PropClient failed to load
+03-14 14:16:55.394  3429  3429 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+03-14 14:16:55.462  3429  3429 I app_process: The ClassLoaderContext is a special shared library.
+03-14 14:16:55.483  3429  3429 E System  : Unable to open boot classpath entry: /system/framework/ims-common.jar
+03-14 14:16:55.484  3429  3429 E System  : java.io.FileNotFoundException: File doesn't exist: /system/framework/ims-common.jar
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.zip.ZipFile.<init>(ZipFile.java:212)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.zip.ZipFile.<init>(ZipFile.java:149)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.jar.JarFile.<init>(JarFile.java:160)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.jar.JarFile.<init>(JarFile.java:97)
+03-14 14:16:55.484  3429  3429 E System  : 	at libcore.io.ClassPathURLStreamHandler.<init>(ClassPathURLStreamHandler.java:47)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.lang.VMClassLoader.createBootClassPathUrlHandlers(VMClassLoader.java:49)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.lang.VMClassLoader.<clinit>(VMClassLoader.java:32)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.lang.BootClassLoader.findResource(ClassLoader.java:1360)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.lang.BootClassLoader.getResource(ClassLoader.java:1406)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.lang.ClassLoader.getResourceAsStream(ClassLoader.java:987)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.lang.Class.getResourceAsStream(Class.java:2211)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager.readConfiguration(LogManager.java:1297)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager$3.run(LogManager.java:390)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager$3.run(LogManager.java:388)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.security.AccessController.doPrivileged(AccessController.java:69)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager.readPrimordialConfiguration(LogManager.java:387)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager.-wrap5(Unknown Source:0)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager$2.run(LogManager.java:336)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.security.AccessController.doPrivileged(AccessController.java:43)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager.ensureLogManagerInitialized(LogManager.java:329)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.LogManager.getLogManager(LogManager.java:369)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.Logger.demandLogger(Logger.java:449)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.logging.Logger.getLogger(Logger.java:505)
+03-14 14:16:55.484  3429  3429 E System  : 	at android.icu.util.TimeZone.<clinit>(TimeZone.java:95)
+03-14 14:16:55.484  3429  3429 E System  : 	at java.util.TimeZone.setDefault(TimeZone.java:746)
+03-14 14:16:55.484  3429  3429 E System  : 	at com.android.internal.os.RuntimeInit.commonInit(RuntimeInit.java:155)
+03-14 14:16:55.484  3429  3429 E System  : 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:279)
+03-14 14:16:55.486  3429  3429 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+03-14 14:16:55.490  1099  2755 I ActivityManager: Force stopping android.camera.cts appid=10084 user=0: start instr
+03-14 14:16:55.499  3438  3438 W main    : type=1400 audit(0.0:443): avc: denied { create } for name="cgroup.procs" scontext=u:r:zygote:s0 tcontext=u:object_r:cgroup:s0 tclass=file permissive=0
+03-14 14:16:55.508  1099  2755 I ActivityManager: Start proc 3438:android.camera.cts/u0a84 for added application android.camera.cts
+03-14 14:16:55.522  1099  2755 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:16:55.522  1099  2755 D CompatibilityInfo: applicationDensity - 560
+03-14 14:16:55.522  1099  2755 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:16:55.534  3438  3438 I zygote64: The ClassLoaderContext is a special shared library.
+03-14 14:16:55.536  3438  3438 I zygote64: The ClassLoaderContext is a special shared library.
+03-14 14:16:55.556  3438  3438 I MonitoringInstr: Instrumentation started on process android.camera.cts
+03-14 14:16:55.557  3438  3438 I MonitoringInstr: Setting context classloader to 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]', Original: 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]'
+03-14 14:16:55.559  3438  3438 I MonitoringInstr: No JSBridge.
+03-14 14:16:55.560  3438  3454 I MonitoringInstr: Setting context classloader to 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]', Original: 'dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.runner.jar", zip file "/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk"],nativeLibraryDirectories=[/data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/lib/arm64, /data/app/android.camera.cts-gjxT__CVCMJjf9bkjMhf6w==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]]'
+03-14 14:16:55.565  3438  3454 D InfraTrack: Tracking disabled due to lack of internet permissions
+03-14 14:16:55.565  3438  3454 I UsageTrackerFacilitator: Usage tracking disabled
+03-14 14:16:55.582  3438  3454 D TestExecutor: Adding listener android.support.test.internal.runner.listener.LogRunListener
+03-14 14:16:55.582  3438  3454 D TestExecutor: Adding listener android.support.test.internal.runner.listener.InstrumentationResultPrinter
+03-14 14:16:55.582  3438  3454 D TestExecutor: Adding listener android.support.test.internal.runner.listener.ActivityFinisherRunListener
+03-14 14:16:55.582  3438  3454 D TestExecutor: Adding listener com.android.cts.runner.CtsTestRunListener
+03-14 14:16:55.591  3438  3454 I TestRunner: run started: 1 tests
+03-14 14:16:55.593  3438  3454 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 14:16:55.595  3438  3454 I CtsTestRunListener: Disabling keyguard
+03-14 14:16:55.596  1290  1310 D KeyguardViewMediator: setKeyguardEnabled(false)
+03-14 14:16:55.597  3438  3454 I TestRunner: started: testToneMapControl(android.hardware.camera2.cts.CaptureRequestTest)
+03-14 14:16:55.600  3438  3438 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 0
+03-14 14:16:55.600  3438  3454 D CtsTestRunListener: Total memory  : 2469592
+03-14 14:16:55.600  3438  3454 D CtsTestRunListener: Used memory   : 2144760
+03-14 14:16:55.600  3438  3454 D CtsTestRunListener: Free memory   : 324832
+03-14 14:16:55.600  3438  3454 D CtsTestRunListener: java.io.tmpdir is:/data/user/0/android.camera.cts/cache
+03-14 14:16:55.600  3438  3454 D CtsTestRunListener: About to .exec df
+03-14 14:16:55.602  3438  3454 D CtsTestRunListener: .exec returned
+03-14 14:16:55.603  3438  3454 D CtsTestRunListener: Stream reader created
+03-14 14:16:55.614  3456  3456 E propClient: PropClient failed to load
+03-14 14:16:55.609  3456  3456 W df      : type=1400 audit(0.0:444): avc: denied { getattr } for path="/persist" dev="mmcblk0p50" ino=2 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=0
+03-14 14:16:55.609  3456  3456 W df      : type=1400 audit(0.0:445): avc: denied { getattr } for path="/dev/block" dev="tmpfs" ino=2877 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:block_device:s0 tclass=dir permissive=0
+03-14 14:16:55.609  3456  3456 W df      : type=1400 audit(0.0:446): avc: denied { getattr } for path="/dev/block" dev="tmpfs" ino=2877 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:block_device:s0 tclass=dir permissive=0
+03-14 14:16:55.617  3438  3454 D CtsTestRunListener: Filesystem                             1K-blocks   Used Available Use% Mounted on
+03-14 14:16:55.617  3438  3454 D CtsTestRunListener: /dev/block/bootdevice/by-name/userdata   5078656 873532   4188740  18% /data
+03-14 14:16:55.618  3438  3454 D CtsTestRunListener: In finally
+03-14 14:16:55.618  3438  3454 D CtsTestRunListener: Now executing : android.hardware.camera2.cts.CaptureRequestTest
+03-14 14:16:55.621  3438  3458 D MonitoringInstr: execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle
+03-14 14:16:55.622  1099  2712 I ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x14000000 cmp=android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity} from uid 10084
+03-14 14:16:55.619   614   614 W vendor.qti.hard: type=1400 audit(0.0:447): avc: denied { read } for name="enable" dev="sysfs" ino=49977 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.627   614   651 E ANDR-PERF-UTIL: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+03-14 14:16:55.627   614   651 E ANDR-PERF-OPTSHANDLER: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+03-14 14:16:55.627   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [11, 4]
+03-14 14:16:55.619   614   614 W vendor.qti.hard: type=1400 audit(0.0:448): avc: denied { read } for name="force_rail_on" dev="sysfs" ino=43852 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.619   614   614 W vendor.qti.hard: type=1400 audit(0.0:449): avc: denied { read } for name="force_clk_on" dev="sysfs" ino=43850 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.628   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.628   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.628  1099  2712 E ANDR-PERF-JNI: Iop tryGetService failed
+03-14 14:16:55.619   614   614 W vendor.qti.hard: type=1400 audit(0.0:452): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.619   614   614 W vendor.qti.hard: type=1400 audit(0.0:453): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.619   614   614 W vendor.qti.hard: type=1400 audit(0.0:454): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.629   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:55.629   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:55.629   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.629   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.619   614   614 W vendor.qti.hard: type=1400 audit(0.0:456): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.632  1099  2712 D ActivityTrigger: activityStartTrigger: Activity is Triggerred in full screen ApplicationInfo{f05e4ce android.camera.cts}
+03-14 14:16:55.633  1099  2712 E ActivityTrigger: activityStartTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:16:55.633  1099  2712 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:16:55.633  1099  2712 D CompatibilityInfo: applicationDensity - 560
+03-14 14:16:55.633  1099  2712 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:16:55.633  1099  2712 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{f05e4ce android.camera.cts} is now in focus and seems to be in full-screen mode
+03-14 14:16:55.633  1099  2712 E ActivityTrigger: activityResumeTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:16:55.633  1099  2712 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 14:16:55.629   614   614 W vendor.qti.hard: type=1400 audit(0.0:460): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.629   614   614 W vendor.qti.hard: type=1400 audit(0.0:461): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.629   614   614 W vendor.qti.hard: type=1400 audit(0.0:462): avc: denied { write } for name="cpu_min_freq" dev="sysfs" ino=32432 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.636  1099  2755 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{f05e4ce android.camera.cts} is now in focus and seems to be in full-screen mode
+03-14 14:16:55.636  1099  2755 E ActivityTrigger: activityResumeTrigger: not whiteListedandroid.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity/26
+03-14 14:16:55.637   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:55.637   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:55.637   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.691  1099  2755 I ActivityManager: Config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 560dpi nrml hdr land finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 2392, 1440) s.22}
+03-14 14:16:55.722  1099  2755 I ActivityManager: Override config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w683dp h387dp 560dpi nrml hdr land finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 2392, 1440) s.22} for displayId=0
+03-14 14:16:55.637   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.729  1099  2755 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 14:16:55.729  1099  2755 D CompatibilityInfo: applicationDensity - 560
+03-14 14:16:55.729  1099  2755 D CompatibilityInfo: applicationScale - 1.0
+03-14 14:16:55.735  1099  1216 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:16:55.735  1099  1216 I InputReader: Device reconfigured: id=3, name='qbt1000_key_input', size 1440x2560, orientation 0, mode 4, display id 0
+03-14 14:16:55.735  1099  1216 I InputReader: Device reconfigured: id=6, name='hbtp_input', size 1440x2560, orientation 1, mode 1, display id 0
+03-14 14:16:55.753  3438  3438 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@59a24c in: PRE_ON_CREATE
+03-14 14:16:55.776  3438  3438 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@59a24c in: CREATED
+03-14 14:16:55.776  3438  3438 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@59a24c in: STARTED
+03-14 14:16:55.778  3438  3438 D LifecycleMonitor: Lifecycle status change: android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity@59a24c in: RESUMED
+03-14 14:16:55.785  3438  3464 D OpenGLRenderer: HWUI GL Pipeline
+03-14 14:16:55.801  3438  3464 I Adreno  : QUALCOMM build                   : 6c319c5, I3912dda768
+03-14 14:16:55.801  3438  3464 I Adreno  : Build Date                       : 03/14/19
+03-14 14:16:55.801  3438  3464 I Adreno  : OpenGL ES Shader Compiler Version: EV031.26.02.00
+03-14 14:16:55.801  3438  3464 I Adreno  : Local Branch                     : 
+03-14 14:16:55.801  3438  3464 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.6.8.1.R2.08.01.00.513.017
+03-14 14:16:55.801  3438  3464 I Adreno  : Remote Branch                    : NONE
+03-14 14:16:55.801  3438  3464 I Adreno  : Reconstruct Branch               : NOTHING
+03-14 14:16:55.801  3438  3464 I Adreno  : Build Config                     : S L 3.9.10 AArch64
+03-14 14:16:55.806  3438  3464 I Adreno  : PFP: 0x016ee181, ME: 0x00000000
+03-14 14:16:55.811  3438  3464 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+03-14 14:16:55.811  3438  3464 I OpenGLRenderer: Initialized EGL, version 1.4
+03-14 14:16:55.811  3438  3464 D OpenGLRenderer: Swap behavior 2
+03-14 14:16:55.812  3438  3438 I Camera2SurfaceViewCtsActivity: Surface created
+03-14 14:16:55.812  3438  3438 I Camera2SurfaceViewCtsActivity: Surface Changed to: 1120x840
+03-14 14:16:55.844  1099  1130 I ActivityManager: Displayed android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity: +205ms
+03-14 14:16:55.845   510   510 W /system/bin/hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.iop@2.0::IIop/default in either framework or device manifest.
+03-14 14:16:55.845  1099  1130 E ANDR-PERF-JNI: Iop tryGetService failed
+03-14 14:16:55.846  3438  3454 I CameraManagerGlobal: Connecting to camera service
+03-14 14:16:55.848  1099  2755 D ActivityTrigger: ActivityTrigger activityStopTrigger 
+03-14 14:16:55.853  3438  3454 E libc    : Access denied finding property "persist.camera.privapp.list"
+03-14 14:16:55.849  3438  3438 W roidJUnitRunner: type=1400 audit(0.0:464): avc: denied { read } for name="u:object_r:camera_prop:s0" dev="tmpfs" ino=13496 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+03-14 14:16:55.854   889   889 I CameraService: CameraService::connect call (PID -1 "android.camera.cts", camera ID 0) for HAL version default and Camera API version 2
+03-14 14:16:55.855   889   889 I Camera2ClientBase: Camera 0: Opened. Client: android.camera.cts (PID 3438, UID 10084)
+03-14 14:16:55.855   889   889 I CameraDeviceClient: CameraDeviceClient 0: Opened
+03-14 14:16:55.857   889   889 I CameraProviderManager: Camera device device@3.3/legacy/0 torch status is now NOT_AVAILABLE
+03-14 14:16:55.857   889   889 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=0
+03-14 14:16:55.857   889   889 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 0: No such file or directory (-2)
+03-14 14:16:55.858   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:55.858   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.858   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 1]
+03-14 14:16:55.858   614   651 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [2, 0]
+03-14 14:16:55.849   614   614 W vendor.qti.hard: type=1400 audit(0.0:465): avc: denied { write } for name="cpu_max_freq" dev="sysfs" ino=32431 scontext=u:r:hal_perf_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+03-14 14:16:55.885  1290  1290 D StatusBar: disable<e i a s b h r c s q >
+03-14 14:16:55.899  1290  1290 W StatusBar/NavBarView: *** Invalid layout in navigation bar (sizeChanged this=168x1440 cur=168x1384)
+03-14 14:16:55.906  3438  3438 I Camera2SurfaceViewCtsActivity: Surface Changed to: 1920x1080
+03-14 14:16:55.909  1099  1192 I WindowManager: Screen frozen for +271ms due to Window{2e369c0 u0 StatusBar}
+03-14 14:16:55.912   889   889 W CameraDeviceClient: createSurfaceFromGbp: Camera 0 with consumer usage flag: 2304: Forcing asynchronous mode for stream
+03-14 14:16:55.914   889   889 W CameraDeviceClient: createSurfaceFromGbp: Camera 0: Overriding format 0x4 to IMPLEMENTATION_DEFINED
+03-14 14:16:55.918   587  2749 E CamX    : [ERROR][PPROC  ] camxipenode.cpp:3476 GetEISMargin() No margin for stabilization type 8
+03-14 14:16:55.919   587  2749 E CHIUSECASE: chxadvancedcamerausecase.cpp:2213 PipelineCreated() MULTIFRAME AdvancedCameraUsecase pipelineId: 0
+03-14 14:16:55.921   587  2749 E CamX    : [ERROR][PPROC  ] camxipenode.cpp:3476 GetEISMargin() No margin for stabilization type 8
+03-14 14:16:55.929   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1522 SetMetadataByTag() Invalid slot; cannot set metadata tag 800b0004
+03-14 14:16:55.929   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1677 PublishMetadataList() Invalid slot, cannot publish metadata list
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][STATS_AF] camxcaecstatsprocessor.cpp:3119 ReadTuningModeParameter() PropertyIDUsecaseChiTuningModeParameter is not published!
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.934   587  2749 E CamX    : [ERROR][STATS_AEC] caeccoredatamanager.cpp:1518: getFrameHistory No start configuration is recorded in the history! 
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1522 SetMetadataByTag() Invalid slot; cannot set metadata tag 800d0005
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1677 PublishMetadataList() Invalid slot, cannot publish metadata list
+03-14 14:16:55.935   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.936   587  2749 D CamX    : [DEBUG][STATS_AWB] camxcawbstatsprocessor.cpp:708 SetOperationModetoAlgo() Mode set to Algo: 1
+03-14 14:16:55.936   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.939   587  2749 E CamX    : [ERROR][HAL    ] camxsession.cpp:3329 GetIntraRealtimePipelineId() Less than two realtime pipelines, no intra result
+03-14 14:16:55.939   587  2749 E CamX    : [ERROR][STATS_AF] camxcafioutil.cpp:326 ReadTuningModeParameter() PropertyIDUsecaseChiTuningModeParameter is not published!
+03-14 14:16:55.940   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:55.942   587  2749 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:55.946   587  2749 I chatty  : uid=1047(cameraserver) HwBinder:587_3 identical 1 line
+03-14 14:16:55.946   587  2749 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:55.946   587  2749 E CamX    : [ERROR][ISP    ] camxiferoundclamp11.cpp:448 RunCalculation() Bad bitWidth 0, defaulting to 8 bits
+03-14 14:16:55.946   587  2749 E CamX    : [ERROR][ISP    ] camxiferoundclamp11.cpp:448 RunCalculation() Bad bitWidth 0, defaulting to 8 bits
+03-14 14:16:56.456   587  1114 E CamX    : [ERROR][SENSOR ] camxirled.cpp:264 Initialize() IRLED CSLAquire failed 4
+03-14 14:16:56.456   587  1114 E CamX    : [ERROR][SENSOR ] camxsensornode.cpp:3002 CreateIRLEDResources() IRLED resources initialization failed
+03-14 14:16:56.456   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:56.456   587  2749 E CamX    : [ERROR][HAL    ] camxmetadatapool.cpp:1369 GetMetadataByTag() Invalid Slot to get a metadata from
+03-14 14:16:56.459   889   889 D Camera3-Device: Set real time priority for request queue thread (tid 3470)
+03-14 14:16:56.460  3438  3467 W zygote64: Long monitor contention with owner Instr: android.support.test.runner.AndroidJUnitRunner (3454) at void android.hardware.camera2.ICameraDeviceUser$Stub$Proxy.beginConfigure()(ICameraDeviceUser.java:385) waiters=0 in void android.hardware.camera2.impl.CameraDeviceImpl$4.run() for 549ms
+03-14 14:16:56.465   587  2749 E CHIUSECASE: chxutils.cpp:1075 FillCameraId() FillCameraId 0 
+03-14 14:16:56.465   587  2749 E CHIUSECASE: chxextensionmodule.cpp:1811 GetNumPCRsBeforeStreamOn() pGetMetaData failed result 1
+03-14 14:16:56.481   587  1112 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :1 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.483   587  1115 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.483   587  1112 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+03-14 14:16:56.484   587  1115 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.484   587  1115 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.485   587  1112 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :2 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.489   587  1112 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.490   587  1113 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+--------- beginning of crash
+03-14 14:16:56.490   587  1115 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 1115 (android.hardwar), pid 587 (provider@2.4-se)
+03-14 14:16:56.491   587  1113 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :3 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.510   587  1114 E CamX    : [ERROR][STATS_AEC] camxcaecstatsprocessor.cpp:1765 SetAlgoBayerHistValue() Unsupported bayer hist channel!
+03-14 14:16:56.510   587  1114 E CamX    : [ERROR][STATS_AEC] caeccoredatamanager.cpp:1518: getFrameHistory No start configuration is recorded in the history! 
+03-14 14:16:56.510   587  1114 D CamX    : [DEBUG][STATS  ] camxcawbstatsprocessor.cpp:600 IsValidAlgoOutput() gains from algo for ReqId :4 Red  = 2.050083, green  = 1.000000, blue  = 1.786826
+03-14 14:16:56.512   587  1114 E CamX    : [ERROR][ISP    ] camxifelsc34.cpp:235 TranslateCalibrationTableToCommonLibrary() Invalid index for EEPROM data
+03-14 14:16:56.525  3474  3474 E propClient: PropClient failed to load
+03-14 14:16:56.536  3475  3475 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+03-14 14:16:56.537   961   961 I /system/bin/tombstoned: received crash request for pid 587
+03-14 14:16:56.539  3475  3475 I crash_dump32: performing dump of process 587 (target tid = 1115)
+03-14 14:16:56.539  3475  3475 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+03-14 14:16:56.539  3475  3475 F DEBUG   : Build fingerprint: 'Android/qcs605h/qcs605h:8.1.0/OPM1.171019.026/lnxbui03140519:userdebug/test-keys'
+03-14 14:16:56.539  3475  3475 F DEBUG   : Revision: '0'
+03-14 14:16:56.539  3475  3475 F DEBUG   : ABI: 'arm'
+03-14 14:16:56.539  3475  3475 F DEBUG   : pid: 587, tid: 1115, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.camera.provider@2.4-service <<<
+03-14 14:16:56.539  3475  3475 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+03-14 14:16:56.539  3475  3475 F DEBUG   : Cause: null pointer dereference
+03-14 14:16:56.539  3475  3475 F DEBUG   :     r0 e58df18c  r1 00000000  r2 00000bd8  r3 00000000
+03-14 14:16:56.539  3475  3475 F DEBUG   :     r4 00000002  r5 00000002  r6 e6d7e223  r7 e6de9aa0
+03-14 14:16:56.540  3475  3475 F DEBUG   :     r8 00002bc4  r9 e6d8204a  sl e6d5bfea  fp e6d82257
+03-14 14:16:56.540  3475  3475 F DEBUG   :     ip e88a65d0  sp e5518c34  lr e6b92d61  pc e882f1ce  cpsr 20000030
+03-14 14:16:56.581  3475  3475 F DEBUG   : 
+03-14 14:16:56.581  3475  3475 F DEBUG   : backtrace:
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #00 pc 000191ce  /system/lib/libc.so (__memcpy_base_aligned+61)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #01 pc 000d7d5d  /vendor/lib/hw/camera.qcom.so (CamX::IPEGamma15::UpdateIPEInternalData(CamX::ISPInputData const*) const+836)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #02 pc 000dac49  /vendor/lib/hw/camera.qcom.so (CamX::IPEGamma15::Execute(CamX::ISPInputData*)+164)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #03 pc 000ab959  /vendor/lib/hw/camera.qcom.so (CamX::IPENode::ProgramIQConfig(CamX::ISPInputData*)+400)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #04 pc 000a90d5  /vendor/lib/hw/camera.qcom.so (CamX::IPENode::ExecuteProcessRequest(CamX::ExecuteProcessRequestData*)+4148)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #05 pc 0021508f  /vendor/lib/hw/camera.qcom.so (CamX::Node::ProcessRequest(CamX::NodeProcessRequestData*, unsigned long long)+3534)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #06 pc 0023b0e9  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerCore(CamX::Dependency*)+296)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #07 pc 0023ae53  /vendor/lib/hw/camera.qcom.so (CamX::DeferredRequestQueue::DeferredWorkerWrapper(void*)+26)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #08 pc 00199019  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::ProcessJobQueue()+164)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #09 pc 001987e5  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::DoWork()+156)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #10 pc 00198741  /vendor/lib/hw/camera.qcom.so (CamX::ThreadCore::WorkerThreadBody(void*)+4)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #11 pc 0004827b  /system/lib/libc.so (__pthread_start(void*)+22)
+03-14 14:16:56.581  3475  3475 F DEBUG   :     #12 pc 0001b57f  /system/lib/libc.so (__start_thread+32)
+03-14 14:16:56.652  1099  1307 W NativeCrashListener: Couldn't find ProcessRecord for pid 587
+03-14 14:16:56.653   961   961 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_00
+03-14 14:16:56.656  1099  1127 I BootReceiver: Copying /data/tombstones/tombstone_00 to DropBox (SYSTEM_TOMBSTONE)
+03-14 14:16:56.711   889  1079 I CameraProviderManager: Camera provider 'legacy/0' has died; removing it
+03-14 14:16:56.711   889  3470 E Camera3-Device: processBatchCaptureRequests: Transaction error: Status(EX_TRANSACTION_FAILED): 'DEAD_OBJECT: '
+03-14 14:16:56.711   889  1079 I CameraService: onDeviceStatusChanged: Status changed for cameraId=0, newStatus=0
+03-14 14:16:56.711   510   510 E hw-IPCThreadState: attemptIncStrongHandle(49): Not supported
+03-14 14:16:56.711   510   510 E hw-IPCThreadState: attemptIncStrongHandle(49): Not supported
+03-14 14:16:56.711   889  3470 E Camera3-Device: Camera 0: sendRequestsBatch: RequestThread: Unable to submit capture request 7 to HAL device: Broken pipe (-32)
+03-14 14:16:56.711   510   510 E hw-IPCThreadState: attemptIncStrongHandle(49): Not supported
+03-14 14:16:56.712   510   510 I chatty  : uid=1000(system) hwservicemanage identical 28 lines
+03-14 14:16:56.712   510   510 E hw-IPCThreadState: attemptIncStrongHandle(49): Not supported
+03-14 14:16:56.713   889  1079 I CameraService: onDeviceStatusChanged: Client for camera ID 0 evicted due to device status change from HAL
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: Session 0: Exception while stopping repeating: 
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: android.hardware.camera2.CameraAccessException: CAMERA_ERROR (3): The camera device has encountered a serious error
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraDeviceImpl.checkIfCameraClosedOrInError(CameraDeviceImpl.java:2227)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraDeviceImpl.stopRepeating(CameraDeviceImpl.java:997)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraCaptureSessionImpl.close(CameraCaptureSessionImpl.java:395)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraCaptureSessionImpl$2.onDisconnected(CameraCaptureSessionImpl.java:575)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraDeviceImpl$7.run(CameraDeviceImpl.java:237)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.os.Handler.handleCallback(Handler.java:790)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.os.Looper.loop(Looper.java:164)
+03-14 14:16:56.714  3438  3467 E CameraCaptureSession: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: FATAL EXCEPTION: SurfaceViewTestCase
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: Process: android.camera.cts, PID: 3438
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: java.lang.AssertionError: Expected null, but got android.hardware.camera2.impl.CameraDeviceImpl@b39fb0a
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at com.android.ex.camera2.blocking.BlockingCameraManager.assertEquals(BlockingCameraManager.java:159)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at com.android.ex.camera2.blocking.BlockingCameraManager.-wrap0(Unknown Source:0)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at com.android.ex.camera2.blocking.BlockingCameraManager$OpenListener.assertInitialState(BlockingCameraManager.java:200)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at com.android.ex.camera2.blocking.BlockingCameraManager$OpenListener.onDisconnected(BlockingCameraManager.java:236)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at android.hardware.camera2.impl.CameraDeviceImpl$7.run(CameraDeviceImpl.java:239)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:790)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+03-14 14:16:56.715  3438  3467 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+03-14 14:16:56.720  3438  3467 I Process : Sending signal. PID: 3438 SIG: 9
+03-14 14:16:56.751  1099  1215 W InputDispatcher: channel 'ed981cf android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+03-14 14:16:56.751  1099  1215 E InputDispatcher: channel 'ed981cf android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+03-14 14:16:56.752  1290  1580 D KeyguardViewMediator: setKeyguardEnabled(true)
+03-14 14:16:56.754  1099  2274 I WindowManager: WIN DEATH: Window{ed981cf u0 android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity}
+03-14 14:16:56.754  1099  2274 W InputDispatcher: Attempted to unregister already unregistered input channel 'ed981cf android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity (server)'
+03-14 14:16:56.755  1099  1111 I ActivityManager: Process android.camera.cts (pid 3438) has died: fore TOP 
+03-14 14:16:56.756  1099  1111 W ActivityManager: Force removing ActivityRecord{54471d0 u0 android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity t32}: app died, no saved state
+03-14 14:16:56.758   639   699 E SurfaceFlinger: removeLayer called with a layer whose parent has been removed
+03-14 14:16:56.760  1099  1111 W ActivityManager: Crash of app android.camera.cts running instrumentation ComponentInfo{android.camera.cts/android.support.test.runner.AndroidJUnitRunner}
+03-14 14:16:56.758   639   699 E SurfaceFlinger: removeLayer called with a layer whose parent has been removed
+03-14 14:16:56.760  1099  1125 W zygote64: kill(-3438, 9) failed: No such process
+03-14 14:16:56.760  1099  1125 I zygote64: Successfully killed process cgroup uid 10084 pid 3438 in 4ms
+03-14 14:16:56.760  1099  1111 I ActivityManager: Force stopping android.camera.cts appid=10084 user=0: finished inst
+03-14 14:16:56.760  1099  3407 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+03-14 14:16:56.760  1099  3407 W Binder  : java.lang.Throwable
+03-14 14:16:56.760  1099  3407 W Binder  : 	at android.os.BinderProxy.transact(Binder.java:752)
+03-14 14:16:56.760  1099  3407 W Binder  : 	at android.app.IInstrumentationWatcher$Stub$Proxy.instrumentationFinished(IInstrumentationWatcher.java:160)
+03-14 14:16:56.760  1099  3407 W Binder  : 	at com.android.server.am.InstrumentationReporter$MyThread.run(InstrumentationReporter.java:86)
+03-14 14:16:56.762  3429  3429 D AndroidRuntime: Shutting down VM
+03-14 14:16:56.763  1099  1111 D ActivityTrigger: activityResumeTrigger: The activity in ApplicationInfo{14004e1 com.android.launcher3} is now in focus and seems to be in full-screen mode
+03-14 14:16:56.763  1099  1111 E ActivityTrigger: activityResumeTrigger: not whiteListedcom.android.launcher3/com.android.launcher3.Launcher/27
+03-14 14:16:56.769  3481  3481 E propClient: PropClient failed to load
+03-14 14:16:56.772  3481  3481 I android.hardware.camera.provider@2.4-service: Camera provider Service is starting.
+03-14 14:16:56.775  3481  3481 D vndksupport: Loading /vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so from current namespace instead of sphal namespace.
+03-14 14:16:56.783  1099  1111 I ActivityManager: Config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 560dpi nrml hdr port finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 1440, 2392) s.23}
+03-14 14:16:56.791  3481  3481 D vndksupport: Loading /vendor/lib/hw/camera.qcom.so from current namespace instead of sphal namespace.
+03-14 14:16:56.794   889  3470 W CallStack: update: Failed to unwind callstack.
+03-14 14:16:56.794   889  3470 E ProcessCallStack: getThreadName: Failed to open /proc/self/task/3471/comm
+03-14 14:16:56.794   889  3470 D CameraTraces: Process trace saved. Use dumpsys media.camera to view.
+03-14 14:16:56.795   889  3470 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.795   889  1079 E Camera3-Device: Camera 0: clearStreamingRequest: Device has encountered a serious error
+03-14 14:16:56.795   889  1079 I Camera3-Device: disconnect: E
+03-14 14:16:56.795   889  1079 E Camera3-Device: Camera 0: disconnect: Shutting down in an error state
+03-14 14:16:56.795   889  1079 I CameraLatencyHistogram: ProcessCaptureRequest latency histogram (7) samples:
+03-14 14:16:56.795   889  1079 I CameraLatencyHistogram:        40     80    120    160    200    240    280    320    360    inf (max ms)
+03-14 14:16:56.795   889  1079 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+03-14 14:16:56.795   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.795   889  1079 E Camera3-Stream: returnBuffer: Stream 0: Returning an unknown buffer.
+03-14 14:16:56.795   889  1079 E Camera3-Device: Can't return buffer to its stream: Invalid argument (-22)
+03-14 14:16:56.795   889  1079 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.795   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.795   889  1079 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.795   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.796   889  1079 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.796   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.796   889  1079 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.796   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.796   889  1079 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.796   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.796   889  1079 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.796   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.796   889  1079 W Camera3-OutputStream: returnBufferCheckedLocked: A frame is dropped for stream 0 due to buffer error.
+03-14 14:16:56.796   639   699 E BufferQueueProducer: [SurfaceView - android.camera.cts/android.hardware.camera2.cts.Camera2SurfaceViewCtsActivity#0] cancelBuffer: BufferQueue has been abandoned
+03-14 14:16:56.797   889  1079 I CameraLatencyHistogram: Stream 0 dequeueBuffer latency histogram (8) samples:
+03-14 14:16:56.797   889  1079 I CameraLatencyHistogram:         5     10     15     20     25     30     35     40     45    inf (max ms)
+03-14 14:16:56.797   889  1079 I CameraLatencyHistogram:      100.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+03-14 14:16:56.797   889  1079 I Camera3-Device: disconnect: X
+03-14 14:16:56.797   889  1079 I Camera3-Device: disconnect: E
+03-14 14:16:56.799   889  1079 I CameraService: disconnect: Disconnected client for camera 0 for PID 3438
+03-14 14:16:56.799   889  1079 I Camera2ClientBase: Closed Camera 0. Client was: android.camera.cts (PID 3438, UID 10084)
+03-14 14:16:56.810  1099  1111 I ActivityManager: Override config changes=480 {1.0 ?mcc?mnc [en_US] ldltr sw411dp w411dp h659dp 560dpi nrml hdr port finger -keyb/v/h -nav/h appBounds=Rect(0, 0 - 1440, 2392) s.23} for displayId=0
+03-14 14:16:56.823  1099  1130 W ActivityManager: setHasOverlayUi called on unknown pid: 3438
+03-14 14:16:56.824  1099  1123 W ActivityManager: Error shutting down UiAutomationConnection
+03-14 14:16:56.828  3481  3481 D CamX    : [DEBUG][HAL    ] camxhal3module.cpp:374 HAL3Module() ***************************************************
+03-14 14:16:56.828  3481  3481 D CamX    : [DEBUG][HAL    ] camxhal3module.cpp:375 HAL3Module() SHA1:     a633212b92160c35b6dfca3fa182883bd2fa1fd0
+03-14 14:16:56.828  3481  3481 D CamX    : [DEBUG][HAL    ] camxhal3module.cpp:376 HAL3Module() COMMITID: Ic8df351b7d8d14bfd205bcf03a67229c0ba3f152
+03-14 14:16:56.828  3481  3481 D CamX    : [DEBUG][HAL    ] camxhal3module.cpp:377 HAL3Module() BUILD TS: 3/14/2019 5:13:14
+03-14 14:16:56.828  3481  3481 D CamX    : [DEBUG][HAL    ] camxhal3module.cpp:378 HAL3Module() ***************************************************
+03-14 14:16:56.830  1099  1216 I InputReader: Reconfiguring input devices.  changes=0x00000004
+03-14 14:16:56.830  1099  1216 I InputReader: Device reconfigured: id=3, name='qbt1000_key_input', size 1440x2560, orientation 0, mode 4, display id 0
+03-14 14:16:56.830  1099  1216 I InputReader: Device reconfigured: id=6, name='hbtp_input', size 1440x2560, orientation 0, mode 1, display id 0
+03-14 14:16:56.859  3481  3481 E CamX    : [ERROR][CSL    ] camxcslhwinternal.cpp:2772 CSLHwInternalFDIoctl() Ioctl failed for FD:8 with error reason Invalid argument
+03-14 14:16:56.880  3481  3481 E         : ChiAWBAlgorithmEntry
+03-14 14:16:56.943  1290  1290 D StatusBar: disable<e i a s b h r c s q >
+03-14 14:16:56.954  1290  1290 W StatusBar/NavBarView: *** Invalid layout in navigation bar (sizeChanged this=1440x168 cur=1384x168)
+03-14 14:16:56.966  1099  1192 I WindowManager: Screen frozen for +201ms due to Window{2e369c0 u0 StatusBar}
+03-14 14:16:57.379  1715  1848 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
